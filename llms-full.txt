@@ -1,0 +1,1048 @@
+# GPT3 Marketing
+
+> GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.
+
+- Website: https://gpt3.marketing/
+- Contact: ask@gpt3.marketing
+- Based in: Singapore
+- Technology partner: SOMIN (https://somin.ai/), an AI audience-research and creative-intelligence platform
+
+## What we do
+- Voice audits: We read your current output, human and machine, against your competitors and your audience's own language. You get a clear map of where you sound like yourself and where you have drifted into the generic.
+- Brand voice systems: A working voice system: principles, vocabulary, banned moves, worked examples and model-ready instructions. Built to be used by writers and models alike, not filed in a brand book.
+- Prompt libraries: Versioned, tested prompts for your recurring content jobs, with examples and review notes. Owned by your team, maintained like code.
+- Human edit loops: Editorial workflows that put skilled humans where they add the most value. We design the checklists, roles and feedback paths that keep quality steady at scale.
+- Audience-grounded briefs: Briefs built from the tensions and phrases your audience actually uses, surfaced through SOMIN. The model writes from evidence instead of averages.
+- Team training: Hands-on sessions on prompt craft, editing machine drafts and keeping a voice consistent. Practical, specific to your channels, no slideware theatre.
+
+## Key pages
+- [Home](https://gpt3.marketing/): GPT3 Marketing is a generative-AI content consultancy est. 2020: brand voice systems, prompt libraries and human-edited content, grounded by SOMIN.
+- [Blog](https://gpt3.marketing/blog/): ten articles
+- [Brand guidelines](https://gpt3.marketing/brand/)
+
+## Articles
+- [What few-shot prompting in 2020 still teaches content teams](https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/): GPT-3 forced writers to teach by example. Those few-shot habits remain the best defence against generic AI content in 2026.
+- [Why AI content all sounds the same, and how to escape it](https://gpt3.marketing/blog/why-ai-content-sounds-the-same/): Generic AI copy comes from averaged inputs, not bad models. How to diagnose sameness and rebuild a voice your audience recognises.
+- [How to build a brand voice system that AI can follow](https://gpt3.marketing/blog/brand-voice-system-for-ai/): A brand voice system for the AI era: principles, vocabulary, examples and model-ready instructions your writers and models both use.
+- [Why AI drafts still need heavy editing, and how to need less](https://gpt3.marketing/blog/why-ai-drafts-need-heavy-editing/): Heavy revision of AI drafts is usually an input problem. Where the editing time goes and how to move effort upstream.
+- [From GPT-3 to ChatGPT: what really changed for marketers](https://gpt3.marketing/blog/from-gpt3-to-chatgpt-what-changed/): Six years from the GPT-3 API beta to today: what changed for content teams, what did not, and why craft matters more now.
+- [Prompt libraries: how to build, version and govern them](https://gpt3.marketing/blog/prompt-library-governance/): A practical guide to building a team prompt library: structure, versioning, testing, ownership and keeping it grounded in audience evidence.
+- [Authenticity outlasts trends: narrative over FOMO in AI content](https://gpt3.marketing/blog/authenticity-outlasts-trends/): Trend-chasing with AI makes brands faster and blurrier. Why a consistent narrative compounds, and how to test trends against it.
+- [Human-edited content at scale: roles, loops and limits](https://gpt3.marketing/blog/human-edited-content-at-scale/): How to scale AI-assisted content without losing quality: editorial roles, review tiers, feedback loops and where humans add most value.
+- [How to run a brand voice audit in the age of AI content](https://gpt3.marketing/blog/how-to-run-a-brand-voice-audit/): A step-by-step brand voice audit: gather samples, test distinctiveness, compare with audience language and prioritise fixes.
+- [Audience-grounded AI content: feeding models what people say](https://gpt3.marketing/blog/audience-grounded-ai-content/): Why AI content improves when briefs carry real audience language and tensions, and a practical workflow for grounding prompts in evidence.
+
+## FAQ
+- **What is GPT3 Marketing?** GPT3 Marketing is a generative-AI content consultancy established in 2020, when OpenAI opened its GPT-3 API. We build brand voice systems, prompt libraries and human-edited content workflows. Our technology partner, SOMIN, grounds that work in real audience conversations so AI-assisted content stays distinctive rather than generic.
+- **Why is the company called GPT3 Marketing?** Because that is when we started. We began writing with GPT-3 in the summer of 2020, when prompts were hand-built few-shot examples and every output needed a careful editor. The name is a reminder of the craft habits we formed then, which matter more now that fluent text is cheap.
+- **Do you only work with OpenAI models?** No. The name is heritage, not a vendor commitment. Voice systems and prompt libraries we build are written to work across the major model families, and we test them on whichever models your team actually uses. The principles hold even as the models change.
+- **What is a voice audit?** A voice audit compares your current content with your competitors' and with the language your audience uses, gathered through SOMIN. It shows where you sound distinctive, where you have drifted into generic AI phrasing, and what to fix first. It is usually the first step of an engagement.
+- **How does SOMIN fit into your work?** SOMIN, an AI audience-research platform, is our technology partner. We use it to surface the tones, emotions and tensions in real audience posts. That evidence shapes voice principles, brief inputs and prompt examples, so content reflects what people actually respond to rather than what a model thinks is average.
+- **Will you replace our writers with AI?** No. Our systems are designed to make good writers faster and more consistent, not to remove them. Human editors own judgment, nuance and final approval. Models handle first drafts, variations and repetitive formatting, under rules your team controls.
+
+## Sister companies
+- [Marketing Mondays](https://mondays.marketing/): One real signal, decoded every Monday
+- [Somonitor](https://somonitor.ai/): Always-on listening you can check
+- [Trafix](https://trafix.app/): Paid traffic, measured in profit
+- [AgentC](https://agentc.marketing/): Agents play. Humans conduct.
+- [GPT5 Marketing](https://gpt5.marketing/): Marketing redesigned for reasoning models
+- [Mindfuse](https://mindfuse.sg/): Consumer psychology and culture, decoded for SEA
+- [SNMRush](https://snmrush.com/): Search, Neural answers, Mentions. One rush.
+
+
+# Full articles
+
+
+# What few-shot prompting in 2020 still teaches content teams
+URL: https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/ · Published 2026-10-05
+
+Few-shot prompting taught early GPT-3 users that a model learns a voice from examples far better than from adjectives. In 2026, with fluent instruction-following models, the lesson still holds: teams that feed models curated, audience-grounded examples get distinctive content, while teams that only describe their tone get the same average copy as everyone else.
+
+## What did writing with GPT-3 actually look like in 2020?
+
+In May 2020 OpenAI published "Language Models are Few-Shot Learners", the paper describing GPT-3, a 175-billion-parameter model. Its central claim was that a large enough model could pick up a task from a handful of examples placed in the prompt, without retraining. In June 2020 the API opened as a private beta, and that summer is when GPT3 Marketing started working with it.
+
+There was no chat window. You wrote a prompt that looked like the beginning of a document: three or four example product descriptions, each with a short input and a finished output, then a new input and an empty space. The model continued the pattern. If your examples were bland, the output was bland. If one example was much longer than the others, the outputs drifted long. Every quirk in the examples showed up, amplified, in the result.
+
+It was a demanding way to work, and it forced a discipline that most teams lost when chat interfaces arrived in November 2022.
+
+## Why do examples beat adjectives?
+
+Ask a modern model to write in a voice that is "warm, confident and witty" and you will get something warm, confident and witty in the way that thousands of other brands are. Those adjectives sit in every brand book. The model has seen them attached to an enormous range of text and returns the centre of that range.
+
+Examples carry information adjectives cannot: sentence length, where the joke lands, which words you never use, how you handle a complaint, whether you write "we" or "the team". A good example is a compressed voice guide. That is why our brand voice systems (/blog/brand-voice-system-for-ai/) are built around worked examples rather than tone descriptors.
+
+Instructions describe what you want. Examples prove it. Models trust proof.
+
+## Which 2020 habits are worth keeping?
+
+### 1. Curate examples like a portfolio
+
+In 2020 every example cost tokens and money, so we chose them carefully. Today context is cheap and teams paste in whole archives. More is not better. Pick the pieces that best represent the voice at its strongest and most specific, and vary them across formats so the model learns the voice, not one template.
+
+### 2. Make the pattern explicit
+
+Few-shot prompts worked best with consistent structure: a labelled input, a labelled output, a clear separator. The same principle applies to modern prompts. Show the model what goes in and what comes out, so it knows which parts of an example are fixed voice and which are variable content.
+
+### 3. Read every output as an editor
+
+Nobody published raw GPT-3 text. It drifted, repeated itself and occasionally invented facts with complete confidence. Modern models are far better, but the editor's habit is still the cheapest quality control available. We cover that in more detail in why AI drafts still need heavy editing (/blog/why-ai-drafts-need-heavy-editing/).
+
+### 4. Treat the prompt as an asset
+
+A good few-shot prompt took hours to tune, so we versioned it, documented it and reused it. That evolved into the prompt library practice we run for clients today.
+
+## Where should the examples come from?
+
+This is where 2026 differs from 2020. Back then, examples came from the brand's own archive. The trouble is that archives reflect what the brand wanted to say, not necessarily what the audience responded to. If your best examples are your own favourite posts, the model learns your preferences, not your audience's.
+
+We now ground example selection in audience evidence. Using SOMIN's strategy tools (https://somin.ai/somin-strategy/), SOMIN being an AI audience-research platform, we look at the conversations around a category: the phrases people actually use, the tensions they voice, the tones that earn replies rather than scrolls. Then we pick or write examples that speak to those specifics. The model inherits the brand's voice and the audience's vocabulary at the same time.
+
+The Fujifilm case study (https://somin.ai/brands-fujifilm-case-study/) is useful further reading on how audience insight shapes what a brand says, before anyone touches the wording.
+
+## A worked example: one product line, two prompts
+
+Imagine a skincare brand writing descriptions for a new serum.
+
+- Prompt A says: "Write a warm, expert product description for our new vitamin C serum. Our tone is friendly and science-led."
+
+- Prompt B includes three past descriptions that performed well, each paired with its brief, plus a short note of phrases the audience uses about the problem (for instance, how they describe dullness or sensitivity in their own words), then the new brief.
+
+Prompt A returns competent copy that could belong to any brand on the shelf. Prompt B returns copy with the brand's rhythm and the audience's language. The difference is not model quality. It is input quality.
+
+## Checklist: a few-shot prompt for brand content
+
+- Two to five examples, varied in format and length
+
+- Each example paired with the brief that produced it
+
+- Consistent labels and separators
+
+- A short list of audience phrases and tensions, sourced from real conversations
+
+- A short list of things the brand never says
+
+- A named human reviewer for the output
+
+## Definitions
+
+- Zero-shot: asking a model to do a task with instructions only.
+
+- Few-shot: including a small number of worked examples in the prompt.
+
+- In-context learning: the model adapting to patterns in the prompt without changing its weights.
+
+## Why this matters now
+
+When everyone has access to the same models, the advantage moves to inputs. Few-shot discipline was born from scarcity in 2020; in 2026 it is a way to escape sameness. If you want to see how audience signal is turning into practical marketing decisions elsewhere, the weekly episodes from Marketing Mondays (https://mondays.marketing/) decode one real signal at a time, which is a good habit to pair with a sharper prompt.
+
+The brands that sound distinctive with AI are rarely the ones with the cleverest instructions. They are the ones with the best examples, chosen with their audience in mind.
+
+
+# Why AI content all sounds the same, and how to escape it
+URL: https://gpt3.marketing/blog/why-ai-content-sounds-the-same/ · Published 2026-09-28
+
+AI content sounds the same because most teams give models the same thing: vague tone adjectives, trend formats and no audience evidence. The model fills the gaps with its most probable defaults. To escape sameness, change the inputs: a codified voice, curated examples, and the specific language and tensions your audience actually uses, gathered from real conversations.
+
+## What does AI sameness look like?
+
+You know it when you scroll. Posts that open with a rhetorical question. Lists of exactly three benefits. Paragraphs that end in a tidy moral. A closing line inviting you to share your thoughts below. None of it is wrong. All of it is interchangeable.
+
+Our listening on brand differentiation keeps returning to the same tension: marketers in saturated categories worry that AI-generated content is making everyone sound alike, and that the reflex response is to discount rather than to communicate value. When your words blend in, price becomes the only thing left to compete on.
+
+## Why do models converge on the same voice?
+
+A language model predicts likely text. Given a thin prompt, the likeliest text is the text most similar to everything else it has seen in that genre. Three forces amplify this:
+
+- Thin briefs. "Write an engaging LinkedIn post about our new feature" gives the model nothing to distinguish you.
+
+- Borrowed formats. When teams copy the trending format of the week, they also copy its rhythm and structure.
+
+- Light editing. Under volume pressure, editors fix errors but leave the defaults, so house style slowly becomes model style.
+
+We saw a milder version of this in 2020. GPT-3 output in a given genre tended towards the same phrasing unless the examples pushed it elsewhere. The difference is scale: back then a limited number of teams had API access; since ChatGPT launched in November 2022, almost everyone has.
+
+## How do you diagnose it in your own content?
+
+### The logo swap test
+
+Take ten recent pieces. Replace your brand name with a competitor's. If the content still reads naturally, the voice is not doing any work.
+
+### The phrase census
+
+List the opening and closing lines of your last thirty posts. Count repeats and near-repeats. Clusters of identical moves are the fingerprint of default model behaviour.
+
+### The audience mirror
+
+Compare your vocabulary with the vocabulary your audience uses when they talk about the problem you solve. If you say "seamless solutions" and they say "I just want it to stop breaking", there is a gap. Finding that language is exactly what SOMIN for brands (https://somin.ai/somin-for-brands/) is built for: SOMIN, an AI audience-research platform, decodes tones, emotions and tensions from real posts.
+
+These three tests form the core of our brand voice audit (/blog/how-to-run-a-brand-voice-audit/).
+
+## How do you escape it?
+
+### 1. Codify what only you would say
+
+A voice system should include things the brand never says, words it owns, and a few signature moves: perhaps you always lead with the customer's situation, or you never use exclamation marks. Rules like these are specific enough for a model to follow and for a reader to notice.
+
+### 2. Feed the model your audience, not the internet
+
+Briefs should carry audience evidence: real phrases, the tension behind the purchase, the objection people raise in comments. The model's default is the average internet; your brief needs to be about your particular corner of it. Our sister brand Mindfuse (https://mindfuse.sg/) does deep work on tensions and cultural codes for exactly this reason.
+
+### 3. Narrative over trend
+
+Trend formats get attention briefly and identity never. A consistent narrative, told in a recognisable voice, compounds. We expand on this in why authenticity outlasts trends (/blog/authenticity-outlasts-trends/).
+
+### 4. Edit for voice, not just for errors
+
+Give editors a voice checklist alongside the grammar check, and empower them to reject drafts that are correct but anonymous.
+
+## Checklist: sameness red flags
+
+- Openers that are questions or "In a world where…"
+
+- Lists that always have three items
+
+- Abstract nouns doing the work: solutions, journeys, ecosystems
+
+- Paragraph-ending morals
+
+- Generic calls to comment
+
+- No phrase a customer would actually say
+
+## A worked example
+
+A B2B software brand writes: "Experience seamless collaboration with our powerful new dashboard." Audience research shows their users complain, in their own words, about chasing three people for one number before Monday's meeting. The rewrite: "One number, before Monday, without chasing three people." Same feature. One version could be anyone's; the other could only be theirs, because it borrows the audience's own frustration.
+
+That rewrite did not need a better model. It needed better evidence. The SAMY case study (https://somin.ai/agencies-samy-case-study/) is useful further reading on how agencies use audience insight to shape creative direction.
+
+## Definitions
+
+- AI sameness: convergence of brand content toward model defaults, making brands indistinguishable.
+
+- Voice system: the rules, examples and vocabulary that make a brand's writing recognisable, written for humans and models.
+
+- Audience language: the words and framings customers use themselves, gathered from real conversations.
+
+## The point
+
+Models are not the problem; averaged inputs are. GPT3 Marketing has written with these systems since 2020, and the pattern has held throughout: the more specific the input, the more distinctive the output. With SOMIN as our technology partner, the specifics come from your audience rather than from our guesses.
+
+## What should you do this week?
+
+Start small. Run the logo swap on ten posts, write down the three openers you use most, and collect ten phrases your customers actually use about the problem you solve. Those three lists will tell you more about your sameness problem than any tool comparison. Then decide on one rule you will enforce from Monday, such as no rhetorical-question openers, and see whether readers notice the difference.
+
+
+# How to build a brand voice system that AI can follow
+URL: https://gpt3.marketing/blog/brand-voice-system-for-ai/ · Published 2026-09-14
+
+A brand voice system for AI is a compact, operable set of voice principles, vocabulary rules, worked examples and model-ready instructions. Unlike a traditional brand book, it is written to be pasted into prompts and used by editors daily. The strongest systems are grounded in audience evidence, so the voice reflects how real customers talk.
+
+## Why do brand books fail with AI?
+
+Most brand books were written for designers and agencies. They describe a voice with adjectives, show a few hero lines and stop. A human copywriter can absorb that and extrapolate. A model cannot. It reads "bold yet approachable" and produces the same bold yet approachable copy it gives every brand that uses those words.
+
+When we started working with GPT-3 in 2020, we learnt this quickly. The only thing that reliably moved the output was concrete material in the prompt. That lesson shaped how we build voice systems now, as we described in what few-shot prompting still teaches (/blog/few-shot-prompting-lessons-2020/).
+
+## What goes into a voice system?
+
+### 1. Three to five principles, written as behaviours
+
+Not "we are confident" but "we state the answer first, then the reasoning". Not "we are warm" but "we address the reader's situation before our product". Behaviours can be checked; adjectives cannot.
+
+### 2. Vocabulary: owned, preferred and banned
+
+- Owned words: terms the brand uses distinctively.
+
+- Preferred words: plain choices that match how customers talk.
+
+- Banned words: clichés, category jargon and model favourites you never want to see.
+
+### 3. An example bank
+
+Pairs of brief and finished piece across your main formats: social post, product page, email, support reply. Include a few "before and after" edits showing a generic draft and the on-voice version. These teach both writers and models what correction looks like.
+
+### 4. Audience language notes
+
+A short, regularly refreshed list of phrases, tensions and objections from real audience conversations. We source these with SOMIN, an AI audience-research platform and our technology partner. Its social media manager (https://somin.ai/somin-social-media-manager/) and listening tools help surface what people actually say about a category.
+
+### 5. Model-ready instructions
+
+A condensed version of the above, formatted for a system prompt or custom instructions, tested against the models your team uses.
+
+### 6. Context dials
+
+Most voices flex by situation. Document how the voice shifts for a complaint versus a launch, or for senior buyers versus students, so neither people nor models overcorrect.
+
+## How do you build one in practice?
+
+- Audit. Gather recent content and score it for distinctiveness. Our voice audit guide (/blog/how-to-run-a-brand-voice-audit/) covers the method.
+
+- Listen. Map the audience's vocabulary and tensions with SOMIN.
+
+- Draft principles. Turn the best of the brand and the clearest audience needs into behavioural rules.
+
+- Build the example bank. Select or rewrite examples that embody the rules.
+
+- Compress for models. Write the model-ready version and test it on real briefs.
+
+- Train and ship. Walk editors through it and connect it to your prompt library.
+
+## How do you test whether a model follows it?
+
+Run the same ten briefs through the model twice: once with only a generic instruction, once with the voice system. Ask editors who do not know which is which to identify the on-brand versions and mark which rules were broken. You learn which rules are clear and which need examples. Repeat after major model updates, because defaults shift.
+
+A voice system is finished when a new freelancer and a model can both produce something your editor would recognise as yours.
+
+## Checklist: is your voice system operable?
+
+- Principles written as observable behaviours
+
+- Owned, preferred and banned word lists
+
+- At least two worked examples per main format
+
+- Before-and-after edits
+
+- Audience phrases refreshed in the last quarter
+
+- A tested model-ready version
+
+- A version number and an owner
+
+## Definitions
+
+- System prompt: standing instructions given to a model before the task.
+
+- Example bank: curated brief-and-output pairs used for training and prompting.
+
+- Context dial: a documented shift in voice for a specific situation or audience.
+
+## Where agentic workflows fit
+
+As more content is produced by multi-step AI workflows, the voice system becomes infrastructure: every agent that writes needs it. Our sister brand AgentC (https://agentc.marketing/) runs agentic marketing workflows and treats voice and judgment as human-owned inputs, which is the right instinct. The SM Universe case study (https://somin.ai/brands-sm-universe-case-study/) is useful further reading on aligning content with what audiences care about.
+
+The aim is simple: whoever or whatever writes for you, the reader should hear one voice, and it should be one shaped by them.
+
+## What are the common mistakes?
+
+### Writing for the brand team, not the user
+
+Voice systems often read like manifestos. Writers and models need instructions they can apply in the middle of a task, so keep the language plain and practical.
+
+### Too many principles
+
+Ten principles compete with each other and none gets followed. Three to five, ranked, give writers and models a clear order of priority when rules conflict.
+
+### No negative examples
+
+Showing what the voice is not is often more instructive than showing what it is. A short set of rejected drafts, with notes on why, saves editors repeating the same correction.
+
+### Set and forget
+
+Audiences shift their language, models change their defaults, and products evolve. A voice system without an owner and a review date will quietly fall out of use within a year.
+
+Avoid these four and the system becomes something people reach for, rather than a document they were once sent.
+
+## Where should you start?
+
+If you have nothing today, begin with a single page: three behavioural principles, a banned word list of twenty items, and four strong examples. Test it on a week of real briefs, note which rules editors still have to enforce by hand, and expand from there. A small system that people use beats a complete one that nobody opens.
+
+
+# Why AI drafts still need heavy editing, and how to need less
+URL: https://gpt3.marketing/blog/why-ai-drafts-need-heavy-editing/ · Published 2026-09-07
+
+AI drafts need heavy editing mainly because of what goes into them, not because models write badly. Most revision time is spent restoring voice, audience specificity and accuracy that the brief never supplied. Teams reduce editing by fixing inputs: stronger briefs grounded in audience evidence, a codified voice system, curated examples and a clear edit checklist.
+
+## Is heavy editing a model problem?
+
+In 2020, yes, partly. GPT-3 outputs wandered off topic, repeated phrases and confidently stated things that were not true. Every piece we produced that summer went through a careful human edit, and some were rewritten almost entirely. Models have improved enormously since, especially after instruction-tuned chat models became mainstream with ChatGPT in November 2022.
+
+Yet our listening on AI integration in marketing keeps surfacing the same complaint: AI content that needs so much human revision that the time savings disappear. If models are much better, why does this persist? Because the remaining problems are mostly not model problems.
+
+## Where does the editing time actually go?
+
+When we review editing logs with teams, edits tend to fall into four buckets:
+
+- Accuracy: fixing facts, claims, product details.
+
+- Voice: removing generic phrasing, restoring brand rhythm.
+
+- Structure: reordering, cutting padding, sharpening the point.
+
+- Audience fit: replacing abstractions with what customers actually care about.
+
+Accuracy edits are essential and will always remain. The other three are largely self-inflicted. They come from briefs that said too little, so the model defaulted, and the editor rebuilt the piece by hand.
+
+## How do you move effort upstream?
+
+### 1. Put facts in, do not ask for them
+
+Give the model the product details, claims you can substantiate and the sources. Ask it to write from those, not to recall them. Accuracy edits shrink when the model has no need to guess.
+
+### 2. Supply the voice
+
+A codified brand voice system (/blog/brand-voice-system-for-ai/) with examples removes much of the voice editing. The editor checks rather than rewrites.
+
+### 3. Supply the audience
+
+This is the bucket most teams miss. A brief that includes how the audience describes the problem, the tension behind the decision and the objection they raise produces a draft that already sounds relevant. SOMIN, an AI audience-research platform and our technology partner, is how we source that evidence; the SOMIN for agencies (https://somin.ai/somin-for-agencies/) overview explains how teams fold it into briefs.
+
+### 4. Define the shape
+
+Specify length, structure and the single point the piece must make. Structure edits drop sharply when the model knows what the piece is for.
+
+## What should the human edit focus on?
+
+Once inputs improve, editors can spend their time where humans are irreplaceable: judgment. Is this the right thing to say now? Would a customer find this respectful? Does it overclaim? Is there a sharper idea hiding in the second paragraph? That is the editing that makes content good, not merely acceptable.
+
+The goal is not zero editing. It is editing spent on judgment rather than repair.
+
+## A worked example
+
+Picture a team producing weekly newsletter intros, where editors spend most of their time replacing generic openings and adding customer context. They change the brief template to include three audience phrases from that week's listening, one fact sheet and two example intros. Editors can then spend their time deciding which angle to lead with, not rewriting sentences. We are not quoting a figure because yours will differ; the point is to measure your own before and after.
+
+## Checklist: the low-edit brief
+
+- One clear point the piece must make
+
+- Verified facts and sources, pasted in
+
+- Voice system reference or condensed rules
+
+- Two relevant examples
+
+- Audience phrases and tension, from real conversations
+
+- Format, length and channel
+
+- Named editor and edit categories to log
+
+## Definitions
+
+- Human in the loop: a workflow where a person reviews and approves model output before it is used.
+
+- Edit log: a lightweight record of edits by category, used to improve inputs.
+
+- Grounding: giving a model verified source material to write from.
+
+## Measuring what lands
+
+Less editing is only half the result. The other half is whether content performs. Pairing edit logs with engagement data shows which inputs matter most. If you are also running paid distribution, our sister brand Trafix (https://trafix.app/) looks at true profitability of creative rather than vanity ROAS, a useful discipline for content teams too. The KPI Media case study (https://somin.ai/agencies-kpi-media-case-study/) is worth reading for how agencies connect insight with execution.
+
+Heavy editing is a symptom. Treat the inputs and the symptom eases, leaving your best people free to do the work only they can do.
+
+## How do you start an edit log?
+
+Keep it simple enough that editors actually use it. A shared sheet with five columns works: piece, time spent, main edit category, a one-line note, and whether the fix could have been supplied in the brief. Ask editors to fill it in for a month. At the end, sort by category and by the last column.
+
+Patterns appear quickly. If voice edits dominate, your voice system is missing or too vague. If audience-fit edits dominate, briefs lack evidence of how customers talk. If accuracy edits dominate, the model is being asked to recall rather than to write from supplied facts. Each pattern points to one upstream change, and you can test that change on the next month's log.
+
+The log also changes how editors see their own work. Instead of feeling like they are cleaning up after a machine, they become the people who improve the system, which is a more satisfying and more valuable role.
+
+
+# From GPT-3 to ChatGPT: what really changed for marketers
+URL: https://gpt3.marketing/blog/from-gpt3-to-chatgpt-what-changed/ · Published 2026-08-24
+
+Between the GPT-3 API beta in June 2020 and today, generative AI went from a specialist tool requiring hand-built prompts to a universal writing assistant. What changed most for marketers is access: everyone can now produce fluent copy. What did not change is that distinctive content still depends on clear voice, real audience insight and human judgment.
+
+## What was the generative AI landscape in 2020?
+
+In May 2020 OpenAI released the paper "Language Models are Few-Shot Learners", describing GPT-3, a model with 175 billion parameters. In June 2020 it opened access through an API in private beta, with a waitlist. Developers and a small number of writers and marketers began experimenting.
+
+The interface was a text box that continued whatever you wrote. To get a product description, you wrote the start of a document containing example descriptions and left a gap. Outputs could be startlingly good one moment and nonsensical the next. GPT3 Marketing was founded that summer, and our earliest work was mostly learning what the model would and would not do reliably.
+
+## What changed between 2020 and 2022?
+
+Models were trained to follow instructions rather than merely continue text. That meant you could say "write three subject lines for this email" instead of building a pattern for the model to complete. The gap between what a non-specialist could achieve and what a specialist could achieve narrowed.
+
+Then, on 30 November 2022, OpenAI released ChatGPT. The conversational interface removed nearly every barrier. Within weeks, generative AI was something marketing teams used rather than something they read about.
+
+## What changed after ChatGPT?
+
+- Volume exploded. Teams could produce many more variations, posts and drafts.
+
+- Quality floors rose. Grammatical, structured copy became the minimum.
+
+- Sameness spread. With everyone using similar models and similar prompts, content converged. We explore this in why AI content all sounds the same (/blog/why-ai-content-sounds-the-same/).
+
+- Models kept improving. Longer context, multimodal input, better reasoning and stronger tool use followed. Our sister studio GPT5 Marketing (https://gpt5.marketing/) works on what reasoning-era models mean for marketing workflows.
+
+- Search changed. AI answers began to sit between brands and buyers, changing how content gets found.
+
+## What did not change?
+
+### Inputs determine outputs
+
+In 2020 a weak example set produced weak copy. In 2026 a weak brief produces generic copy. The mechanism is the same.
+
+### Someone has to own judgment
+
+Models are more reliable, but they still cannot decide what your brand should say, to whom, and when. That remains a human call.
+
+### Audiences reward specificity
+
+People respond to content that reflects their situation in their language. No model release changes that. What has changed is the tooling to find that language at scale. SOMIN, an AI audience-research platform and our technology partner, reads real posts to surface tones, emotions and tensions; the SOMIN vision (https://somin.ai/vision/) explains why grounding AI in real conversation matters.
+
+## Timeline: key dates for marketers
+
+- May 2020: GPT-3 paper published (175B parameters).
+
+- June 2020: GPT-3 API opens in private beta. GPT3 Marketing is founded that summer.
+
+- November 2022: ChatGPT launches; generative AI goes mainstream.
+
+- August 2025: GPT-5 released, with routing between fast and deeper reasoning modes.
+
+## What should content teams take from six years of change?
+
+The advantage has moved. In 2020 the edge was being able to use the technology at all. In 2023 it was speed. In 2026, with fluent output universal, the edge is distinctiveness: content that could only have come from you, for an audience you actually understand.
+
+When everyone can write, the scarce thing is having something specific to say.
+That is why our work now centres on three systems: a voice system, a prompt library and a human edit loop, all fed with audience evidence. It is also why we see the old craft habits as more valuable, not less. See what few-shot prompting still teaches (/blog/few-shot-prompting-lessons-2020/) for the practical side.
+
+## Checklist: is your team using AI like it is 2020, 2023 or 2026?
+
+- 2020 mode: experimenting, no shared prompts, everything rewritten.
+
+- 2023 mode: high volume, ad hoc prompts, light edits, rising sameness.
+
+- 2026 mode: codified voice, versioned prompt library, audience-grounded briefs, judgment-led editing, measurement of what lands.
+
+## Definitions
+
+- Large language model: a model trained on large text corpora to predict and generate text.
+
+- Instruction tuning: training that teaches a model to follow natural-language requests.
+
+- Context window: the amount of text a model can consider at once.
+
+For further reading on how audience research translates into strategy across categories, browse SOMIN's AI marketing strategy cases (https://somin.ai/cases-ai-marketing-strategy/), including the Pepsi India case study (https://somin.ai/brands-pepsi-india-case-study/).
+
+## What did the first wave get wrong?
+
+Looking back, the early enthusiasm around generative content made a few mistakes worth naming, because teams are still repeating them.
+
+- Treating volume as the goal. Because more content became cheap, many teams assumed more content was better. Audiences did not agree.
+
+- Skipping the brief. When drafting was effortless, the thinking that used to happen before drafting quietly disappeared.
+
+- Assuming fluency meant accuracy. Confident, polished text still needed checking, and still does.
+
+- Ignoring the audience. Prompts described the brand at length and the customer barely at all.
+
+None of these were model failures. They were process choices, and they can be reversed.
+
+## What will the next six years reward?
+
+Nobody can forecast model capabilities with confidence, and we will not try. What seems safe to say is that whatever makes fluent text cheaper will make specific, evidenced, recognisable content relatively more valuable. Teams that invest now in voice, audience understanding and editorial judgment are building assets that survive model changes. Teams that invest only in volume are building on the one thing that keeps getting cheaper for everyone. That is the bet GPT3 Marketing has made since 2020, and six years of change have not given us a reason to revise it.
+
+
+# Prompt libraries: how to build, version and govern them
+URL: https://gpt3.marketing/blog/prompt-library-governance/ · Published 2026-08-17
+
+A prompt library is a shared, versioned collection of tested prompts for a team's recurring content jobs. Done well, it captures craft so quality does not depend on who is typing. It needs structure, named owners, test cases and regular review, and its examples and audience inputs should be refreshed from real audience evidence rather than left to go stale.
+
+## Why do teams need a prompt library?
+
+Without one, every writer invents their own prompts. Some are excellent, most are fine, a few are poor, and nobody knows which is which. Quality becomes personal rather than systemic, and when the excellent writer leaves, their craft leaves with them.
+
+We started keeping prompt libraries in 2020 because GPT-3 prompts were expensive to tune. A good few-shot prompt for a product description could take an afternoon of iteration. Losing it would have been absurd. The habit outlasted the scarcity.
+
+## What should each prompt entry contain?
+
+- Name and purpose: the content job it serves.
+
+- The prompt: with clearly marked variable slots.
+
+- Required inputs: brief fields, facts, audience notes.
+
+- Examples: two to five curated examples or references to the example bank.
+
+- Test cases: a handful of briefs with known good outputs.
+
+- Owner and version: who maintains it and what changed.
+
+- Models tested: which models and settings it has been validated on.
+
+- Known failure modes: where it tends to go wrong.
+
+## How do you structure the library?
+
+Organise by content job, not by channel or by person. "Product launch announcement", "Customer complaint reply", "Weekly newsletter intro" and so on. Each job may have variants by channel, but the job is the unit people search for.
+
+Keep the voice system separate and referenced, not copied into every prompt. When the voice changes, you update one place. Our guide to building a brand voice system (/blog/brand-voice-system-for-ai/) covers what that shared layer contains.
+
+## How do you version and test prompts?
+
+Treat prompts like code. Every change gets a version number and a one-line note. Before a new version replaces the old, run the test cases and have an editor compare outputs blind. Keep the old version available until the new one has proved itself in real use.
+
+Retest when:
+
+- Your model provider updates or you switch models.
+
+- The voice system changes.
+
+- Audience research shows a shift in language or concerns.
+
+- Editors report the same correction repeatedly.
+
+## How do you keep prompts grounded?
+
+A prompt library can fossilise. The examples that worked last year may describe concerns your audience has moved past. We tie each prompt's audience inputs to a refresh cycle fed by SOMIN, an AI audience-research platform and our technology partner. Its reporting (https://somin.ai/somin-reporting/) and listening help us see which themes and phrases are rising or fading. For always-on listening across brand conversations, our sister app Somonitor (https://somonitor.ai/) is built specifically for share of voice and early warning.
+
+A prompt library is only as current as the audience evidence inside it.
+
+## Who governs it?
+
+Governance does not need to be heavy. One owner for the library, one owner per prompt, a monthly review of usage and edit logs, and a simple rule: no prompt is used for published content until it has passed its test cases. That is enough to keep quality steady without bureaucracy.
+
+## Checklist: prompt library health
+
+- Organised by content job
+
+- Every prompt has an owner and version
+
+- Test cases exist and are run on change
+
+- Voice system referenced, not duplicated
+
+- Audience inputs refreshed in the last quarter
+
+- Models tested are listed
+
+- Edit logs feed improvements
+
+## Definitions
+
+- Variable slot: a placeholder in a prompt filled per use, such as product name or audience segment.
+
+- Test case: a fixed input with a known acceptable output, used to check a prompt.
+
+- Prompt drift: a decline in output quality as models, voice or audiences change around an unchanged prompt.
+
+## A worked example
+
+A retail team keeps a "Complaint reply" prompt. Edit logs show editors repeatedly softening the opening line. The owner adds a before-and-after example and a rule to acknowledge the specific issue first, bumps the version, runs six test cases, and ships. The repeated edit disappears. Small, visible loops like this are what make a library valuable over time.
+
+The Mothercare SG case study (https://somin.ai/brands-mothercare-sg-case-study/) is useful further reading on understanding an audience before deciding what to say to them. And if you want to talk prompt craft with peers in Singapore, Marketing Mondays (https://mondays.marketing/) brings marketers together around one real signal every week.
+
+## Which tools should you use?
+
+Less than you might think. Many effective prompt libraries live in a shared document workspace or a simple database with clear naming and version notes. Dedicated prompt management tools help when you have many prompts running inside automated workflows, but they do not replace the discipline of owners, test cases and reviews.
+
+Whatever you use, make three things easy: finding the right prompt for a job, seeing what changed and why, and reporting a problem. If writers cannot find a prompt in under a minute, they will write their own, and the library starts to fragment. A short index page listing every content job, with one line on when to use each prompt, prevents most of that.
+
+Finally, make retirement part of governance. Prompts for discontinued products or outdated campaigns should be archived, not left in place to confuse new team members.
+
+## How do you get people to use it?
+
+Adoption is a design problem. Put the library where people already work, show a before-and-after for each prompt so its value is obvious, and credit contributors when their improvements ship. Within a few months, using the library should feel faster than writing a prompt from scratch.
+
+
+# Authenticity outlasts trends: narrative over FOMO in AI content
+URL: https://gpt3.marketing/blog/authenticity-outlasts-trends/ · Published 2026-08-03
+
+Authenticity outlasts trends because trends reward speed, which everyone now has, while a consistent narrative rewards recognition, which compounds over time. With AI making trend content almost free to produce, brands that chase every format blur together. Brands that filter trends through a clear narrative and real audience evidence stay distinctive and earn lasting trust.
+
+## Why does trend chasing feel necessary?
+
+Our listening on brand differentiation surfaces a familiar pressure: fear of missing out. A format takes off, competitors pile in, and the team worries that sitting it out means invisibility. Generative AI intensifies this. A trend post that once took a day now takes minutes, so the cost of joining seems negligible.
+
+The hidden cost is identity. When every brand uses the same audio, the same caption structure and the same model to write it, the audience remembers the trend, not the brand.
+
+## What does the evidence from audiences suggest?
+
+Across SOMIN's research workspaces, one insight recurs: authenticity outlasts trends and captures hearts. Audiences describe a sea of sameness and reward content that feels like it comes from someone with a point of view. SOMIN, an AI audience-research platform and our technology partner, reads these signals from real posts rather than surveys, which matters because people describe sameness in their own blunt words.
+
+This aligns with what we have seen since 2020. The pieces that last are rarely the ones riding a format. They are the ones that say something specific in a recognisable voice. We explored why in why AI content all sounds the same (/blog/why-ai-content-sounds-the-same/).
+
+## How do you build a narrative that AI can serve?
+
+### 1. Write the narrative in one paragraph
+
+What you believe, who you serve, what tension you resolve for them. If it does not fit in a paragraph, it is not yet clear enough to guide a model.
+
+### 2. Define three recurring themes
+
+Themes are the territories your content returns to. They should come from the overlap between what you stand for and what your audience actually worries about. Audience evidence keeps this honest; SOMIN strategy (https://somin.ai/somin-strategy/) is built for mapping those tensions.
+
+### 3. Encode it in your voice system and prompts
+
+Every prompt in your library should reference the narrative and themes, so even quick content pulls in the same direction. See our guide to prompt libraries (/blog/prompt-library-governance/).
+
+## How do you decide which trends to join?
+
+Run every trend through a short filter:
+
+- Fit: does it connect to one of our themes?
+
+- Angle: can we say something only we would say with it?
+
+- Audience: does our audience actually engage with this, or just the wider internet?
+
+- Voice: can we do it without abandoning how we sound?
+
+- Afterlife: will this piece still make sense in three months?
+
+Two or more "no" answers means skip it. That is not a loss; it is a choice that protects recognition.
+
+Be a trendsetter, not a trend chaser: let your narrative decide which waves are worth catching.
+
+## A worked example
+
+A sportswear brand sees a viral "day in my life" format spreading. Its narrative centres on everyday athletes who train around full-time jobs. The filter says yes on fit, angle and audience: a pre-dawn routine from a real customer fits the story perfectly. A week later, a meme format with no connection to training appears. The filter says no. The brand sits it out, and nobody notices, because its content that week is about something its audience cares about.
+
+## Checklist: narrative health
+
+- One-paragraph narrative, agreed and written down
+
+- Three themes linked to audience tensions
+
+- Narrative referenced in the voice system and prompt library
+
+- Trend filter used before production
+
+- Quarterly check of themes against fresh audience evidence
+
+## Definitions
+
+- Brand narrative: the consistent story that gives content direction.
+
+- Theme: a recurring territory of content within the narrative.
+
+- Trend filter: a short set of questions that decides whether a trend serves the narrative.
+
+## Visibility without sameness
+
+There is a practical upside too. As AI answers increasingly mediate discovery, consistent, specific content on a narrow set of themes helps search engines and AI systems understand what a brand is about. Our sister agency SNMRush (https://snmrush.com/) works on exactly that visibility, in classic search and in AI answers. The Exostride case study (https://somin.ai/brands-exostride-case-study/) is good further reading on grounding a brand's story in audience insight.
+
+Trends will keep coming, faster than ever. A narrative is what lets you pick the right ones and stay recognisable while you do.
+
+## How do you measure whether a narrative is working?
+
+Trend content is easy to measure in the short term: a spike in views. Narrative content needs a longer view. Useful signals include whether audiences start using your phrases back to you in comments, whether returning engagement from the same people grows over time, and whether people can describe what you stand for without prompting.
+
+Listening is the most direct way to see this. If audience conversation about your brand begins to echo your themes, the narrative is landing. If it only mentions your trend posts, it is not. Review these signals quarterly alongside your normal performance metrics, and resist judging the narrative on any single week's numbers.
+
+## What if leadership wants the trend anyway?
+
+It happens. Share the filter results openly and propose a version of the trend that does pass, perhaps with a different angle or a real customer at its centre. Most of the time the conversation shifts from whether to join to how to join in a way only your brand could. When it does not, do it once, measure it against narrative content over the following month, and let the evidence guide the next decision rather than opinion on either side.
+
+
+# Human-edited content at scale: roles, loops and limits
+URL: https://gpt3.marketing/blog/human-edited-content-at-scale/ · Published 2026-07-27
+
+Human-edited content at scale means using AI for drafting and variation while people own voice, judgment and approval. It works when review is tiered by risk, editors focus on judgment rather than repair, edit patterns feed back into prompts and voice rules, and audience evidence keeps content relevant. Scale comes from the system, not from removing editors.
+
+## What does "at scale" really mean?
+
+For some teams it means fifty product pages a week; for others, hundreds of localised social variations or thousands of catalogue descriptions. The numbers vary, but the problem is the same: volume grows faster than the number of people who can read carefully. In 2020, scale with GPT-3 was barely possible because every output needed close review. Now drafting is effortless and review is the constraint.
+
+## Which roles make it work?
+
+- Voice owner: maintains the voice system and settles disputes about what is on-brand.
+
+- System owner: maintains prompts, templates and the prompt library (/blog/prompt-library-governance/).
+
+- Editors: review, correct and approve, and log the categories of edits they make.
+
+- Fact checker: verifies claims for higher-risk content.
+
+- Insight lead: keeps audience evidence current and connects performance back to inputs.
+
+In small teams one person may wear several hats. The point is that each responsibility is named.
+
+## How do you tier review?
+
+### Tier 1: full review
+
+Claims, regulated categories, sensitive topics, crisis communication, high-reach campaigns. Every piece is read and approved by an editor, with fact checks where needed.
+
+### Tier 2: standard review
+
+Regular brand content. Every piece is read; edits focus on voice and judgment.
+
+### Tier 3: sampled review
+
+Low-risk variations from an approved master, such as format adaptations. An editor approves the master and reviews a sample of the variations, escalating if issues appear.
+
+Tiering is not about trusting the model more. It is about spending human attention where the risk and the reward are highest.
+
+## How do feedback loops reduce editing over time?
+
+Every edit is information. If editors keep removing the same phrase, add it to the banned list. If they keep adding customer context, the brief template is missing audience inputs. A monthly review of edit logs, owned by the system owner, turns repeated corrections into upstream fixes. We covered the categories in why AI drafts still need heavy editing (/blog/why-ai-drafts-need-heavy-editing/).
+
+## Where do humans add the most value?
+
+- Deciding what is worth saying at all
+
+- Choosing the sharpest angle from several drafts
+
+- Spotting tone that is technically fine but wrong for the moment
+
+- Protecting accuracy and the brand's honesty
+
+- Noticing when audience sentiment has shifted
+
+That last point is where audience evidence helps. SOMIN, an AI audience-research platform and our technology partner, surfaces shifts in tone and tension from real posts, so editors are not relying on instinct alone. Teams scaling social output often pair this with the SOMIN social media manager (https://somin.ai/somin-social-media-manager/).
+
+## What are the limits?
+
+Scale has a ceiling set by attention. Push sampled review too far, or let tier 1 content slip into tier 3, and errors reach the public. If edit logs show quality falling, slow down. Volume that damages trust is not efficiency.
+
+## Checklist: scaling safely
+
+- Named owners for voice, system, editing and insight
+
+- Review tiers defined and documented
+
+- Edit logs kept by category
+
+- Monthly loop from edit logs to prompts and voice rules
+
+- Audience evidence refreshed regularly
+
+- Clear escalation path for sensitive content
+
+## Definitions
+
+- Review tier: a level of human scrutiny assigned by content risk.
+
+- Master and variation: an approved core piece and its adapted versions.
+
+- Escalation: moving content to a higher review tier when issues appear.
+
+## Agents and editors
+
+As agentic workflows take on more steps, from research to drafting to scheduling, the same principle holds: agents run the process, humans own judgment. Our sister agency AgentC (https://agentc.marketing/) works this way. For further reading on teams combining insight and execution, see the Havas Media case study (https://somin.ai/agencies-havas-media-case-study/).
+
+## How do you onboard editors to AI-assisted work?
+
+Editing machine drafts is a different skill from editing human writing. Human drafts tend to have an intention you can sharpen; machine drafts are often smooth but empty, with the point buried or missing. New editors need practice spotting fluent emptiness.
+
+A practical onboarding sequence takes about a week:
+
+- Read the voice system and the narrative, then rewrite three generic drafts into on-voice pieces.
+
+- Shadow an experienced editor through a day of tier 2 review, discussing each decision.
+
+- Edit a batch independently and compare with a senior editor's version.
+
+- Start logging edits by category from day one.
+
+Also teach editors when to reject a draft entirely and fix the brief instead. Rewriting from scratch every time hides the real problem and burns the time that scale was meant to save.
+
+## What does a good week look like?
+
+In a healthy operation, editors spend most of their time on tier 1 and tier 2 judgment, sampled reviews raise few issues, and the monthly loop produces one or two small changes to prompts or voice rules. If editors are rewriting most drafts, return to inputs before adding headcount.
+
+## Where does audience insight sit in the loop?
+
+The insight lead closes the loop between what was published and what the audience said back. Monthly, they compare response signals with the themes and phrases in briefs, and flag gaps to the system owner. Without this step, the operation gets efficient at producing content that slowly drifts away from its readers.
+
+Treat that comparison as a standing agenda item rather than an occasional project. Small, regular corrections keep the system close to its readers and stop a drift that would otherwise need a full audit to fix.
+
+
+# How to run a brand voice audit in the age of AI content
+URL: https://gpt3.marketing/blog/how-to-run-a-brand-voice-audit/ · Published 2026-07-13
+
+A brand voice audit measures how distinctive, consistent and audience-relevant your content sounds. You gather recent samples, test them against competitors, look for generic AI patterns, and compare your vocabulary with the language your audience actually uses. The output is a prioritised list of fixes that feed directly into a voice system and prompt library.
+
+## Why audit your voice now?
+
+Since AI drafting became routine, many brands have drifted without noticing. Each piece seemed fine on its own; together they slid towards the same polished, anonymous register as their competitors. A voice audit makes that drift visible. It is the first thing we do in almost every engagement at GPT3 Marketing, and the reason our primary call to action is to book one.
+
+## Step 1: what should you collect?
+
+- Thirty to fifty recent pieces across your main channels
+
+- A note of which were AI-assisted, if known
+
+- Your existing brand guidelines
+
+- A comparable sample from two or three competitors
+
+- Performance data where available
+
+## Step 2: how do you test distinctiveness?
+
+### The logo swap
+
+Replace your brand name with a competitor's in each piece. Mark every piece where the swap feels natural. That percentage is a rough measure of how generic your content has become.
+
+### The blind line-up
+
+Mix your pieces with competitors' and remove names. Ask colleagues outside marketing to sort them by brand. If they cannot, the voice is not doing its job.
+
+### The pattern census
+
+Count recurring openers, list structures, closing lines and favourite words. Repeated machine patterns are signs that model defaults have taken over. We list common ones in why AI content all sounds the same (/blog/why-ai-content-sounds-the-same/).
+
+## Step 3: how does your language compare with your audience's?
+
+This is the step most audits skip, and the one that matters most. Gather how your audience talks about the problem you solve: the phrases, the frustrations, the tone they use with each other. SOMIN, an AI audience-research platform and our technology partner, does this from real social posts, decoding tones, emotions and tensions. The comparison pages such as SOMIN versus social tools (https://somin.ai/somin-vs-social-tools/) explain how this differs from simple keyword monitoring.
+
+Then put the two vocabularies side by side. Where you say "optimise", do they say "stop wasting"? Where you say "community", do they say "people like me"? Each gap is an opportunity to sound more like someone they would listen to.
+
+## Step 4: how do you score it?
+
+Score each piece from one to five on four dimensions:
+
+- Distinctiveness: could only we have written this?
+
+- Consistency: does it match our other content?
+
+- Audience fit: does it use their language and address their tension?
+
+- Clarity: is the point obvious within two sentences?
+
+Averages by channel show where the voice is strongest and where it has slipped. Cross-reference with performance data to see whether higher audience fit tracks with better engagement in your own numbers.
+
+## Step 5: what do you do with the findings?
+
+- Quick fixes: banned phrases, opener rules, a refreshed vocabulary list.
+
+- Structural fixes: a new or revised voice system (/blog/brand-voice-system-for-ai/) with worked examples.
+
+- Process fixes: brief templates that carry audience evidence, and edit logs.
+
+An audit is only useful if it changes what goes into the next brief.
+
+## Checklist: voice audit
+
+- Sample of 30 to 50 pieces, plus competitors
+
+- Logo swap, blind line-up and pattern census completed
+
+- Audience vocabulary gathered from real conversations
+
+- Pieces scored on four dimensions
+
+- Findings sorted into quick, structural and process fixes
+
+- Owner and date for each fix
+
+## Definitions
+
+- Voice drift: gradual movement of a brand's writing away from its intended voice.
+
+- Distinctiveness: the degree to which content is recognisable as one brand's.
+
+- Audience fit: how closely content reflects the audience's language and concerns.
+
+## Worked example
+
+Imagine a financial services brand auditing forty posts. The logo swap works on most of them. The pattern census finds the same question opener in a third of posts. Audience research shows customers talk about money with anxiety and dry humour, while the brand writes with relentless cheer. The fixes: ban the opener, add two examples that acknowledge worry plainly, and update the brief template with current audience phrases. The next month's content reads like a different, more trustworthy brand.
+
+For a wider view of how audience understanding shapes brand work, the Reassured case study (https://somin.ai/brands-reassured-case-study/) is useful further reading. If cultural nuance matters in your market, our sister consultancy Mindfuse (https://mindfuse.sg/) specialises in Singapore and Southeast Asian consumer psychology.
+
+## Who should be involved?
+
+A voice audit works best with a small group: the person who owns the brand voice, one or two editors who handle daily content, someone close to customers such as a community or support lead, and whoever manages your AI tools and prompts. The support lead is often the most valuable participant, because they hear the audience's language every day and notice quickly when brand copy does not match it.
+
+Keep leadership informed but not in the room for scoring. Senior opinions tend to anchor the group, and the audit is meant to surface what the evidence says rather than what anyone prefers.
+
+## What happens after the audit?
+
+Set a date three months out to repeat a lighter version: the logo swap and the pattern census on fresh content. If the fixes have worked, distinctiveness scores should rise and repeated patterns should fall. If not, the problem usually sits in the brief templates rather than the voice rules.
+
+Most teams find the second audit faster and more encouraging than the first, because the tests are familiar and the improvements are visible.
+
+
+# Audience-grounded AI content: feeding models what people say
+URL: https://gpt3.marketing/blog/audience-grounded-ai-content/ · Published 2026-07-06
+
+Audience-grounded AI content uses real evidence of how people talk, what they worry about and what they respond to as the core input for briefs and prompts. Instead of letting a model fill gaps with averaged internet language, you give it your audience's specifics. The result is content that sounds relevant to real people while staying in your brand's own voice.
+
+## Why do models need audience evidence?
+
+A model knows a great deal about language in general and almost nothing about your customers in particular. Left to itself, it writes for an imagined average reader. That is the root of much generic AI content. Since we began working with GPT-3 in 2020, the single biggest quality lever we have found is not the model version; it is the specificity of what goes into the prompt.
+
+Our listening on AI integration also points to a related problem: poor audience data and fragmented analytics. Teams sense that their content misses, but cannot see why, because the audience signal never reaches the brief.
+
+## What counts as audience evidence?
+
+- Language: words and phrases people use about the problem.
+
+- Tensions: the conflicts behind a decision, such as wanting quality but fearing waste.
+
+- Tones and emotions: how people feel when they talk about the category.
+
+- Questions: what they ask each other, and what they ask search engines and AI assistants.
+
+- Response signals: which themes and angles earn engagement.
+
+SOMIN, an AI audience-research platform and our technology partner, decodes these from real posts, and every conclusion can be traced back to the posts that evidence it. That traceability matters: it lets editors check that a brief reflects people rather than a hunch. The SOMIN AI agents (https://somin.ai/ai-agents/) page shows how research tasks can be automated without losing that link to source.
+
+## How do you put evidence into a prompt?
+
+### 1. Start with one tension
+
+Pick the single tension the piece addresses. A brief that tries to address five addresses none.
+
+### 2. Add three to five real phrases
+
+Paraphrased or anonymised as needed, these give the model the audience's vocabulary and register.
+
+### 3. Add the response signal
+
+Note which angle has earned engagement on this theme. The model leans in the right direction.
+
+### 4. Add the voice
+
+Reference your voice system (/blog/brand-voice-system-for-ai/), so the audience substance is delivered in your manner, not theirs.
+
+### 5. Add the facts
+
+Verified product details and claims, so the model does not guess.
+
+The audience supplies the substance. The brand supplies the voice. The model supplies the speed.
+
+## A worked example
+
+Consider a parenting brand writing about sleep products. Without evidence, the model produces calm, aspirational copy about restful nights. Audience research shows exhausted parents talking with gallows humour about the 3am shift and distrusting "miracle" claims. The grounded brief names the tension (desperation versus scepticism), includes a few anonymised phrases, notes that honest, practical posts out-engage aspirational ones in this category, and adds the brand's voice rules. The draft that comes back is practical, wry and credible. An editor tightens it rather than rebuilding it.
+
+## Checklist: grounded brief
+
+- One tension, stated plainly
+
+- Three to five audience phrases
+
+- Response signal for this theme
+
+- Voice system reference
+
+- Verified facts
+
+- Channel, format and length
+
+- Editor and review tier
+
+## Definitions
+
+- Tension: a conflict between what someone wants and what holds them back.
+
+- Response signal: evidence of which content themes or angles an audience engages with.
+
+- Traceability: the ability to link an insight back to the posts that support it.
+
+## Where this leads
+
+Grounded content also tends to answer the questions people actually ask, which helps visibility in search and AI answers; our sister agency SNMRush (https://snmrush.com/) builds on the same principle. And if you want to see audience signals decoded live, Marketing Mondays (https://mondays.marketing/) does it weekly. For further reading, the Viva School case study (https://somin.ai/brands-viva-school-case-study/) shows audience insight shaping a brand's communication. For the editing side, see human-edited content at scale (/blog/human-edited-content-at-scale/).
+
+Six years in, our conclusion is unchanged from the summer of 2020: models write what you give them reason to write. Give them your audience.
+
+## How often should audience evidence be refreshed?
+
+It depends on how fast your category moves. Fashion, entertainment and consumer technology conversations shift quickly, so monthly refreshes make sense. Financial services, B2B software and healthcare tend to move more slowly, and quarterly reviews are often enough. A fixed calendar is less useful than a trigger: refresh whenever listening shows a new tension rising, a product launch changes the conversation, or editors start making the same audience-fit correction repeatedly.
+
+## What are the risks?
+
+Three are worth watching. First, privacy: use aggregated themes and anonymised or paraphrased phrases, never identifiable individuals' posts, in briefs. Second, overfitting: if you copy audience slang too literally, the brand can sound like it is imitating people rather than talking to them. The voice system should moderate how much audience language comes through. Third, recency bias: a loud week of conversation is not always a lasting shift, so look for patterns over time before rewriting your themes.
+
+Handled with care, audience grounding is the most reliable way we know to make AI content feel as if it were written by someone who has been paying attention.
+
+## Where should a team begin?
+
+Pick one recurring content job, such as weekly social posts, and ground its brief for a month. Compare edit time and engagement with the previous month. One clear before-and-after is the best argument for rolling the approach out further.

@@ -1,0 +1,50 @@
+# GPT3 Marketing
+
+> GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.
+
+- Website: https://gpt3.marketing/
+- Contact: ask@gpt3.marketing
+- Based in: Singapore
+- Technology partner: SOMIN (https://somin.ai/), an AI audience-research and creative-intelligence platform
+
+## What we do
+- Voice audits: We read your current output, human and machine, against your competitors and your audience's own language. You get a clear map of where you sound like yourself and where you have drifted into the generic.
+- Brand voice systems: A working voice system: principles, vocabulary, banned moves, worked examples and model-ready instructions. Built to be used by writers and models alike, not filed in a brand book.
+- Prompt libraries: Versioned, tested prompts for your recurring content jobs, with examples and review notes. Owned by your team, maintained like code.
+- Human edit loops: Editorial workflows that put skilled humans where they add the most value. We design the checklists, roles and feedback paths that keep quality steady at scale.
+- Audience-grounded briefs: Briefs built from the tensions and phrases your audience actually uses, surfaced through SOMIN. The model writes from evidence instead of averages.
+- Team training: Hands-on sessions on prompt craft, editing machine drafts and keeping a voice consistent. Practical, specific to your channels, no slideware theatre.
+
+## Key pages
+- [Home](https://gpt3.marketing/): GPT3 Marketing is a generative-AI content consultancy est. 2020: brand voice systems, prompt libraries and human-edited content, grounded by SOMIN.
+- [Blog](https://gpt3.marketing/blog/): ten articles
+- [Brand guidelines](https://gpt3.marketing/brand/)
+
+## Articles
+- [What few-shot prompting in 2020 still teaches content teams](https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/): GPT-3 forced writers to teach by example. Those few-shot habits remain the best defence against generic AI content in 2026.
+- [Why AI content all sounds the same, and how to escape it](https://gpt3.marketing/blog/why-ai-content-sounds-the-same/): Generic AI copy comes from averaged inputs, not bad models. How to diagnose sameness and rebuild a voice your audience recognises.
+- [How to build a brand voice system that AI can follow](https://gpt3.marketing/blog/brand-voice-system-for-ai/): A brand voice system for the AI era: principles, vocabulary, examples and model-ready instructions your writers and models both use.
+- [Why AI drafts still need heavy editing, and how to need less](https://gpt3.marketing/blog/why-ai-drafts-need-heavy-editing/): Heavy revision of AI drafts is usually an input problem. Where the editing time goes and how to move effort upstream.
+- [From GPT-3 to ChatGPT: what really changed for marketers](https://gpt3.marketing/blog/from-gpt3-to-chatgpt-what-changed/): Six years from the GPT-3 API beta to today: what changed for content teams, what did not, and why craft matters more now.
+- [Prompt libraries: how to build, version and govern them](https://gpt3.marketing/blog/prompt-library-governance/): A practical guide to building a team prompt library: structure, versioning, testing, ownership and keeping it grounded in audience evidence.
+- [Authenticity outlasts trends: narrative over FOMO in AI content](https://gpt3.marketing/blog/authenticity-outlasts-trends/): Trend-chasing with AI makes brands faster and blurrier. Why a consistent narrative compounds, and how to test trends against it.
+- [Human-edited content at scale: roles, loops and limits](https://gpt3.marketing/blog/human-edited-content-at-scale/): How to scale AI-assisted content without losing quality: editorial roles, review tiers, feedback loops and where humans add most value.
+- [How to run a brand voice audit in the age of AI content](https://gpt3.marketing/blog/how-to-run-a-brand-voice-audit/): A step-by-step brand voice audit: gather samples, test distinctiveness, compare with audience language and prioritise fixes.
+- [Audience-grounded AI content: feeding models what people say](https://gpt3.marketing/blog/audience-grounded-ai-content/): Why AI content improves when briefs carry real audience language and tensions, and a practical workflow for grounding prompts in evidence.
+
+## FAQ
+- **What is GPT3 Marketing?** GPT3 Marketing is a generative-AI content consultancy established in 2020, when OpenAI opened its GPT-3 API. We build brand voice systems, prompt libraries and human-edited content workflows. Our technology partner, SOMIN, grounds that work in real audience conversations so AI-assisted content stays distinctive rather than generic.
+- **Why is the company called GPT3 Marketing?** Because that is when we started. We began writing with GPT-3 in the summer of 2020, when prompts were hand-built few-shot examples and every output needed a careful editor. The name is a reminder of the craft habits we formed then, which matter more now that fluent text is cheap.
+- **Do you only work with OpenAI models?** No. The name is heritage, not a vendor commitment. Voice systems and prompt libraries we build are written to work across the major model families, and we test them on whichever models your team actually uses. The principles hold even as the models change.
+- **What is a voice audit?** A voice audit compares your current content with your competitors' and with the language your audience uses, gathered through SOMIN. It shows where you sound distinctive, where you have drifted into generic AI phrasing, and what to fix first. It is usually the first step of an engagement.
+- **How does SOMIN fit into your work?** SOMIN, an AI audience-research platform, is our technology partner. We use it to surface the tones, emotions and tensions in real audience posts. That evidence shapes voice principles, brief inputs and prompt examples, so content reflects what people actually respond to rather than what a model thinks is average.
+- **Will you replace our writers with AI?** No. Our systems are designed to make good writers faster and more consistent, not to remove them. Human editors own judgment, nuance and final approval. Models handle first drafts, variations and repetitive formatting, under rules your team controls.
+
+## Sister companies
+- [Marketing Mondays](https://mondays.marketing/): One real signal, decoded every Monday
+- [Somonitor](https://somonitor.ai/): Always-on listening you can check
+- [Trafix](https://trafix.app/): Paid traffic, measured in profit
+- [AgentC](https://agentc.marketing/): Agents play. Humans conduct.
+- [GPT5 Marketing](https://gpt5.marketing/): Marketing redesigned for reasoning models
+- [Mindfuse](https://mindfuse.sg/): Consumer psychology and culture, decoded for SEA
+- [SNMRush](https://snmrush.com/): Search, Neural answers, Mentions. One rush.
