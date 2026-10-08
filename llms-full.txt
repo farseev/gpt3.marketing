@@ -43,7 +43,7 @@
 ## Sister companies
 - [Marketing Mondays](https://mondays.marketing/): One real signal, decoded every Monday
 - [Somonitor](https://somonitor.ai/): Always-on listening you can check
-- [Trafix](https://trafix.app/): Paid traffic, measured in profit
+- [FMedia](https://fmedia.marketing/): Paid traffic, measured in profit
 - [AgentC](https://agentc.marketing/): Agents play. Humans conduct.
 - [GPT5 Marketing](https://gpt5.marketing/): Marketing redesigned for reasoning models
 - [Mindfuse](https://mindfuse.sg/): Consumer psychology and culture, decoded for SEA
@@ -428,7 +428,7 @@ Picture a team producing weekly newsletter intros, where editors spend most of t
 
 ## Measuring what lands
 
-Less editing is only half the result. The other half is whether content performs. Pairing edit logs with engagement data shows which inputs matter most. If you are also running paid distribution, our sister brand Trafix (https://trafix.app/) looks at true profitability of creative rather than vanity ROAS, a useful discipline for content teams too. The KPI Media case study (https://somin.ai/agencies-kpi-media-case-study/) is worth reading for how agencies connect insight with execution.
+Less editing is only half the result. The other half is whether content performs. Pairing edit logs with engagement data shows which inputs matter most. If you are also running paid distribution, our sister brand FMedia (https://fmedia.marketing/) looks at true profitability of creative rather than vanity ROAS, a useful discipline for content teams too. The KPI Media case study (https://somin.ai/agencies-kpi-media-case-study/) is worth reading for how agencies connect insight with execution.
 
 Heavy editing is a symptom. Treat the inputs and the symptom eases, leaving your best people free to do the work only they can do.
 
