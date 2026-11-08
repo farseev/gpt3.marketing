@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法</title>
+<meta name="description" content="AIの下書きの大幅な手直しは、たいてい入力の問題です。編集時間がどこに消えているか、そして労力を上流に移す方法。">
+<link rel="canonical" href="https://gpt3.marketing/ja/blog/why-ai-drafts-need-heavy-editing/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/why-ai-drafts-need-heavy-editing/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/why-ai-drafts-need-heavy-editing/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/why-ai-drafts-need-heavy-editing/">
+<link rel="alternate" hreflang="ja" href="https://gpt3.marketing/ja/blog/why-ai-drafts-need-heavy-editing/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/why-ai-drafts-need-heavy-editing/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法">
+<meta property="og:description" content="AIの下書きに大幅な編集が必要なのは、主にモデルの文章が下手だからではなく、入力に原因があります。">
+<meta property="og:url" content="https://gpt3.marketing/ja/blog/why-ai-drafts-need-heavy-editing/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/why-ai-drafts-need-heavy-editing.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法、GPT3 Marketing">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法">
+<meta name="twitter:description" content="AIの下書きに大幅な編集が必要なのは、主にモデルの文章が下手だからではなく、入力に原因があります。">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/why-ai-drafts-need-heavy-editing.jpg">
+<meta name="twitter:image:alt" content="AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法、GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-09-07"><meta property="article:section" content="編集"><meta name="keywords" content="AI content editing, AI drafts, human in the loop, content quality, editorial workflow">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketingブログ" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans JP',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans JP',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法","description":"AIの下書きの大幅な手直しは、たいてい入力の問題です。編集時間がどこに消えているか、そして労力を上流に移す方法。","datePublished":"2026-09-07","dateModified":"2026-09-07","image":["https://gpt3.marketing/assets/img/og/why-ai-drafts-need-heavy-editing.jpg","https://gpt3.marketing/assets/img/a04.webp"],"url":"https://gpt3.marketing/ja/blog/why-ai-drafts-need-heavy-editing/","mainEntityOfPage":"https://gpt3.marketing/ja/blog/why-ai-drafts-need-heavy-editing/","keywords":"AI content editing, AI drafts, human in the loop, content quality, editorial workflow","articleSection":"編集","inLanguage":"ja","wordCount":908,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/ja/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://gpt3.marketing/ja/blog/"},{"@type":"ListItem","position":3,"name":"AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法","item":"https://gpt3.marketing/ja/blog/why-ai-drafts-need-heavy-editing/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"AIの下書きになぜそれほど手直しが必要なのですか？","acceptedAnswer":{"@type":"Answer","text":"たいていは、ブリーフにオーディエンスのエビデンス、ボイスのルール、例が欠けていたからです。モデルがデフォルトで隙間を埋め、編集者はブリーフに欠けていたものを戻すのに時間を費やすことになります。"}},{"@type":"Question","name":"AIの下書きを編集なしで公開してもよい場合はありますか？","acceptedAnswer":{"@type":"Answer","text":"ブランドのコンテンツなら、ありません。ブランドを代表するすべてのコンテンツについて、人が正確さ、ボイス、判断を確認すべきです。編集は軽くできても、なくすべきではありません。"}},{"@type":"Question","name":"編集の労力はどう測りますか？","acceptedAnswer":{"@type":"Answer","text":"コンテンツごとの時間を記録し、各編集を正確さ、ボイス、構成、オーディエンスとの適合性に分類します。最も多い種類が、上流のどの入力から直すべきかを示します。"}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">コンテンツへスキップ</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketingホーム"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketingのロゴ"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="メイン"><a href="../../index.html#work">実績</a><a href="../../index.html#services">私たちの活動</a><a href="../index.html">インサイト</a><a href="../../index.html#faq">よくある質問</a><a href="../../../brand/index.html">ブランド</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">ボイス監査を予約する</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="言語: 日本語"><span>日本語</span></summary><ul><li><a href="../../../blog/why-ai-drafts-need-heavy-editing/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/why-ai-drafts-need-heavy-editing/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../../../zh-hant/blog/why-ai-drafts-need-heavy-editing/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="index.html" hreflang="ja" lang="ja" aria-current="page">日本語</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="パンくずリスト"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">ブログ</a> / 編集</nav>
+<h1 style="margin-top:18px">AIの下書きにいまだに大幅な編集が必要な理由と、それを減らす方法</h1><p class="meta">2026年9月7日 · 6分で読めます · GPT3 Marketing編集部 · <a href="#faq">よくある質問</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a04.webp" alt="レトロなターミナルプリンターからあふれる白紙の上に、編集者の鉛筆と琥珀色の校正記号" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">AIの下書きに大幅な編集が必要なのは、主にモデルの文章が下手だからではなく、入力に原因があります。手直しの時間の大半は、ブリーフが最初から与えていなかったボイス、オーディエンスに即した具体性、正確さを取り戻すことに費やされています。チームは入力を直すことで編集を減らせます。オーディエンスのエビデンスに根ざしたより強いブリーフ、体系化されたボイス・システム、厳選された例、明確な編集チェックリストです。</p>
+<h2>大幅な編集はモデルの問題なのか？</h2>
+<p>2020年には、部分的にはそうでした。GPT-3の出力は話題からそれ、フレーズを繰り返し、事実でないことを自信満々に述べました。その夏に私たちが制作したコンテンツはすべて人間による丁寧な編集を経ており、中にはほぼ全面的に書き直したものもありました。それ以来、モデルは大きく進化しました。特に、2022年11月のChatGPTで指示チューニングされたチャットモデルが主流になってからです。</p>
+<p>それでも、マーケティングへのAI導入についての私たちのリスニングでは、同じ不満が繰り返し浮かび上がります。AIコンテンツに人の手直しがあまりに必要で、時間の節約が消えてしまうというものです。モデルがはるかに良くなったのなら、なぜこれが続くのでしょうか。残っている問題の大半が、モデルの問題ではないからです。</p>
+<h2>編集の時間は実際にどこに使われているのか？</h2>
+<p>チームと一緒に編集ログを見直すと、編集はたいてい4つの種類に分かれます。</p>
+<ul>
+<li><strong>正確さ：</strong>事実、主張、製品情報の修正。</li>
+<li><strong>ボイス：</strong>画一的な言い回しを取り除き、ブランドのリズムを取り戻す。</li>
+<li><strong>構成：</strong>並べ替え、水増しの削除、要点を研ぎ澄ます。</li>
+<li><strong>オーディエンスとの適合性：</strong>抽象的な表現を、顧客が実際に関心を持つことに置き換える。</li>
+</ul>
+<p>正確さの編集は不可欠で、これからも残ります。残りの3つは、大部分が自ら招いたものです。ブリーフの情報が少なすぎたためにモデルがデフォルトに頼り、編集者が手作業でコンテンツを作り直した結果です。</p>
+<h2>労力をどう上流に移すか？</h2>
+<h3>1. 事実は求めるのではなく、入れる</h3>
+<p>製品情報、裏付けのある主張、情報源をモデルに与えてください。それらを思い出させるのではなく、それらをもとに書かせるのです。モデルが推測する必要がなくなれば、正確さの編集は減ります。</p>
+<h3>2. ボイスを与える</h3>
+<p>例を備えた体系的な<a href="../brand-voice-system-for-ai/index.html">ブランドボイス・システム</a>があれば、ボイスの編集の多くがなくなります。編集者は書き直すのではなく、確認するだけになります。</p>
+<h3>3. オーディエンスを与える</h3>
+<p>ほとんどのチームが見落としている種類です。オーディエンスがその問題をどう表現しているか、意思決定の背後にある緊張、そして挙げてくる反論を含むブリーフからは、最初から身近に感じられる下書きが生まれます。私たちは、AIオーディエンスリサーチ・プラットフォームであり私たちのテクノロジーパートナーでもあるSOMINでそのエビデンスを集めています。チームがそれをブリーフにどう取り込むかは、<a href="https://somin.ai/somin-for-agencies/" rel="noopener">エージェンシー向けSOMIN</a>の概要で説明されています。</p>
+<h3>4. 形を定める</h3>
+<p>長さ、構成、そのコンテンツが伝えるべき唯一の要点を指定します。コンテンツの目的がモデルにわかっていれば、構成の編集は大きく減ります。</p>
+<h2>人の編集は何に集中すべきか？</h2>
+<p>入力が改善されれば、編集者は人間がかけがえのない領域、つまり判断に時間を使えます。今これを言うのは正しいか。顧客はこれを敬意あるものと感じるか。言い過ぎていないか。2段落目に、もっと鋭いアイデアが隠れていないか。それこそが、コンテンツを単に許容できるものではなく、良いものにする編集です。</p>
+<blockquote>目標は編集をゼロにすることではありません。編集の時間を、修繕ではなく判断に使うことです。</blockquote>
+<h2>具体例</h2>
+<p>毎週のニュースレターの導入文を制作するチームを思い浮かべてください。編集者は時間の大半を、ありきたりな書き出しの差し替えと顧客のコンテキストの追加に費やしています。チームはブリーフのテンプレートを変え、その週のリスニングから得たオーディエンスのフレーズ3つ、ファクトシート1枚、導入文の例2つを含めるようにします。すると編集者は、文の書き直しではなく、どの切り口で始めるかの判断に時間を使えるようになります。数字を挙げないのは、御社の数字は異なるからです。大事なのは、自社のビフォー・アフターを測ることです。</p>
+<h2>チェックリスト：編集の少ないブリーフ</h2>
+<ul>
+<li>そのコンテンツが伝えるべき明確な要点が1つ</li>
+<li>貼り付けた、検証済みの事実と情報源</li>
+<li>ボイス・システムの参照、または凝縮したルール</li>
+<li>関連する例が2つ</li>
+<li>実際の会話から得たオーディエンスのフレーズと緊張</li>
+<li>フォーマット、長さ、チャネル</li>
+<li>担当編集者の名前と、記録する編集の種類</li>
+</ul>
+<h2>用語の定義</h2>
+<ul>
+<li><strong>ヒューマン・イン・ザ・ループ：</strong>モデルの出力を使う前に、人がレビューして承認するワークフロー。</li>
+<li><strong>編集ログ：</strong>入力の改善に使う、種類別の編集の簡易な記録。</li>
+<li><strong>グラウンディング：</strong>モデルが書く拠り所となる、検証済みの元資料を与えること。</li>
+</ul>
+<h2>何が響くかを測る</h2>
+<p>編集が減るのは成果の半分にすぎません。残りの半分は、コンテンツが成果を上げるかどうかです。編集ログとエンゲージメントのデータを組み合わせると、どの入力が最も重要かがわかります。有料配信も行っているなら、姉妹ブランドの<a href="https://fmedia.marketing/" rel="noopener">FMedia</a>が、見かけのROASではなくクリエイティブの真の収益性を見ています。これはコンテンツチームにも役立つ規律です。エージェンシーがインサイトと実行をどう結びつけているかについては、<a href="https://somin.ai/agencies-kpi-media-case-study/" rel="noopener">KPI Mediaの事例</a>が一読の価値があります。</p>
+<p>大幅な編集は症状です。入力を治せば症状は和らぎ、最も優秀な人材は、その人にしかできない仕事に専念できるようになります。</p><h2>編集ログはどう始めるか？</h2>
+<p>編集者が実際に使うくらいシンプルにしましょう。5列の共有シートで十分です。コンテンツ、かかった時間、主な編集の種類、1行のメモ、そしてその修正をブリーフで提供できたかどうか。1か月間、編集者に記入してもらいます。最後に、種類別と最後の列で並べ替えます。</p>
+<p>パターンはすぐに見えてきます。ボイスの編集が大半なら、ボイス・システムがないか、曖昧すぎます。オーディエンスとの適合性の編集が大半なら、ブリーフに顧客の話し方のエビデンスが欠けています。正確さの編集が大半なら、提供された事実から書くのではなく、思い出すようモデルに求めています。それぞれのパターンが上流での1つの変更を指し示し、その変更は翌月のログで検証できます。</p>
+<p>ログは、編集者が自分の仕事をどう捉えるかも変えます。機械の後始末をしていると感じる代わりに、システムを改善する人になるのです。それは、より満足感があり、より価値のある役割です。</p>
+<section id="faq" style="padding:40px 0 0"><h2>よくある質問</h2><details><summary>AIの下書きになぜそれほど手直しが必要なのですか？</summary><p>たいていは、ブリーフにオーディエンスのエビデンス、ボイスのルール、例が欠けていたからです。モデルがデフォルトで隙間を埋め、編集者はブリーフに欠けていたものを戻すのに時間を費やすことになります。</p></details><details><summary>AIの下書きを編集なしで公開してもよい場合はありますか？</summary><p>ブランドのコンテンツなら、ありません。ブランドを代表するすべてのコンテンツについて、人が正確さ、ボイス、判断を確認すべきです。編集は軽くできても、なくすべきではありません。</p></details><details><summary>編集の労力はどう測りますか？</summary><p>コンテンツごとの時間を記録し、各編集を正確さ、ボイス、構成、オーディエンスとの適合性に分類します。最も多い種類が、上流のどの入力から直すべきかを示します。</p></details></section>
+<div class="cta-box"><h2>ボイス監査を予約する</h2><p>私たちは、GPT-3のAPIが公開された2020年の夏から言語モデルとともに書いてきました。実際のオーディエンスが反応するものに根ざしたブランドボイス・システム、プロンプトライブラリ、人が編集するコンテンツ運用を構築しています。</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20Why%20AI%20drafts%20still%20need%20heavy%20editing%2C%20and%20how%20to%20need%20less%29">ask@gpt3.marketing にメールする →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>続けて読む</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../brand-voice-system-for-ai/index.html"><img src="../../../assets/img/a03-640.webp" alt="ダイヤルで音の波を独自のシルエットへと形づくるレトロなコンソール。ブランドボイス・システムを表している" width="640" height="427" loading="lazy"><div class="b"><span class="tag">ブランドボイス</span><h3>AIが従えるブランドボイス・システムの作り方</h3><p>AI時代のブランドボイス・システム：ライターとモデルの双方が使う原則、語彙、具体例、モデル向けの指示。</p><div class="meta" style="margin-top:12px">2026年9月14日 · 7分で読めます</div></div></a><a class="post-card" href="../from-gpt3-to-chatgpt-what-changed/index.html"><img src="../../../assets/img/a05-640.webp" alt="2020年の小さなターミナルから、街のスカイラインの上に広がる巨大な光るチャット画面へと続く画面のタイムライン" width="640" height="427" loading="lazy"><div class="b"><span class="tag">歩み</span><h3>GPT-3からChatGPTへ：マーケターにとって本当に変わったこと</h3><p>GPT-3 APIのベータから今日までの6年間：コンテンツチームにとって何が変わり、何が変わらず、なぜ今技術がより重要なのか。</p><div class="meta" style="margin-top:12px">2026年8月24日 · 7分で読めます</div></div></a><a class="post-card" href="../prompt-library-governance/index.html"><img src="../../../assets/img/a06-640.webp" alt="琥珀色に光る引き出しのあるヴィンテージのカード目録と、手作業で整理されるプロンプトカード" width="640" height="427" loading="lazy"><div class="b"><span class="tag">プロンプトの技術</span><h3>プロンプトライブラリ：構築、バージョン管理、ガバナンスの方法</h3><p>チームのプロンプトライブラリを構築するための実践ガイド：構造、バージョン管理、テスト、オーナーシップ、そしてオーディエンスのエビデンスに根ざし続ける方法。</p><div class="meta" style="margin-top:12px">2026年8月17日 · 6分で読めます</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketingのロゴ"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">ブランドが自分らしく語り続けられるよう支える、草分けの生成AIコンテンツコンサルティング。</p>
+<p class="partner">テクノロジーパートナー <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">ボイス監査を予約する</a></p>
+<p>メール：<a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">私たちの活動</a></li><li><a href="../index.html">インサイト</a></li><li><a href="../../index.html#about">概要</a></li><li><a href="../../index.html#faq">よくある質問</a></li><li><a href="../../../brand/index.html">ブランドガイドライン</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>Powered by SOMIN</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">導入事例</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">ブランド向け</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">エージェンシー向け</a></li></ul></div>
+</div>
+<h4>ネットワーク</h4>
+<nav class="network" aria-label="姉妹企業"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>毎週月曜日、実際のシグナルをひとつ読み解く</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>検証できる常時リスニング</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>有料トラフィックを利益で測る</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>演奏するのはエージェント。指揮するのは人間。</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>推論モデルのために再設計されたマーケティング</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>東南アジアの消費者心理と文化を読み解く</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search、Neural answers、Mentions。ひとつの勢いで。</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · シンガポール。GPT3 Marketingは独立系のコンサルティング会社であり、OpenAIとは関係がありません。 </p>
+</div></footer>
+</body></html>
