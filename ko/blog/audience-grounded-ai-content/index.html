@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기</title>
+<meta name="description" content="브리프에 실제 오디언스의 언어와 긴장이 담길 때 AI 콘텐츠가 나아지는 이유, 그리고 프롬프트를 근거에 기반하게 하는 실무 워크플로.">
+<link rel="canonical" href="https://gpt3.marketing/ko/blog/audience-grounded-ai-content/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/audience-grounded-ai-content/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/audience-grounded-ai-content/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/audience-grounded-ai-content/">
+<link rel="alternate" hreflang="ja" href="https://gpt3.marketing/ja/blog/audience-grounded-ai-content/">
+<link rel="alternate" hreflang="ko" href="https://gpt3.marketing/ko/blog/audience-grounded-ai-content/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/audience-grounded-ai-content/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기">
+<meta property="og:description" content="오디언스 기반 AI 콘텐츠는 사람들이 어떻게 말하고, 무엇을 걱정하고, 무엇에 반응하는지에 대한 실제 근거를 브리프와 프롬프트의 핵심 입력으로 사용합니다.">
+<meta property="og:url" content="https://gpt3.marketing/ko/blog/audience-grounded-ai-content/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/audience-grounded-ai-content.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기, GPT3 Marketing">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기">
+<meta name="twitter:description" content="오디언스 기반 AI 콘텐츠는 사람들이 어떻게 말하고, 무엇을 걱정하고, 무엇에 반응하는지에 대한 실제 근거를 브리프와 프롬프트의 핵심 입력으로 사용합니다.">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/audience-grounded-ai-content.jpg">
+<meta name="twitter:image:alt" content="오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기, GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-07-06"><meta property="article:section" content="전략"><meta name="keywords" content="audience research, AI content briefs, social listening, consumer tensions, content strategy">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketing 블로그" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans KR',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans KR',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기","description":"브리프에 실제 오디언스의 언어와 긴장이 담길 때 AI 콘텐츠가 나아지는 이유, 그리고 프롬프트를 근거에 기반하게 하는 실무 워크플로.","datePublished":"2026-07-06","dateModified":"2026-07-06","image":["https://gpt3.marketing/assets/img/og/audience-grounded-ai-content.jpg","https://gpt3.marketing/assets/img/a10.webp"],"url":"https://gpt3.marketing/ko/blog/audience-grounded-ai-content/","mainEntityOfPage":"https://gpt3.marketing/ko/blog/audience-grounded-ai-content/","keywords":"audience research, AI content briefs, social listening, consumer tensions, content strategy","articleSection":"전략","inLanguage":"ko","wordCount":900,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/ko/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://gpt3.marketing/ko/blog/"},{"@type":"ListItem","position":3,"name":"오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기","item":"https://gpt3.marketing/ko/blog/audience-grounded-ai-content/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"오디언스 기반 콘텐츠란 무엇입니까?","acceptedAnswer":{"@type":"Answer","text":"브리프, 예시, 앵글이 가정이나 모델의 기본값이 아니라 실제 오디언스가 하는 말과 반응에 대한 근거에서 나오는 콘텐츠입니다."}},{"@type":"Question","name":"오디언스 근거는 어디에서 얻습니까?","acceptedAnswer":{"@type":"Answer","text":"소셜 대화, 리뷰, 댓글, 검색 질문, 커뮤니티 토론입니다. SOMIN 같은 플랫폼은 실제 게시물을 분석해 톤, 감정, 긴장을 대규모로 찾아냅니다."}},{"@type":"Question","name":"오디언스 데이터에 기반한 콘텐츠는 다른 모두와 비슷하게 들릴 위험이 있습니까?","acceptedAnswer":{"@type":"Answer","text":"차별적인 보이스와 결합한다면 그렇지 않습니다. 오디언스는 내용과 언어를 제공하고, 브랜드 보이스는 리듬과 관점을 제공합니다."}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketing 홈"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 로고"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="메인"><a href="../../index.html#work">사례</a><a href="../../index.html#services">하는 일</a><a href="../index.html">인사이트</a><a href="../../index.html#faq">FAQ</a><a href="../../../brand/index.html">브랜드</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">보이스 진단 예약하기</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="언어: 한국어"><span>한국어</span></summary><ul><li><a href="../../../blog/audience-grounded-ai-content/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/audience-grounded-ai-content/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../../../zh-hant/blog/audience-grounded-ai-content/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../../../ja/blog/audience-grounded-ai-content/index.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="index.html" hreflang="ko" lang="ko" aria-current="page">한국어</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="이동 경로"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">블로그</a> / 전략</nav>
+<h1 style="margin-top:18px">오디언스 기반 AI 콘텐츠: 사람들이 하는 말을 모델에 넣기</h1><p class="meta">2026년 7월 6일 · 6분 분량 · GPT3 Marketing 편집팀 · <a href="#faq">FAQ</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a10.webp" alt="대화의 실타래가 레트로 터미널로 흘러들어 하나의 밝은 작품으로 짜이는 군중 실루엣" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">오디언스 기반 AI 콘텐츠는 사람들이 어떻게 말하고, 무엇을 걱정하고, 무엇에 반응하는지에 대한 실제 근거를 브리프와 프롬프트의 핵심 입력으로 사용합니다. 모델이 평균화된 인터넷 언어로 빈틈을 메우게 두는 대신, 오디언스의 구체적인 정보를 제공합니다. 그 결과 브랜드 고유의 보이스를 유지하면서도 실제 사람들에게 와닿는 콘텐츠가 됩니다.</p>
+<h2>모델에 왜 오디언스 근거가 필요합니까?</h2>
+<p>모델은 언어 일반에 대해서는 많이 알지만 여러분의 고객에 대해서는 거의 아무것도 모릅니다. 그대로 두면 상상 속의 평균 독자를 위해 씁니다. 이것이 평범한 AI 콘텐츠의 상당 부분이 생기는 근본 원인입니다. 2020년 GPT-3로 작업을 시작한 이래 저희가 발견한 가장 큰 품질 레버는 모델 버전이 아니라 프롬프트에 들어가는 내용의 구체성입니다.</p>
+<p>AI 도입에 관한 저희의 리스닝은 이와 관련된 문제도 보여 줍니다. 부실한 오디언스 데이터와 파편화된 분석입니다. 팀은 콘텐츠가 빗나간다는 것을 느끼지만, 오디언스 시그널이 브리프까지 도달하지 않기 때문에 그 이유를 알지 못합니다.</p>
+<h2>무엇이 오디언스 근거가 됩니까?</h2>
+<ul>
+<li><strong>언어:</strong> 사람들이 그 문제에 대해 쓰는 단어와 표현.</li>
+<li><strong>긴장:</strong> 품질을 원하면서도 낭비를 두려워하는 것처럼, 결정 이면에 있는 갈등.</li>
+<li><strong>톤과 감정:</strong> 사람들이 그 카테고리에 대해 이야기할 때 느끼는 감정.</li>
+<li><strong>질문:</strong> 서로에게 묻는 것, 그리고 검색 엔진과 AI 어시스턴트에 묻는 것.</li>
+<li><strong>반응 시그널:</strong> 어떤 테마와 앵글이 참여를 얻는지.</li>
+</ul>
+<p>AI 오디언스 리서치 플랫폼이자 저희의 기술 파트너인 SOMIN은 실제 게시물에서 이러한 요소를 해독하며, 모든 결론은 그 근거가 되는 게시물까지 추적할 수 있습니다. 이 추적 가능성이 중요합니다. 편집자가 브리프가 직감이 아니라 사람들을 반영하는지 확인할 수 있게 해 주기 때문입니다. <a href="https://somin.ai/ai-agents/" rel="noopener">SOMIN AI 에이전트</a> 페이지는 원천과의 연결을 잃지 않고 리서치 작업을 자동화하는 방법을 보여 줍니다.</p>
+<h2>근거를 프롬프트에 어떻게 넣습니까?</h2>
+<h3>1. 긴장 하나로 시작하십시오</h3>
+<p>글이 다룰 단 하나의 긴장을 고르십시오. 다섯 가지를 다루려는 브리프는 어느 것도 다루지 못합니다.</p>
+<h3>2. 실제 표현 3~5개를 넣으십시오</h3>
+<p>필요에 따라 바꿔 쓰거나 익명화한 이 표현들은 모델에게 오디언스의 어휘와 톤을 알려 줍니다.</p>
+<h3>3. 반응 시그널을 넣으십시오</h3>
+<p>이 테마에서 어떤 앵글이 참여를 얻었는지 적어 두십시오. 모델이 올바른 방향으로 기웁니다.</p>
+<h3>4. 보이스를 넣으십시오</h3>
+<p><a href="../brand-voice-system-for-ai/index.html">보이스 시스템</a>을 참조하게 하여, 오디언스의 내용이 그들의 방식이 아닌 여러분의 방식으로 전달되게 하십시오.</p>
+<h3>5. 사실을 넣으십시오</h3>
+<p>검증된 제품 정보와 주장을 넣어 모델이 추측하지 않게 하십시오.</p>
+<blockquote>오디언스는 내용을 제공합니다. 브랜드는 보이스를 제공합니다. 모델은 속도를 제공합니다.</blockquote>
+<h2>실제 적용 예시</h2>
+<p>수면 제품에 관해 글을 쓰는 육아 브랜드를 생각해 보십시오. 근거가 없으면 모델은 편안한 밤에 대한 차분하고 이상적인 카피를 만듭니다. 오디언스 리서치는 지친 부모들이 새벽 3시 교대에 대해 자조적인 유머로 이야기하고 ‘기적’ 같은 주장을 불신한다는 것을 보여 줍니다. 근거 기반 브리프는 긴장(절박함 대 회의감)을 명시하고, 익명화한 표현 몇 개를 넣고, 이 카테고리에서는 이상적인 게시물보다 솔직하고 실용적인 게시물이 더 많은 참여를 얻는다고 적고, 브랜드의 보이스 규칙을 더합니다. 돌아온 초안은 실용적이고, 위트 있고, 신뢰할 만합니다. 편집자는 다시 쓰는 대신 다듬기만 하면 됩니다.</p>
+<h2>체크리스트: 근거 기반 브리프</h2>
+<ul>
+<li>평이하게 서술한 긴장 하나</li>
+<li>오디언스 표현 3~5개</li>
+<li>이 테마의 반응 시그널</li>
+<li>보이스 시스템 참조</li>
+<li>검증된 사실</li>
+<li>채널, 형식, 분량</li>
+<li>편집자와 검토 등급</li>
+</ul>
+<h2>용어 정의</h2>
+<ul>
+<li><strong>긴장:</strong> 누군가가 원하는 것과 그를 가로막는 것 사이의 갈등.</li>
+<li><strong>반응 시그널:</strong> 오디언스가 어떤 콘텐츠 테마나 앵글에 참여하는지 보여 주는 근거.</li>
+<li><strong>추적 가능성:</strong> 인사이트를 그것을 뒷받침하는 게시물까지 연결할 수 있는 능력.</li>
+</ul>
+<h2>이것이 이끄는 곳</h2>
+<p>근거 기반 콘텐츠는 사람들이 실제로 묻는 질문에 답하는 경향이 있어 검색과 AI 답변에서의 가시성에도 도움이 됩니다. 저희 자매 에이전시 <a href="https://snmrush.com/" rel="noopener">SNMRush</a>도 같은 원칙 위에서 일합니다. 오디언스 시그널이 실시간으로 해독되는 모습을 보고 싶다면 <a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a>가 매주 그 일을 합니다. 더 읽어 볼 거리로는 오디언스 인사이트가 브랜드 커뮤니케이션을 만들어 간 <a href="https://somin.ai/brands-viva-school-case-study/" rel="noopener">Viva School 사례 연구</a>가 있습니다. 편집 측면은 <a href="../human-edited-content-at-scale/index.html">대규모로 사람이 편집하는 콘텐츠</a>를 참고하십시오.</p>
+<p>6년이 지난 지금도 저희의 결론은 2020년 여름과 같습니다. 모델은 여러분이 쓸 이유를 준 것을 씁니다. 모델에게 여러분의 오디언스를 주십시오.</p><h2>오디언스 근거는 얼마나 자주 갱신해야 합니까?</h2>
+<p>카테고리가 얼마나 빨리 움직이느냐에 달려 있습니다. 패션, 엔터테인먼트, 소비자 기술 분야의 대화는 빠르게 바뀌므로 매월 갱신하는 것이 합리적입니다. 금융 서비스, B2B 소프트웨어, 헬스케어는 비교적 천천히 움직이는 편이라 분기별 검토로 충분한 경우가 많습니다. 고정된 일정보다 유용한 것은 트리거입니다. 리스닝에서 새로운 긴장이 떠오를 때, 제품 출시로 대화가 바뀔 때, 편집자가 오디언스 적합성에 관한 같은 수정을 반복하기 시작할 때마다 갱신하십시오.</p>
+<h2>위험 요소는 무엇입니까?</h2>
+<p>주의할 만한 위험이 세 가지 있습니다. 첫째, 개인정보입니다. 브리프에는 집계된 테마와 익명화하거나 바꿔 쓴 표현을 쓰고, 식별 가능한 개인의 게시물은 절대 쓰지 마십시오. 둘째, 과적합입니다. 오디언스의 은어를 너무 그대로 따라 하면 브랜드가 사람들에게 말을 거는 것이 아니라 흉내 내는 것처럼 들릴 수 있습니다. 보이스 시스템이 오디언스의 언어를 얼마나 반영할지 조절해야 합니다. 셋째, 최신성 편향입니다. 대화가 떠들썩했던 한 주가 항상 지속적인 변화는 아니므로, 테마를 다시 쓰기 전에 시간에 걸친 패턴을 찾으십시오.</p>
+<p>신중하게 다룬다면, 오디언스 기반 접근은 AI 콘텐츠가 주의 깊게 지켜본 누군가가 쓴 것처럼 느껴지게 하는, 저희가 아는 가장 믿을 만한 방법입니다.</p><h2>팀은 어디서부터 시작해야 합니까?</h2><p>주간 소셜 게시물처럼 반복되는 콘텐츠 작업 하나를 골라 한 달 동안 그 브리프를 근거에 기반하게 하십시오. 편집 시간과 참여도를 지난달과 비교하십시오. 명확한 전후 비교 하나가 이 접근을 더 넓게 도입하자는 최고의 논거가 됩니다.</p>
+<section id="faq" style="padding:40px 0 0"><h2>자주 묻는 질문</h2><details><summary>오디언스 기반 콘텐츠란 무엇입니까?</summary><p>브리프, 예시, 앵글이 가정이나 모델의 기본값이 아니라 실제 오디언스가 하는 말과 반응에 대한 근거에서 나오는 콘텐츠입니다.</p></details><details><summary>오디언스 근거는 어디에서 얻습니까?</summary><p>소셜 대화, 리뷰, 댓글, 검색 질문, 커뮤니티 토론입니다. SOMIN 같은 플랫폼은 실제 게시물을 분석해 톤, 감정, 긴장을 대규모로 찾아냅니다.</p></details><details><summary>오디언스 데이터에 기반한 콘텐츠는 다른 모두와 비슷하게 들릴 위험이 있습니까?</summary><p>차별적인 보이스와 결합한다면 그렇지 않습니다. 오디언스는 내용과 언어를 제공하고, 브랜드 보이스는 리듬과 관점을 제공합니다.</p></details></section>
+<div class="cta-box"><h2>보이스 진단 예약하기</h2><p>저희는 2020년 GPT-3 API가 열린 여름부터 언어 모델로 글을 써 왔습니다. 실제 오디언스가 반응하는 것에 기반한 브랜드 보이스 시스템, 프롬프트 라이브러리, 사람이 편집하는 콘텐츠 운영 체계를 만듭니다.</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20Audience-grounded%20AI%20content%3A%20feeding%20models%20what%20people%20say%29">ask@gpt3.marketing으로 이메일 보내기 →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>계속 읽기</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../few-shot-prompting-lessons-2020/index.html"><img src="../../../assets/img/a01-640.webp" alt="쌓인 예시 블록이 빛나는 앰버색 커서로 이어지는 2020년풍 레트로 터미널" width="640" height="427" loading="lazy"><div class="b"><span class="tag">프롬프트 작성</span><h3>2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것</h3><p>GPT-3는 작가들이 예시로 가르치게 만들었습니다. 그 퓨샷 습관은 2026년에도 평범한 AI 콘텐츠에 맞서는 최선의 방어책입니다.</p><div class="meta" style="margin-top:12px">2026년 10월 5일 · 6분 읽기</div></div></a><a class="post-card" href="../why-ai-content-sounds-the-same/index.html"><img src="../../../assets/img/a02-640.webp" alt="똑같은 회색 말풍선들 사이에서 눈에 띄는 앰버색 말풍선 하나" width="640" height="427" loading="lazy"><div class="b"><span class="tag">브랜드 보이스</span><h3>AI 콘텐츠가 모두 똑같이 들리는 이유와 벗어나는 방법</h3><p>평범한 AI 카피는 나쁜 모델이 아니라 평균화된 입력에서 나옵니다. 획일성을 진단하고 오디언스가 알아보는 보이스를 다시 세우는 방법.</p><div class="meta" style="margin-top:12px">2026년 9월 28일 · 6분 분량</div></div></a><a class="post-card" href="../brand-voice-system-for-ai/index.html"><img src="../../../assets/img/a03-640.webp" alt="다이얼로 음파를 뚜렷한 실루엣으로 다듬는 레트로 콘솔, 브랜드 보이스 시스템" width="640" height="427" loading="lazy"><div class="b"><span class="tag">브랜드 보이스</span><h3>AI가 따를 수 있는 브랜드 보이스 시스템을 만드는 방법</h3><p>AI 시대의 브랜드 보이스 시스템: 작가와 모델이 함께 쓰는 원칙, 어휘, 예시, 모델용 지시문.</p><div class="meta" style="margin-top:12px">2026년 9월 14일 · 7분 읽기</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 로고"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">브랜드가 브랜드답게 들리도록 지켜 주는, 오랜 역사의 생성형 AI 콘텐츠 컨설팅.</p>
+<p class="partner">기술 파트너 <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">보이스 진단 예약하기</a></p>
+<p>이메일 <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">하는 일</a></li><li><a href="../index.html">인사이트</a></li><li><a href="../../index.html#about">소개</a></li><li><a href="../../index.html#faq">FAQ</a></li><li><a href="../../../brand/index.html">브랜드 가이드라인</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>Powered by SOMIN</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">사례 연구</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">브랜드용</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">에이전시용</a></li></ul></div>
+</div>
+<h4>네트워크</h4>
+<nav class="network" aria-label="자매 회사"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>매주 월요일 해독하는 하나의 실제 시그널</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>검증할 수 있는 상시 리스닝</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>수익으로 측정하는 유료 트래픽</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>에이전트가 연주하고, 사람이 지휘합니다.</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>추론 모델 시대에 맞게 재설계한 마케팅</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>동남아시아를 위해 해독한 소비자 심리와 문화</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search, Neural answers, Mentions. 하나의 러시.</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · 싱가포르. GPT3 Marketing은 독립 컨설팅이며 OpenAI와 제휴 관계가 없습니다. </p>
+</div></footer>
+</body></html>

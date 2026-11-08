@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것</title>
+<meta name="description" content="GPT-3는 작가들이 예시로 가르치게 만들었습니다. 그 퓨샷 습관은 2026년에도 평범한 AI 콘텐츠에 맞서는 최선의 방어책입니다.">
+<link rel="canonical" href="https://gpt3.marketing/ko/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="ja" href="https://gpt3.marketing/ja/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="ko" href="https://gpt3.marketing/ko/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것">
+<meta property="og:description" content="퓨샷 프롬프팅은 초기 GPT-3 사용자들에게 모델이 형용사보다 예시에서 보이스를 훨씬 더 잘 배운다는 것을 가르쳐 주었습니다.">
+<meta property="og:url" content="https://gpt3.marketing/ko/blog/few-shot-prompting-lessons-2020/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것, GPT3 Marketing">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것">
+<meta name="twitter:description" content="퓨샷 프롬프팅은 초기 GPT-3 사용자들에게 모델이 형용사보다 예시에서 보이스를 훨씬 더 잘 배운다는 것을 가르쳐 주었습니다.">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta name="twitter:image:alt" content="2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것, GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-10-05"><meta property="article:section" content="프롬프트 작성"><meta name="keywords" content="few-shot prompting, GPT-3, prompt craft, brand voice, AI content">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketing 블로그" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans KR',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans KR',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것","description":"GPT-3는 작가들이 예시로 가르치게 만들었습니다. 그 퓨샷 습관은 2026년에도 평범한 AI 콘텐츠에 맞서는 최선의 방어책입니다.","datePublished":"2026-10-05","dateModified":"2026-10-05","image":["https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg","https://gpt3.marketing/assets/img/a01.webp"],"url":"https://gpt3.marketing/ko/blog/few-shot-prompting-lessons-2020/","mainEntityOfPage":"https://gpt3.marketing/ko/blog/few-shot-prompting-lessons-2020/","keywords":"few-shot prompting, GPT-3, prompt craft, brand voice, AI content","articleSection":"프롬프트 작성","inLanguage":"ko","wordCount":1028,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/ko/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://gpt3.marketing/ko/blog/"},{"@type":"ListItem","position":3,"name":"2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것","item":"https://gpt3.marketing/ko/blog/few-shot-prompting-lessons-2020/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"퓨샷 프롬프팅이란 무엇입니까?","acceptedAnswer":{"@type":"Answer","text":"퓨샷 프롬프팅은 프롬프트 안에 작업의 실제 예시를 몇 개 넣어 언어 모델이 패턴을 추론하고 이어 가게 하는 것입니다. 2020년 GPT-3 논문이 이 용어를 널리 알렸습니다."}},{"@type":"Question","name":"최신 모델에서도 퓨샷 프롬프팅이 여전히 유용합니까?","acceptedAnswer":{"@type":"Answer","text":"그렇습니다. 지시 학습된 모델은 평이한 요청을 따르지만, 특정한 보이스, 구조, 상세 수준을 전달하는 가장 정확한 방법은 여전히 예시입니다. 지시는 설명하고, 예시는 보여 줍니다."}},{"@type":"Question","name":"콘텐츠 프롬프트에는 예시를 몇 개 넣어야 합니까?","acceptedAnswer":{"@type":"Answer","text":"보통 강력하고 다양한 예시 2~5개입니다. 너무 적으면 모델이 하나를 과하게 베끼고, 너무 많으면 브리프가 묻힙니다. 개수보다 품질과 다양성이 중요합니다."}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketing 홈"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 로고"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="메인"><a href="../../index.html#work">사례</a><a href="../../index.html#services">하는 일</a><a href="../index.html">인사이트</a><a href="../../index.html#faq">FAQ</a><a href="../../../brand/index.html">브랜드</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">보이스 진단 예약하기</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="언어: 한국어"><span>한국어</span></summary><ul><li><a href="../../../blog/few-shot-prompting-lessons-2020/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/few-shot-prompting-lessons-2020/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../../../zh-hant/blog/few-shot-prompting-lessons-2020/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../../../ja/blog/few-shot-prompting-lessons-2020/index.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="index.html" hreflang="ko" lang="ko" aria-current="page">한국어</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="이동 경로"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">블로그</a> / 프롬프트 작성</nav>
+<h1 style="margin-top:18px">2020년의 퓨샷 프롬프팅이 지금도 콘텐츠 팀에게 가르쳐 주는 것</h1><p class="meta">2026년 10월 5일 · 6분 분량 · GPT3 Marketing 편집팀 · <a href="#faq">FAQ</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a01.webp" alt="쌓인 예시 블록이 빛나는 앰버색 커서로 이어지는 2020년풍 레트로 터미널" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">퓨샷 프롬프팅은 초기 GPT-3 사용자들에게 모델이 형용사보다 예시에서 보이스를 훨씬 더 잘 배운다는 것을 가르쳐 주었습니다. 지시를 유창하게 따르는 모델이 있는 2026년에도 이 교훈은 유효합니다. 선별된, 오디언스에 기반한 예시를 모델에 넣는 팀은 차별적인 콘텐츠를 얻고, 톤을 설명만 하는 팀은 다른 모두와 같은 평균적인 카피를 얻습니다.</p>
+<h2>2020년에 GPT-3로 글을 쓴다는 것은 실제로 어떤 모습이었습니까?</h2>
+<p>2020년 5월 OpenAI는 1,750억 개 매개변수 모델 GPT-3를 설명하는 논문 「Language Models are Few-Shot Learners」를 발표했습니다. 핵심 주장은 충분히 큰 모델이라면 재학습 없이 프롬프트에 넣은 몇 가지 예시만으로 작업을 익힐 수 있다는 것이었습니다. 2020년 6월 API가 비공개 베타로 열렸고, GPT3 Marketing은 그해 여름 이를 활용하기 시작했습니다.</p>
+<p>채팅 창은 없었습니다. 문서의 시작처럼 보이는 프롬프트를 썼습니다. 짧은 입력과 완성된 출력으로 이루어진 제품 설명 예시 서너 개를 쓰고, 새 입력과 빈칸을 두었습니다. 모델은 그 패턴을 이어 갔습니다. 예시가 밋밋하면 결과물도 밋밋했습니다. 예시 하나가 다른 것보다 훨씬 길면 결과물도 길어졌습니다. 예시의 모든 특이점이 결과물에 증폭되어 나타났습니다.</p>
+<p>까다로운 작업 방식이었고, 2022년 11월 채팅 인터페이스가 등장하면서 대부분의 팀이 잃어버린 규율을 요구했습니다.</p>
+<h2>왜 형용사보다 예시가 낫습니까?</h2>
+<p>최신 모델에게 “따뜻하고, 자신감 있고, 위트 있는” 보이스로 써 달라고 하면, 수천 개의 다른 브랜드와 같은 방식으로 따뜻하고, 자신감 있고, 위트 있는 결과물을 얻게 됩니다. 이런 형용사는 모든 브랜드 북에 있습니다. 모델은 이 단어들이 엄청나게 다양한 텍스트에 붙어 있는 것을 보았고, 그 범위의 중간값을 돌려줍니다.</p>
+<p>예시는 형용사가 담을 수 없는 정보를 담습니다. 문장 길이, 농담이 터지는 지점, 절대 쓰지 않는 단어, 불만을 다루는 방식, ‘저희’라고 쓰는지 ‘팀’이라고 쓰는지 등입니다. 좋은 예시는 압축된 보이스 가이드입니다. 그래서 저희의 <a href="../brand-voice-system-for-ai/index.html">브랜드 보이스 시스템</a>은 톤 묘사어가 아니라 실제 예시를 중심으로 만들어집니다.</p>
+<blockquote>지시는 원하는 것을 설명합니다. 예시는 그것을 증명합니다. 모델은 증명을 믿습니다.</blockquote>
+<h2>2020년의 어떤 습관을 유지할 만합니까?</h2>
+<h3>1. 포트폴리오처럼 예시를 선별하십시오</h3>
+<p>2020년에는 예시 하나하나에 토큰과 비용이 들었기 때문에 신중하게 골랐습니다. 지금은 컨텍스트가 저렴해 팀들이 아카이브 전체를 붙여 넣습니다. 많다고 좋은 것이 아닙니다. 가장 강하고 구체적인 보이스를 가장 잘 보여 주는 콘텐츠를 고르고, 형식을 다양하게 섞어 모델이 템플릿 하나가 아니라 보이스를 배우게 하십시오.</p>
+<h3>2. 패턴을 명시적으로 만드십시오</h3>
+<p>퓨샷 프롬프트는 일관된 구조일 때 가장 잘 작동했습니다. 라벨이 붙은 입력, 라벨이 붙은 출력, 명확한 구분자입니다. 같은 원칙이 최신 프롬프트에도 적용됩니다. 무엇이 들어가고 무엇이 나오는지 모델에게 보여 주어, 예시의 어느 부분이 고정된 보이스이고 어느 부분이 바뀌는 내용인지 알게 하십시오.</p>
+<h3>3. 모든 결과물을 편집자의 눈으로 읽으십시오</h3>
+<p>GPT-3의 날것 그대로의 텍스트를 게시한 사람은 없었습니다. 주제에서 벗어나고, 같은 말을 반복하고, 가끔은 완전한 자신감으로 사실을 지어냈습니다. 최신 모델은 훨씬 낫지만, 편집자의 습관은 여전히 가장 저렴한 품질 관리 수단입니다. 이에 대해서는 <a href="../why-ai-drafts-need-heavy-editing/index.html">AI 초안에 여전히 많은 편집이 필요한 이유</a>에서 더 자세히 다룹니다.</p>
+<h3>4. 프롬프트를 자산으로 다루십시오</h3>
+<p>좋은 퓨샷 프롬프트는 다듬는 데 몇 시간이 걸렸기 때문에 저희는 버전을 관리하고, 문서화하고, 재사용했습니다. 이것이 오늘날 저희가 클라이언트를 위해 운영하는 프롬프트 라이브러리 방식으로 발전했습니다.</p>
+<h2>예시는 어디에서 가져와야 합니까?</h2>
+<p>여기서 2026년은 2020년과 다릅니다. 당시 예시는 브랜드 자체 아카이브에서 나왔습니다. 문제는 아카이브가 오디언스가 반응한 것이 아니라 브랜드가 말하고 싶었던 것을 반영한다는 점입니다. 가장 좋은 예시가 여러분이 좋아하는 게시물이라면, 모델은 오디언스의 선호가 아니라 여러분의 선호를 배웁니다.</p>
+<p>이제 저희는 예시 선정을 오디언스 근거에 기반합니다. AI 오디언스 리서치 플랫폼인 SOMIN의 <a href="https://somin.ai/somin-strategy/" rel="noopener">전략 도구</a>로 카테고리를 둘러싼 대화를 살펴봅니다. 사람들이 실제로 쓰는 표현, 그들이 표현하는 긴장, 스크롤이 아니라 답글을 얻는 톤입니다. 그런 다음 그 구체적인 내용에 말을 거는 예시를 고르거나 씁니다. 모델은 브랜드의 보이스와 오디언스의 어휘를 동시에 물려받습니다.</p>
+<p>누군가 문구를 손대기 전에 오디언스 인사이트가 브랜드가 하는 말을 어떻게 만들어 가는지는 <a href="https://somin.ai/brands-fujifilm-case-study/" rel="noopener">Fujifilm 사례 연구</a>도 함께 읽어 볼 만합니다.</p>
+<h2>실제 예시: 하나의 제품 라인, 두 개의 프롬프트</h2>
+<p>새 세럼의 설명을 쓰는 스킨케어 브랜드를 생각해 보십시오.</p>
+<ul>
+<li><strong>프롬프트 A</strong>: “새 비타민 C 세럼에 대한 따뜻하고 전문적인 제품 설명을 써 줘. 우리의 톤은 친근하고 과학 중심이야.”</li>
+<li><strong>프롬프트 B</strong>에는 성과가 좋았던 과거 설명 세 개와 각각의 브리프, 그리고 오디언스가 그 문제에 대해 쓰는 표현(예를 들어 칙칙함이나 민감함을 자신의 언어로 어떻게 묘사하는지)을 정리한 짧은 메모가 들어가고, 그다음에 새 브리프가 옵니다.</li>
+</ul>
+<p>프롬프트 A는 매대의 어느 브랜드 것이어도 될 무난한 카피를 돌려줍니다. 프롬프트 B는 브랜드의 리듬과 오디언스의 언어가 담긴 카피를 돌려줍니다. 차이는 모델의 품질이 아닙니다. 입력의 품질입니다.</p>
+<h2>체크리스트: 브랜드 콘텐츠를 위한 퓨샷 프롬프트</h2>
+<ul>
+<li>형식과 길이가 다양한 예시 2~5개</li>
+<li>각 예시와 그것을 만든 브리프의 쌍</li>
+<li>일관된 라벨과 구분자</li>
+<li>실제 대화에서 수집한 오디언스 표현과 긴장의 짧은 목록</li>
+<li>브랜드가 절대 하지 않는 말의 짧은 목록</li>
+<li>결과물을 검토할 지정된 사람</li>
+</ul>
+<h2>용어 정의</h2>
+<ul>
+<li><strong>제로샷:</strong> 지시만으로 모델에게 작업을 요청하는 것.</li>
+<li><strong>퓨샷:</strong> 프롬프트에 소수의 실제 예시를 포함하는 것.</li>
+<li><strong>인컨텍스트 러닝:</strong> 모델이 가중치를 바꾸지 않고 프롬프트의 패턴에 적응하는 것.</li>
+</ul>
+<h2>지금 이것이 중요한 이유</h2>
+<p>모두가 같은 모델에 접근할 수 있을 때 우위는 입력으로 옮겨 갑니다. 퓨샷의 규율은 2020년의 희소성에서 태어났지만, 2026년에는 획일성에서 벗어나는 방법입니다. 오디언스 시그널이 다른 곳에서 실무적인 마케팅 결정으로 어떻게 바뀌는지 보고 싶다면, <a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a>의 주간 에피소드가 한 번에 하나씩 실제 시그널을 해독합니다. 더 날카로운 프롬프트와 함께 들이기 좋은 습관입니다.</p>
+<p>AI로 차별적인 목소리를 내는 브랜드는 가장 영리한 지시문을 가진 브랜드인 경우가 드뭅니다. 오디언스를 염두에 두고 고른 가장 좋은 예시를 가진 브랜드입니다.</p>
+<section id="faq" style="padding:40px 0 0"><h2>자주 묻는 질문</h2><details><summary>퓨샷 프롬프팅이란 무엇입니까?</summary><p>퓨샷 프롬프팅은 프롬프트 안에 작업의 실제 예시를 몇 개 넣어 언어 모델이 패턴을 추론하고 이어 가게 하는 것입니다. 2020년 GPT-3 논문이 이 용어를 널리 알렸습니다.</p></details><details><summary>최신 모델에서도 퓨샷 프롬프팅이 여전히 유용합니까?</summary><p>그렇습니다. 지시 학습된 모델은 평이한 요청을 따르지만, 특정한 보이스, 구조, 상세 수준을 전달하는 가장 정확한 방법은 여전히 예시입니다. 지시는 설명하고, 예시는 보여 줍니다.</p></details><details><summary>콘텐츠 프롬프트에는 예시를 몇 개 넣어야 합니까?</summary><p>보통 강력하고 다양한 예시 2~5개입니다. 너무 적으면 모델이 하나를 과하게 베끼고, 너무 많으면 브리프가 묻힙니다. 개수보다 품질과 다양성이 중요합니다.</p></details></section>
+<div class="cta-box"><h2>보이스 진단 예약하기</h2><p>저희는 2020년 GPT-3 API가 열린 여름부터 언어 모델로 글을 써 왔습니다. 실제 오디언스가 반응하는 것에 기반한 브랜드 보이스 시스템, 프롬프트 라이브러리, 사람이 편집하는 콘텐츠 운영 체계를 만듭니다.</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20What%20few-shot%20prompting%20in%202020%20still%20teaches%20content%20teams%29">ask@gpt3.marketing으로 이메일 보내기 →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>계속 읽기</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../why-ai-content-sounds-the-same/index.html"><img src="../../../assets/img/a02-640.webp" alt="똑같은 회색 말풍선들 사이에서 눈에 띄는 앰버색 말풍선 하나" width="640" height="427" loading="lazy"><div class="b"><span class="tag">브랜드 보이스</span><h3>AI 콘텐츠가 모두 똑같이 들리는 이유와 벗어나는 방법</h3><p>평범한 AI 카피는 나쁜 모델이 아니라 평균화된 입력에서 나옵니다. 획일성을 진단하고 오디언스가 알아보는 보이스를 다시 세우는 방법.</p><div class="meta" style="margin-top:12px">2026년 9월 28일 · 6분 분량</div></div></a><a class="post-card" href="../brand-voice-system-for-ai/index.html"><img src="../../../assets/img/a03-640.webp" alt="다이얼로 음파를 뚜렷한 실루엣으로 다듬는 레트로 콘솔, 브랜드 보이스 시스템" width="640" height="427" loading="lazy"><div class="b"><span class="tag">브랜드 보이스</span><h3>AI가 따를 수 있는 브랜드 보이스 시스템을 만드는 방법</h3><p>AI 시대의 브랜드 보이스 시스템: 작가와 모델이 함께 쓰는 원칙, 어휘, 예시, 모델용 지시문.</p><div class="meta" style="margin-top:12px">2026년 9월 14일 · 7분 읽기</div></div></a><a class="post-card" href="../why-ai-drafts-need-heavy-editing/index.html"><img src="../../../assets/img/a04-640.webp" alt="레트로 터미널 프린터에서 쏟아지는 빈 종이 위의 편집자 연필과 앰버색 교정 표시" width="640" height="427" loading="lazy"><div class="b"><span class="tag">에디토리얼</span><h3>AI 초안에 여전히 많은 편집이 필요한 이유와 편집을 줄이는 방법</h3><p>AI 초안을 많이 고쳐야 하는 것은 대개 입력의 문제입니다. 편집 시간이 어디에 쓰이는지, 그리고 노력을 앞단으로 옮기는 방법.</p><div class="meta" style="margin-top:12px">2026년 9월 7일 · 6분 분량</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 로고"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">브랜드가 브랜드답게 들리도록 지켜 주는, 오랜 역사의 생성형 AI 콘텐츠 컨설팅.</p>
+<p class="partner">기술 파트너 <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">보이스 진단 예약하기</a></p>
+<p>이메일 <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">하는 일</a></li><li><a href="../index.html">인사이트</a></li><li><a href="../../index.html#about">소개</a></li><li><a href="../../index.html#faq">FAQ</a></li><li><a href="../../../brand/index.html">브랜드 가이드라인</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>Powered by SOMIN</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">사례 연구</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">브랜드용</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">에이전시용</a></li></ul></div>
+</div>
+<h4>네트워크</h4>
+<nav class="network" aria-label="자매 회사"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>매주 월요일 해독하는 하나의 실제 시그널</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>검증할 수 있는 상시 리스닝</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>수익으로 측정하는 유료 트래픽</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>에이전트가 연주하고, 사람이 지휘합니다.</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>추론 모델 시대에 맞게 재설계한 마케팅</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>동남아시아를 위해 해독한 소비자 심리와 문화</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search, Neural answers, Mentions. 하나의 러시.</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · 싱가포르. GPT3 Marketing은 독립 컨설팅이며 OpenAI와 제휴 관계가 없습니다. </p>
+</div></footer>
+</body></html>

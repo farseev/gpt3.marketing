@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법</title>
+<meta name="description" content="팀 프롬프트 라이브러리 구축 실무 가이드: 구조, 버전 관리, 테스트, 소유권, 그리고 오디언스 근거에 기반한 유지.">
+<link rel="canonical" href="https://gpt3.marketing/ko/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="ja" href="https://gpt3.marketing/ja/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="ko" href="https://gpt3.marketing/ko/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/prompt-library-governance/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법">
+<meta property="og:description" content="프롬프트 라이브러리는 팀의 반복적인 콘텐츠 작업을 위해 검증된 프롬프트를 버전 관리하며 공유하는 모음입니다.">
+<meta property="og:url" content="https://gpt3.marketing/ko/blog/prompt-library-governance/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법, GPT3 Marketing">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법">
+<meta name="twitter:description" content="프롬프트 라이브러리는 팀의 반복적인 콘텐츠 작업을 위해 검증된 프롬프트를 버전 관리하며 공유하는 모음입니다.">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg">
+<meta name="twitter:image:alt" content="프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법, GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-08-17"><meta property="article:section" content="프롬프트 작성"><meta name="keywords" content="prompt library, prompt management, prompt versioning, AI governance, content operations">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketing 블로그" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans KR',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans KR',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법","description":"팀 프롬프트 라이브러리 구축 실무 가이드: 구조, 버전 관리, 테스트, 소유권, 그리고 오디언스 근거에 기반한 유지.","datePublished":"2026-08-17","dateModified":"2026-08-17","image":["https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg","https://gpt3.marketing/assets/img/a06.webp"],"url":"https://gpt3.marketing/ko/blog/prompt-library-governance/","mainEntityOfPage":"https://gpt3.marketing/ko/blog/prompt-library-governance/","keywords":"prompt library, prompt management, prompt versioning, AI governance, content operations","articleSection":"프롬프트 작성","inLanguage":"ko","wordCount":933,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/ko/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://gpt3.marketing/ko/blog/"},{"@type":"ListItem","position":3,"name":"프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법","item":"https://gpt3.marketing/ko/blog/prompt-library-governance/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"프롬프트 라이브러리란 무엇입니까?","acceptedAnswer":{"@type":"Answer","text":"팀의 반복 작업을 위해 검증된 프롬프트를 정리해 공유하는 모음으로, 각 프롬프트에는 예시, 사용 메모, 담당자, 버전 이력이 있습니다."}},{"@type":"Question","name":"프롬프트 라이브러리는 누가 책임져야 합니까?","acceptedAnswer":{"@type":"Answer","text":"지정된 콘텐츠 또는 운영 리드가 맡고, 팀 전반에서 기여자가 참여합니다. 각 프롬프트에도 테스트와 업데이트를 책임지는 담당자가 따로 있어야 합니다."}},{"@type":"Question","name":"프롬프트는 얼마나 자주 다시 테스트해야 합니까?","acceptedAnswer":{"@type":"Answer","text":"주요 모델 업데이트, 보이스 시스템 변경, 오디언스 리서치의 뚜렷한 변화가 있을 때, 그리고 최소한 분기마다 정기적으로 테스트하십시오."}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketing 홈"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 로고"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="메인"><a href="../../index.html#work">사례</a><a href="../../index.html#services">하는 일</a><a href="../index.html">인사이트</a><a href="../../index.html#faq">FAQ</a><a href="../../../brand/index.html">브랜드</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">보이스 진단 예약하기</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="언어: 한국어"><span>한국어</span></summary><ul><li><a href="../../../blog/prompt-library-governance/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/prompt-library-governance/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../../../zh-hant/blog/prompt-library-governance/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../../../ja/blog/prompt-library-governance/index.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="index.html" hreflang="ko" lang="ko" aria-current="page">한국어</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="이동 경로"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">블로그</a> / 프롬프트 작성</nav>
+<h1 style="margin-top:18px">프롬프트 라이브러리: 구축, 버전 관리, 거버넌스 방법</h1><p class="meta">2026년 8월 17일 · 6분 분량 · GPT3 Marketing 편집팀 · <a href="#faq">FAQ</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a06.webp" alt="앰버색으로 빛나는 서랍이 달린 빈티지 카드 목록함과 손으로 정리되는 프롬프트 카드" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">프롬프트 라이브러리는 팀의 반복적인 콘텐츠 작업을 위해 검증된 프롬프트를 버전 관리하며 공유하는 모음입니다. 잘 만들면 크래프트를 담아 두어 품질이 누가 입력하느냐에 좌우되지 않게 합니다. 구조, 지정된 담당자, 테스트 케이스, 정기 검토가 필요하며, 예시와 오디언스 입력은 낡도록 방치하지 말고 실제 오디언스 근거로 갱신해야 합니다.</p>
+<h2>팀에 왜 프롬프트 라이브러리가 필요합니까?</h2>
+<p>라이브러리가 없으면 작가마다 자기만의 프롬프트를 만듭니다. 일부는 훌륭하고, 대부분은 괜찮고, 몇몇은 부실하며, 어느 것이 어느 것인지 아무도 모릅니다. 품질은 시스템이 아니라 개인의 문제가 되고, 뛰어난 작가가 떠나면 그 크래프트도 함께 떠납니다.</p>
+<p>저희가 2020년에 프롬프트 라이브러리를 관리하기 시작한 것은 GPT-3 프롬프트를 다듬는 데 비용이 많이 들었기 때문입니다. 제품 설명을 위한 좋은 퓨샷 프롬프트 하나에 오후 내내 반복 작업이 필요할 수 있었습니다. 그것을 잃는 것은 터무니없는 일이었을 것입니다. 이 습관은 희소성이 사라진 뒤에도 남았습니다.</p>
+<h2>각 프롬프트 항목에는 무엇이 들어가야 합니까?</h2>
+<ul>
+<li><strong>이름과 목적:</strong> 이 프롬프트가 담당하는 콘텐츠 작업.</li>
+<li><strong>프롬프트:</strong> 변수 슬롯을 명확히 표시한 것.</li>
+<li><strong>필수 입력:</strong> 브리프 항목, 사실, 오디언스 메모.</li>
+<li><strong>예시:</strong> 선별한 예시 2~5개 또는 예시 뱅크 참조.</li>
+<li><strong>테스트 케이스:</strong> 좋은 결과물이 알려진 브리프 몇 개.</li>
+<li><strong>담당자와 버전:</strong> 누가 관리하고 무엇이 바뀌었는지.</li>
+<li><strong>테스트한 모델:</strong> 어떤 모델과 설정에서 검증했는지.</li>
+<li><strong>알려진 실패 유형:</strong> 어디에서 잘못되기 쉬운지.</li>
+</ul>
+<h2>라이브러리는 어떻게 구성합니까?</h2>
+<p>채널이나 사람이 아니라 콘텐츠 작업별로 정리하십시오. ‘제품 출시 공지’, ‘고객 불만 답변’, ‘주간 뉴스레터 도입부’ 같은 식입니다. 작업마다 채널별 변형이 있을 수 있지만, 사람들이 찾는 단위는 작업입니다.</p>
+<p>보이스 시스템은 모든 프롬프트에 복사하지 말고 별도로 두고 참조하십시오. 보이스가 바뀌면 한 곳만 업데이트하면 됩니다. 그 공통 레이어에 무엇이 들어가는지는 <a href="../brand-voice-system-for-ai/index.html">브랜드 보이스 시스템 구축</a> 가이드에서 다룹니다.</p>
+<h2>프롬프트는 어떻게 버전 관리하고 테스트합니까?</h2>
+<p>프롬프트를 코드처럼 다루십시오. 모든 변경에는 버전 번호와 한 줄 메모를 붙입니다. 새 버전이 이전 버전을 대체하기 전에 테스트 케이스를 실행하고, 편집자가 결과물을 블라인드로 비교하게 하십시오. 새 버전이 실제 사용에서 검증될 때까지 이전 버전을 계속 쓸 수 있게 두십시오.</p>
+<p>다음과 같은 경우 다시 테스트하십시오.</p>
+<ol>
+<li>모델 제공업체가 업데이트하거나 모델을 바꿀 때.</li>
+<li>보이스 시스템이 바뀔 때.</li>
+<li>오디언스 리서치에서 언어나 관심사의 변화가 보일 때.</li>
+<li>편집자가 같은 수정을 반복해서 보고할 때.</li>
+</ol>
+<h2>프롬프트를 어떻게 근거에 기반하게 유지합니까?</h2>
+<p>프롬프트 라이브러리는 화석처럼 굳을 수 있습니다. 작년에 효과가 있던 예시가 오디언스가 이미 지나간 관심사를 다루고 있을 수 있습니다. 저희는 각 프롬프트의 오디언스 입력을 AI 오디언스 리서치 플랫폼이자 기술 파트너인 SOMIN이 공급하는 갱신 주기에 연결합니다. SOMIN의 <a href="https://somin.ai/somin-reporting/" rel="noopener">리포팅</a>과 리스닝은 어떤 테마와 표현이 떠오르거나 사그라드는지 보여 줍니다. 브랜드 대화 전반의 상시 리스닝에는 점유율(share of voice)과 조기 경보를 위해 만들어진 저희 자매 앱 <a href="https://somonitor.ai/" rel="noopener">Somonitor</a>가 있습니다.</p>
+<blockquote>프롬프트 라이브러리는 그 안에 담긴 오디언스 근거만큼만 최신입니다.</blockquote>
+<h2>누가 관리합니까?</h2>
+<p>거버넌스가 무거울 필요는 없습니다. 라이브러리 담당자 한 명, 프롬프트별 담당자 한 명, 사용량과 편집 기록에 대한 월간 검토, 그리고 간단한 규칙 하나면 됩니다. 테스트 케이스를 통과하기 전에는 어떤 프롬프트도 게시용 콘텐츠에 쓰지 않는다는 것입니다. 관료주의 없이 품질을 안정적으로 유지하기에 충분합니다.</p>
+<h2>체크리스트: 프롬프트 라이브러리 건강 상태</h2>
+<ul>
+<li>콘텐츠 작업별로 정리됨</li>
+<li>모든 프롬프트에 담당자와 버전이 있음</li>
+<li>테스트 케이스가 있고 변경 시 실행함</li>
+<li>보이스 시스템을 복제하지 않고 참조함</li>
+<li>지난 분기에 갱신한 오디언스 입력</li>
+<li>테스트한 모델이 기재됨</li>
+<li>편집 기록이 개선으로 이어짐</li>
+</ul>
+<h2>용어 정의</h2>
+<ul>
+<li><strong>변수 슬롯:</strong> 제품명이나 오디언스 세그먼트처럼 사용할 때마다 채우는 프롬프트 내 자리 표시자.</li>
+<li><strong>테스트 케이스:</strong> 프롬프트를 확인하는 데 쓰는, 허용 가능한 결과물이 알려진 고정 입력.</li>
+<li><strong>프롬프트 드리프트:</strong> 프롬프트는 그대로인데 모델, 보이스, 오디언스가 바뀌면서 결과물 품질이 떨어지는 현상.</li>
+</ul>
+<h2>실제 적용 예시</h2>
+<p>한 리테일 팀이 ‘불만 답변’ 프롬프트를 관리합니다. 편집 기록을 보니 편집자들이 첫 문장을 반복해서 부드럽게 고치고 있습니다. 담당자는 수정 전후 예시와 구체적인 문제를 먼저 인정하라는 규칙을 추가하고, 버전을 올리고, 테스트 케이스 여섯 개를 실행한 뒤 배포합니다. 반복되던 편집이 사라집니다. 이렇게 작고 눈에 보이는 루프가 시간이 지나며 라이브러리를 가치 있게 만듭니다.</p>
+<p>무엇을 말할지 정하기 전에 오디언스를 이해하는 방법은 <a href="https://somin.ai/brands-mothercare-sg-case-study/" rel="noopener">Mothercare SG 사례 연구</a>도 함께 읽어 볼 만합니다. 싱가포르의 동료들과 프롬프트 작성에 대해 이야기하고 싶다면 <a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a>가 매주 실제 시그널 하나를 중심으로 마케터들을 모읍니다.</p><h2>어떤 도구를 써야 합니까?</h2>
+<p>생각보다 적게 필요합니다. 효과적인 프롬프트 라이브러리 중 상당수는 명확한 이름과 버전 메모를 갖춘 공유 문서 공간이나 간단한 데이터베이스에 있습니다. 전용 프롬프트 관리 도구는 자동화된 워크플로 안에서 많은 프롬프트를 돌릴 때 도움이 되지만, 담당자, 테스트 케이스, 검토라는 규율을 대신하지는 못합니다.</p>
+<p>무엇을 쓰든 세 가지를 쉽게 만드십시오. 작업에 맞는 프롬프트 찾기, 무엇이 왜 바뀌었는지 보기, 문제 보고하기입니다. 작가가 1분 안에 프롬프트를 찾지 못하면 직접 쓰게 되고, 라이브러리는 파편화되기 시작합니다. 모든 콘텐츠 작업과 각 프롬프트를 언제 쓰는지 한 줄씩 적은 짧은 색인 페이지가 대부분 이를 막아 줍니다.</p>
+<p>마지막으로 폐기도 거버넌스의 일부로 삼으십시오. 단종된 제품이나 지난 캠페인용 프롬프트는 새 팀원을 혼란스럽게 하도록 그대로 두지 말고 보관 처리해야 합니다.</p><h2>사람들이 실제로 쓰게 하려면 어떻게 해야 합니까?</h2><p>도입은 설계의 문제입니다. 사람들이 이미 일하는 곳에 라이브러리를 두고, 각 프롬프트의 전후 비교를 보여 주어 가치가 분명히 드러나게 하고, 개선 사항이 반영되면 기여자를 인정하십시오. 몇 달 안에 라이브러리를 쓰는 것이 처음부터 프롬프트를 쓰는 것보다 빠르게 느껴져야 합니다.</p>
+<section id="faq" style="padding:40px 0 0"><h2>자주 묻는 질문</h2><details><summary>프롬프트 라이브러리란 무엇입니까?</summary><p>팀의 반복 작업을 위해 검증된 프롬프트를 정리해 공유하는 모음으로, 각 프롬프트에는 예시, 사용 메모, 담당자, 버전 이력이 있습니다.</p></details><details><summary>프롬프트 라이브러리는 누가 책임져야 합니까?</summary><p>지정된 콘텐츠 또는 운영 리드가 맡고, 팀 전반에서 기여자가 참여합니다. 각 프롬프트에도 테스트와 업데이트를 책임지는 담당자가 따로 있어야 합니다.</p></details><details><summary>프롬프트는 얼마나 자주 다시 테스트해야 합니까?</summary><p>주요 모델 업데이트, 보이스 시스템 변경, 오디언스 리서치의 뚜렷한 변화가 있을 때, 그리고 최소한 분기마다 정기적으로 테스트하십시오.</p></details></section>
+<div class="cta-box"><h2>보이스 진단 예약하기</h2><p>저희는 2020년 GPT-3 API가 열린 여름부터 언어 모델로 글을 써 왔습니다. 실제 오디언스가 반응하는 것에 기반한 브랜드 보이스 시스템, 프롬프트 라이브러리, 사람이 편집하는 콘텐츠 운영 체계를 만듭니다.</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20Prompt%20libraries%3A%20how%20to%20build%2C%20version%20and%20govern%20them%29">ask@gpt3.marketing으로 이메일 보내기 →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>계속 읽기</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../from-gpt3-to-chatgpt-what-changed/index.html"><img src="../../../assets/img/a05-640.webp" alt="2020년의 작은 터미널부터 도시 스카이라인 위의 거대하게 빛나는 채팅 창까지 이어지는 화면 타임라인" width="640" height="427" loading="lazy"><div class="b"><span class="tag">유산</span><h3>GPT-3에서 ChatGPT까지: 마케터에게 실제로 달라진 것</h3><p>GPT-3 API 베타부터 오늘까지 6년: 콘텐츠 팀에게 무엇이 달라졌고 무엇이 그대로인지, 그리고 왜 지금 크래프트가 더 중요한지.</p><div class="meta" style="margin-top:12px">2026년 8월 24일 · 7분 읽기</div></div></a><a class="post-card" href="../authenticity-outlasts-trends/index.html"><img src="../../../assets/img/a07-640.webp" alt="트렌드 모양의 연과 색종이가 스쳐 지나가는 가운데 굳건히 서 있는 뿌리 깊은 앰버색 나무" width="640" height="427" loading="lazy"><div class="b"><span class="tag">전략</span><h3>진정성은 트렌드보다 오래갑니다: AI 콘텐츠에서 FOMO보다 내러티브</h3><p>AI로 트렌드를 좇으면 브랜드는 빨라지지만 흐릿해집니다. 일관된 내러티브가 왜 복리로 쌓이는지, 그리고 트렌드를 그에 비추어 검증하는 방법.</p><div class="meta" style="margin-top:12px">2026년 8월 3일 · 6분 분량</div></div></a><a class="post-card" href="../human-edited-content-at-scale/index.html"><img src="../../../assets/img/a08-640.webp" alt="레트로 기계에서 나오는 콘텐츠 카드 컨베이어 앞에서 하나하나 손으로 마무리하는 사람 편집자들" width="640" height="427" loading="lazy"><div class="b"><span class="tag">에디토리얼</span><h3>대규모로 사람이 편집하는 콘텐츠: 역할, 루프, 한계</h3><p>품질을 잃지 않고 AI 지원 콘텐츠를 확장하는 방법: 편집 역할, 검토 등급, 피드백 루프, 그리고 사람이 가장 큰 가치를 더하는 지점.</p><div class="meta" style="margin-top:12px">2026년 7월 27일 · 6분 읽기</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 로고"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">브랜드가 브랜드답게 들리도록 지켜 주는, 오랜 역사의 생성형 AI 콘텐츠 컨설팅.</p>
+<p class="partner">기술 파트너 <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">보이스 진단 예약하기</a></p>
+<p>이메일 <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">하는 일</a></li><li><a href="../index.html">인사이트</a></li><li><a href="../../index.html#about">소개</a></li><li><a href="../../index.html#faq">FAQ</a></li><li><a href="../../../brand/index.html">브랜드 가이드라인</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>Powered by SOMIN</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">사례 연구</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">브랜드용</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">에이전시용</a></li></ul></div>
+</div>
+<h4>네트워크</h4>
+<nav class="network" aria-label="자매 회사"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>매주 월요일 해독하는 하나의 실제 시그널</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>검증할 수 있는 상시 리스닝</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>수익으로 측정하는 유료 트래픽</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>에이전트가 연주하고, 사람이 지휘합니다.</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>추론 모델 시대에 맞게 재설계한 마케팅</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>동남아시아를 위해 해독한 소비자 심리와 문화</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search, Neural answers, Mentions. 하나의 러시.</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · 싱가포르. GPT3 Marketing은 독립 컨설팅이며 OpenAI와 제휴 관계가 없습니다. </p>
+</div></footer>
+</body></html>
