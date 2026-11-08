@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें</title>
+<meta name="description" content="टीम प्रॉम्प्ट लाइब्रेरी बनाने की व्यावहारिक गाइड: संरचना, वर्ज़निंग, टेस्टिंग, स्वामित्व और उसे ऑडियंस साक्ष्य पर आधारित रखना।">
+<link rel="canonical" href="https://gpt3.marketing/hi/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="ja" href="https://gpt3.marketing/ja/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="ko" href="https://gpt3.marketing/ko/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="th" href="https://gpt3.marketing/th/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="vi" href="https://gpt3.marketing/vi/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="id" href="https://gpt3.marketing/id/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="ms" href="https://gpt3.marketing/ms/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="hi" href="https://gpt3.marketing/hi/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/prompt-library-governance/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें">
+<meta property="og:description" content="प्रॉम्प्ट लाइब्रेरी टीम के बार-बार होने वाले कंटेंट कामों के लिए परखे हुए प्रॉम्प्ट का एक साझा, वर्ज़न किया गया संग्रह है।">
+<meta property="og:url" content="https://gpt3.marketing/hi/blog/prompt-library-governance/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें, GPT3 Marketing">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें">
+<meta name="twitter:description" content="प्रॉम्प्ट लाइब्रेरी टीम के बार-बार होने वाले कंटेंट कामों के लिए परखे हुए प्रॉम्प्ट का एक साझा, वर्ज़न किया गया संग्रह है।">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg">
+<meta name="twitter:image:alt" content="प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें, GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-08-17"><meta property="article:section" content="प्रॉम्प्ट क्राफ़्ट"><meta name="keywords" content="prompt library, prompt management, prompt versioning, AI governance, content operations">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketing ब्लॉग" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans Devanagari',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans Devanagari',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें","description":"टीम प्रॉम्प्ट लाइब्रेरी बनाने की व्यावहारिक गाइड: संरचना, वर्ज़निंग, टेस्टिंग, स्वामित्व और उसे ऑडियंस साक्ष्य पर आधारित रखना।","datePublished":"2026-08-17","dateModified":"2026-08-17","image":["https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg","https://gpt3.marketing/assets/img/a06.webp"],"url":"https://gpt3.marketing/hi/blog/prompt-library-governance/","mainEntityOfPage":"https://gpt3.marketing/hi/blog/prompt-library-governance/","keywords":"prompt library, prompt management, prompt versioning, AI governance, content operations","articleSection":"प्रॉम्प्ट क्राफ़्ट","inLanguage":"hi","wordCount":933,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/hi/"},{"@type":"ListItem","position":2,"name":"ब्लॉग","item":"https://gpt3.marketing/hi/blog/"},{"@type":"ListItem","position":3,"name":"प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें","item":"https://gpt3.marketing/hi/blog/prompt-library-governance/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"प्रॉम्प्ट लाइब्रेरी क्या है?","acceptedAnswer":{"@type":"Answer","text":"किसी टीम के बार-बार होने वाले कामों के लिए परखे हुए प्रॉम्प्ट का एक साझा, व्यवस्थित संग्रह, जिसमें हर एक के साथ उदाहरण, इस्तेमाल के नोट्स, एक ज़िम्मेदार और वर्ज़न इतिहास होता है।"}},{"@type":"Question","name":"प्रॉम्प्ट लाइब्रेरी का ज़िम्मेदार कौन होना चाहिए?","acceptedAnswer":{"@type":"Answer","text":"एक नामित कंटेंट या ऑपरेशंस लीड, और पूरी टीम से योगदानकर्ता। हर प्रॉम्प्ट का भी अपना ज़िम्मेदार होना चाहिए जो टेस्टिंग और अपडेट के लिए जवाबदेह हो।"}},{"@type":"Question","name":"प्रॉम्प्ट को कितनी बार दोबारा टेस्ट करना चाहिए?","acceptedAnswer":{"@type":"Answer","text":"बड़े मॉडल अपडेट, वॉइस सिस्टम में बदलाव या ऑडियंस रिसर्च में उल्लेखनीय बदलाव के बाद, और कम से कम हर तिमाही नियमित रूप से।"}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">सामग्री पर जाएँ</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketing होम"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing लोगो"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="मुख्य"><a href="../../index.html#work">काम</a><a href="../../index.html#services">हम क्या करते हैं</a><a href="../index.html">इनसाइट्स</a><a href="../../index.html#faq">अक्सर पूछे जाने वाले प्रश्न</a><a href="../../../brand/index.html">ब्रांड</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">वॉइस ऑडिट बुक करें</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="भाषा: हिन्दी"><span>हिन्दी</span></summary><ul><li><a href="../../../blog/prompt-library-governance/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/prompt-library-governance/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../../../zh-hant/blog/prompt-library-governance/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../../../ja/blog/prompt-library-governance/index.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="../../../ko/blog/prompt-library-governance/index.html" hreflang="ko" lang="ko">한국어</a></li><li><a href="../../../th/blog/prompt-library-governance/index.html" hreflang="th" lang="th">ไทย</a></li><li><a href="../../../vi/blog/prompt-library-governance/index.html" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="../../../id/blog/prompt-library-governance/index.html" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="../../../ms/blog/prompt-library-governance/index.html" hreflang="ms" lang="ms">Bahasa Melayu</a></li><li><a href="index.html" hreflang="hi" lang="hi" aria-current="page">हिन्दी</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="ब्रेडक्रम्ब"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">ब्लॉग</a> / प्रॉम्प्ट क्राफ़्ट</nav>
+<h1 style="margin-top:18px">प्रॉम्प्ट लाइब्रेरी: उन्हें कैसे बनाएँ, वर्ज़न करें और नियंत्रित करें</h1><p class="meta">17 अगस्त 2026 · 6 मिनट में पढ़ें · GPT3 Marketing संपादकीय टीम · <a href="#faq">FAQ</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a06.webp" alt="एम्बर रोशनी से चमकते दराज़ों वाला पुराना कार्ड कैटलॉग, जिसमें प्रॉम्प्ट कार्ड हाथ से फ़ाइल किए जा रहे हैं" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">प्रॉम्प्ट लाइब्रेरी टीम के बार-बार होने वाले कंटेंट कामों के लिए परखे हुए प्रॉम्प्ट का एक साझा, वर्ज़न किया गया संग्रह है। अच्छी तरह बनाई जाए तो यह क्राफ़्ट को संजोती है, ताकि गुणवत्ता इस पर निर्भर न रहे कि टाइप कौन कर रहा है। इसे संरचना, नामित ज़िम्मेदार, टेस्ट केस और नियमित समीक्षा चाहिए, और इसके उदाहरण और ऑडियंस इनपुट पुराने पड़ने के लिए छोड़ने के बजाय असली ऑडियंस साक्ष्य से रीफ़्रेश किए जाने चाहिए।</p>
+<h2>टीमों को प्रॉम्प्ट लाइब्रेरी की ज़रूरत क्यों है?</h2>
+<p>इसके बिना हर राइटर अपने प्रॉम्प्ट ख़ुद गढ़ता है। कुछ बेहतरीन होते हैं, ज़्यादातर ठीक-ठाक, कुछ कमज़ोर, और किसी को नहीं पता कि कौन-सा कौन है। गुणवत्ता व्यवस्थागत के बजाय व्यक्तिगत हो जाती है, और जब बेहतरीन राइटर चला जाता है, तो उसका क्राफ़्ट भी उसके साथ चला जाता है।</p>
+<p>हमने 2020 में प्रॉम्प्ट लाइब्रेरी रखना शुरू किया, क्योंकि GPT-3 के प्रॉम्प्ट ट्यून करना महँगा था। प्रोडक्ट विवरण के लिए एक अच्छा फ़्यू-शॉट प्रॉम्प्ट बनाने में दोपहर भर की कोशिशें लग सकती थीं। उसे खो देना बेतुका होता। यह आदत उस कमी के बाद भी बनी रही।</p>
+<h2>हर प्रॉम्प्ट एंट्री में क्या होना चाहिए?</h2>
+<ul>
+<li><strong>नाम और उद्देश्य:</strong> वह कंटेंट काम जिसके लिए यह है।</li>
+<li><strong>प्रॉम्प्ट:</strong> स्पष्ट रूप से चिह्नित परिवर्तनशील स्लॉट के साथ।</li>
+<li><strong>ज़रूरी इनपुट:</strong> ब्रीफ़ के फ़ील्ड, तथ्य, ऑडियंस नोट्स।</li>
+<li><strong>उदाहरण:</strong> दो से पाँच चुने हुए उदाहरण या उदाहरण बैंक के संदर्भ।</li>
+<li><strong>टेस्ट केस:</strong> कुछ ब्रीफ़ जिनके अच्छे आउटपुट पहले से पता हों।</li>
+<li><strong>ज़िम्मेदार और वर्ज़न:</strong> इसे कौन बनाए रखता है और क्या बदला।</li>
+<li><strong>परखे गए मॉडल:</strong> किन मॉडलों और सेटिंग्स पर इसकी पुष्टि हुई है।</li>
+<li><strong>ज्ञात विफलताएँ:</strong> यह आमतौर पर कहाँ ग़लत होता है।</li>
+</ul>
+<h2>लाइब्रेरी की संरचना कैसे बनाएँ?</h2>
+<p>चैनल या व्यक्ति के बजाय कंटेंट काम के अनुसार व्यवस्थित करें। "प्रोडक्ट लॉन्च की घोषणा", "ग्राहक शिकायत का जवाब", "साप्ताहिक न्यूज़लेटर की शुरुआत" आदि। हर काम के चैनल के अनुसार वेरिएंट हो सकते हैं, लेकिन लोग काम के नाम से ही खोजते हैं।</p>
+<p>वॉइस सिस्टम को अलग रखें और उसका हवाला दें, उसे हर प्रॉम्प्ट में कॉपी न करें। जब आवाज़ बदले, तो आप एक ही जगह अपडेट करते हैं। <a href="../brand-voice-system-for-ai/index.html">ब्रांड वॉइस सिस्टम बनाने</a> पर हमारी गाइड बताती है कि उस साझा परत में क्या होता है।</p>
+<h2>प्रॉम्प्ट को वर्ज़न और टेस्ट कैसे करें?</h2>
+<p>प्रॉम्प्ट को कोड की तरह संभालें। हर बदलाव को एक वर्ज़न नंबर और एक लाइन का नोट मिलता है। नया वर्ज़न पुराने की जगह ले, उससे पहले टेस्ट केस चलाएँ और किसी एडिटर से आउटपुट की ब्लाइंड तुलना करवाएँ। जब तक नया वर्ज़न असली इस्तेमाल में ख़ुद को साबित न कर दे, पुराना वर्ज़न उपलब्ध रखें।</p>
+<p>दोबारा टेस्ट करें जब:</p>
+<ol>
+<li>आपका मॉडल प्रोवाइडर अपडेट करे या आप मॉडल बदलें।</li>
+<li>वॉइस सिस्टम बदले।</li>
+<li>ऑडियंस रिसर्च भाषा या चिंताओं में बदलाव दिखाए।</li>
+<li>एडिटर बार-बार एक ही सुधार की बात करें।</li>
+</ol>
+<h2>प्रॉम्प्ट को ठोस आधार पर कैसे बनाए रखें?</h2>
+<p>प्रॉम्प्ट लाइब्रेरी जड़ हो सकती है। जो उदाहरण पिछले साल काम करते थे, वे ऐसी चिंताओं का वर्णन कर सकते हैं जिनसे आपकी ऑडियंस आगे बढ़ चुकी है। हम हर प्रॉम्प्ट के ऑडियंस इनपुट को SOMIN से संचालित एक रीफ़्रेश चक्र से जोड़ते हैं, जो एक AI ऑडियंस-रिसर्च प्लेटफ़ॉर्म और हमारा टेक्नोलॉजी पार्टनर है। इसकी <a href="https://somin.ai/somin-reporting/" rel="noopener">रिपोर्टिंग</a> और लिसनिंग हमें दिखाती है कि कौन-सी थीम और वाक्यांश उभर रहे हैं या फीके पड़ रहे हैं। ब्रांड बातचीत की लगातार लिसनिंग के लिए हमारा सहयोगी ऐप <a href="https://somonitor.ai/" rel="noopener">Somonitor</a> ख़ास तौर पर शेयर ऑफ़ वॉइस और शुरुआती चेतावनी के लिए बना है।</p>
+<blockquote>प्रॉम्प्ट लाइब्रेरी उतनी ही ताज़ा होती है जितना उसके भीतर का ऑडियंस साक्ष्य।</blockquote>
+<h2>इसका संचालन कौन करता है?</h2>
+<p>संचालन भारी-भरकम होना ज़रूरी नहीं। लाइब्रेरी का एक ज़िम्मेदार, हर प्रॉम्प्ट का एक ज़िम्मेदार, इस्तेमाल और एडिट लॉग की मासिक समीक्षा, और एक सरल नियम: कोई भी प्रॉम्प्ट प्रकाशित कंटेंट के लिए तब तक इस्तेमाल न हो जब तक वह अपने टेस्ट केस पास न कर ले। बिना नौकरशाही के गुणवत्ता स्थिर रखने के लिए इतना काफ़ी है।</p>
+<h2>चेकलिस्ट: प्रॉम्प्ट लाइब्रेरी की सेहत</h2>
+<ul>
+<li>कंटेंट काम के अनुसार व्यवस्थित</li>
+<li>हर प्रॉम्प्ट का एक ज़िम्मेदार और वर्ज़न है</li>
+<li>टेस्ट केस मौजूद हैं और बदलाव पर चलाए जाते हैं</li>
+<li>वॉइस सिस्टम का हवाला, दोहराव नहीं</li>
+<li>पिछली तिमाही में रीफ़्रेश किए गए ऑडियंस इनपुट</li>
+<li>परखे गए मॉडलों की सूची</li>
+<li>एडिट लॉग से सुधार होते हैं</li>
+</ul>
+<h2>परिभाषाएँ</h2>
+<ul>
+<li><strong>परिवर्तनशील स्लॉट:</strong> प्रॉम्प्ट में एक प्लेसहोल्डर जो हर इस्तेमाल पर भरा जाता है, जैसे प्रोडक्ट का नाम या ऑडियंस सेगमेंट।</li>
+<li><strong>टेस्ट केस:</strong> एक तय इनपुट जिसका स्वीकार्य आउटपुट पहले से पता हो, प्रॉम्प्ट जाँचने के लिए इस्तेमाल होता है।</li>
+<li><strong>प्रॉम्प्ट ड्रिफ़्ट:</strong> किसी अपरिवर्तित प्रॉम्प्ट के आसपास मॉडल, आवाज़ या ऑडियंस बदलने से आउटपुट की गुणवत्ता में गिरावट।</li>
+</ul>
+<h2>एक उदाहरण</h2>
+<p>एक रिटेल टीम "शिकायत का जवाब" प्रॉम्प्ट रखती है। एडिट लॉग दिखाते हैं कि एडिटर बार-बार शुरुआती लाइन को नरम करते हैं। ज़िम्मेदार व्यक्ति एक पहले-और-बाद वाला उदाहरण और पहले ख़ास समस्या को स्वीकार करने का नियम जोड़ता है, वर्ज़न बढ़ाता है, छह टेस्ट केस चलाता है और उसे लागू कर देता है। बार-बार का एडिट ग़ायब हो जाता है। ऐसे छोटे, दिखाई देने वाले लूप ही समय के साथ लाइब्रेरी को मूल्यवान बनाते हैं।</p>
+<p>किसी ऑडियंस से क्या कहना है यह तय करने से पहले उसे समझने पर आगे पढ़ने के लिए <a href="https://somin.ai/brands-mothercare-sg-case-study/" rel="noopener">Mothercare SG केस स्टडी</a> उपयोगी है। और अगर आप सिंगापुर में साथियों से प्रॉम्प्ट क्राफ़्ट पर बात करना चाहते हैं, तो <a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a> हर हफ़्ते एक असली संकेत के इर्द-गिर्द मार्केटर्स को साथ लाता है।</p><h2>कौन-से टूल इस्तेमाल करने चाहिए?</h2>
+<p>जितना आप सोचते हैं उससे कम। कई असरदार प्रॉम्प्ट लाइब्रेरी किसी साझा डॉक्यूमेंट वर्कस्पेस या एक सरल डेटाबेस में रहती हैं, स्पष्ट नामकरण और वर्ज़न नोट्स के साथ। जब ऑटोमेटेड वर्कफ़्लो के भीतर बहुत-से प्रॉम्प्ट चल रहे हों तो समर्पित प्रॉम्प्ट मैनेजमेंट टूल मदद करते हैं, लेकिन वे ज़िम्मेदारों, टेस्ट केस और समीक्षाओं के अनुशासन की जगह नहीं लेते।</p>
+<p>आप जो भी इस्तेमाल करें, तीन चीज़ें आसान बनाएँ: किसी काम के लिए सही प्रॉम्प्ट ढूँढना, यह देखना कि क्या बदला और क्यों, और किसी समस्या की रिपोर्ट करना। अगर राइटर एक मिनट के भीतर प्रॉम्प्ट नहीं ढूँढ पाते, तो वे अपना ख़ुद लिखेंगे, और लाइब्रेरी बिखरने लगेगी। हर कंटेंट काम की सूची वाला एक छोटा इंडेक्स पेज, जिसमें हर प्रॉम्प्ट के इस्तेमाल के समय पर एक लाइन हो, इसका ज़्यादातर हिस्सा रोक देता है।</p>
+<p>अंत में, प्रॉम्प्ट को हटाना भी संचालन का हिस्सा बनाएँ। बंद हो चुके प्रोडक्ट या पुराने कैंपेन के प्रॉम्प्ट को आर्काइव करना चाहिए, नए टीम सदस्यों को उलझाने के लिए वहीं नहीं छोड़ना चाहिए।</p><h2>लोगों से इसका इस्तेमाल कैसे करवाएँ?</h2><p>अपनाया जाना एक डिज़ाइन समस्या है। लाइब्रेरी वहाँ रखें जहाँ लोग पहले से काम करते हैं, हर प्रॉम्प्ट के लिए पहले-और-बाद की तुलना दिखाएँ ताकि उसका मूल्य साफ़ दिखे, और जब योगदानकर्ताओं के सुधार लागू हों तो उन्हें श्रेय दें। कुछ ही महीनों में लाइब्रेरी इस्तेमाल करना शुरुआत से प्रॉम्प्ट लिखने से तेज़ लगना चाहिए।</p>
+<section id="faq" style="padding:40px 0 0"><h2>अक्सर पूछे जाने वाले प्रश्न</h2><details><summary>प्रॉम्प्ट लाइब्रेरी क्या है?</summary><p>किसी टीम के बार-बार होने वाले कामों के लिए परखे हुए प्रॉम्प्ट का एक साझा, व्यवस्थित संग्रह, जिसमें हर एक के साथ उदाहरण, इस्तेमाल के नोट्स, एक ज़िम्मेदार और वर्ज़न इतिहास होता है।</p></details><details><summary>प्रॉम्प्ट लाइब्रेरी का ज़िम्मेदार कौन होना चाहिए?</summary><p>एक नामित कंटेंट या ऑपरेशंस लीड, और पूरी टीम से योगदानकर्ता। हर प्रॉम्प्ट का भी अपना ज़िम्मेदार होना चाहिए जो टेस्टिंग और अपडेट के लिए जवाबदेह हो।</p></details><details><summary>प्रॉम्प्ट को कितनी बार दोबारा टेस्ट करना चाहिए?</summary><p>बड़े मॉडल अपडेट, वॉइस सिस्टम में बदलाव या ऑडियंस रिसर्च में उल्लेखनीय बदलाव के बाद, और कम से कम हर तिमाही नियमित रूप से।</p></details></section>
+<div class="cta-box"><h2>वॉइस ऑडिट बुक करें</h2><p>हम 2020 में GPT-3 API खुलने वाली गर्मी से ही लैंग्वेज मॉडल के साथ लिख रहे हैं। हम ब्रांड वॉइस सिस्टम, प्रॉम्प्ट लाइब्रेरी और मानव-संपादित कंटेंट ऑपरेशंस बनाते हैं, जो इस पर आधारित होते हैं कि आपकी असली ऑडियंस किस पर प्रतिक्रिया देती है।</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20Prompt%20libraries%3A%20how%20to%20build%2C%20version%20and%20govern%20them%29">ask@gpt3.marketing पर ईमेल करें →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>आगे पढ़ें</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../from-gpt3-to-chatgpt-what-changed/index.html"><img src="../../../assets/img/a05-640.webp" alt="2020 के छोटे टर्मिनल से लेकर शहर की स्काईलाइन पर एक विशाल चमकती चैट विंडो तक स्क्रीनों की टाइमलाइन" width="640" height="427" loading="lazy"><div class="b"><span class="tag">विरासत</span><h3>GPT-3 से ChatGPT तक: मार्केटर्स के लिए वास्तव में क्या बदला</h3><p>GPT-3 API बीटा से आज तक के छह साल: कंटेंट टीमों के लिए क्या बदला, क्या नहीं, और अब क्राफ़्ट ज़्यादा क्यों मायने रखता है।</p><div class="meta" style="margin-top:12px">24 अगस्त 2026 · 7 मिनट में पढ़ें</div></div></a><a class="post-card" href="../authenticity-outlasts-trends/index.html"><img src="../../../assets/img/a07-640.webp" alt="गहरी जड़ों वाला एम्बर पेड़ स्थिर खड़ा है, जबकि ट्रेंड के आकार की पतंगें और कंफ़ेटी उड़ते जा रहे हैं" width="640" height="427" loading="lazy"><div class="b"><span class="tag">रणनीति</span><h3>प्रामाणिकता ट्रेंड से ज़्यादा टिकती है: AI कंटेंट में FOMO के बजाय नैरेटिव</h3><p>AI के साथ ट्रेंड के पीछे भागना ब्रांड्स को तेज़ लेकिन धुंधला बनाता है। एक सुसंगत नैरेटिव का असर क्यों बढ़ता जाता है, और ट्रेंड को उस पर कैसे परखें।</p><div class="meta" style="margin-top:12px">3 अगस्त 2026 · 6 मिनट में पढ़ें</div></div></a><a class="post-card" href="../human-edited-content-at-scale/index.html"><img src="../../../assets/img/a08-640.webp" alt="रेट्रो मशीन से आते कंटेंट कार्ड्स के कन्वेयर पर मानव एडिटर, हर एक को हाथ से अंतिम रूप देते हुए" width="640" height="427" loading="lazy"><div class="b"><span class="tag">संपादकीय</span><h3>बड़े पैमाने पर मानव-संपादित कंटेंट: भूमिकाएँ, लूप और सीमाएँ</h3><p>गुणवत्ता खोए बिना AI की मदद से बने कंटेंट को कैसे बढ़ाएँ: संपादकीय भूमिकाएँ, समीक्षा स्तर, फ़ीडबैक लूप और इंसान सबसे ज़्यादा मूल्य कहाँ जोड़ते हैं।</p><div class="meta" style="margin-top:12px">27 जुलाई 2026 · 6 मिनट में पढ़ें</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing लोगो"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">विरासत वाली जेनरेटिव-AI कंटेंट कंसल्टेंसी, जो ब्रांड्स को अपने जैसा सुनाई देने में मदद करती है।</p>
+<p class="partner">तकनीकी पार्टनर <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">वॉइस ऑडिट बुक करें</a></p>
+<p>ईमेल करें <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">हम क्या करते हैं</a></li><li><a href="../index.html">इनसाइट्स</a></li><li><a href="../../index.html#about">परिचय</a></li><li><a href="../../index.html#faq">अक्सर पूछे जाने वाले प्रश्न</a></li><li><a href="../../../brand/index.html">ब्रांड दिशानिर्देश</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>SOMIN द्वारा संचालित</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">केस स्टडी</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">ब्रांडों के लिए</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">एजेंसियों के लिए</a></li></ul></div>
+</div>
+<h4>नेटवर्क</h4>
+<nav class="network" aria-label="सहयोगी कंपनियाँ"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>एक वास्तविक संकेत, हर सोमवार डिकोड</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>हमेशा चालू लिसनिंग, जिसे आप जाँच सकते हैं</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>पेड ट्रैफ़िक, मुनाफ़े में मापा गया</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>एजेंट बजाते हैं। इंसान संचालन करते हैं।</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>रीज़निंग मॉडल के लिए नए सिरे से गढ़ी गई मार्केटिंग</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>उपभोक्ता मनोविज्ञान और संस्कृति, दक्षिण-पूर्व एशिया के लिए डिकोड</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search, Neural answers, Mentions. एक ही रश।</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · सिंगापुर। GPT3 Marketing एक स्वतंत्र कंसल्टेंसी है और इसका OpenAI से कोई संबंध नहीं है। </p>
+</div></footer>
+</body></html>
