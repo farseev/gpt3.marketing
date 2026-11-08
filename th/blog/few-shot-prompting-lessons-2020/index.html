@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้</title>
+<meta name="description" content="GPT-3 บังคับให้นักเขียนสอนด้วยตัวอย่าง นิสัยแบบ few-shot เหล่านั้นยังคงเป็นเกราะป้องกันที่ดีที่สุดต่อคอนเทนต์ AI ที่ธรรมดาทั่วไปในปี 2026">
+<link rel="canonical" href="https://gpt3.marketing/th/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="ja" href="https://gpt3.marketing/ja/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="ko" href="https://gpt3.marketing/ko/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="th" href="https://gpt3.marketing/th/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้">
+<meta property="og:description" content="few-shot prompting สอนผู้ใช้ GPT-3 ยุคแรกว่าโมเดลเรียนรู้น้ำเสียงจากตัวอย่างได้ดีกว่าจากคำคุณศัพท์มาก">
+<meta property="og:url" content="https://gpt3.marketing/th/blog/few-shot-prompting-lessons-2020/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้, GPT3 Marketing">
+<meta property="og:locale" content="th_TH">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้">
+<meta name="twitter:description" content="few-shot prompting สอนผู้ใช้ GPT-3 ยุคแรกว่าโมเดลเรียนรู้น้ำเสียงจากตัวอย่างได้ดีกว่าจากคำคุณศัพท์มาก">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta name="twitter:image:alt" content="สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้, GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-10-05"><meta property="article:section" content="ฝีมือการเขียนพรอมต์"><meta name="keywords" content="few-shot prompting, GPT-3, prompt craft, brand voice, AI content">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="บล็อก GPT3 Marketing" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans Thai',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans Thai',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้","description":"GPT-3 บังคับให้นักเขียนสอนด้วยตัวอย่าง นิสัยแบบ few-shot เหล่านั้นยังคงเป็นเกราะป้องกันที่ดีที่สุดต่อคอนเทนต์ AI ที่ธรรมดาทั่วไปในปี 2026","datePublished":"2026-10-05","dateModified":"2026-10-05","image":["https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg","https://gpt3.marketing/assets/img/a01.webp"],"url":"https://gpt3.marketing/th/blog/few-shot-prompting-lessons-2020/","mainEntityOfPage":"https://gpt3.marketing/th/blog/few-shot-prompting-lessons-2020/","keywords":"few-shot prompting, GPT-3, prompt craft, brand voice, AI content","articleSection":"ฝีมือการเขียนพรอมต์","inLanguage":"th","wordCount":1028,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/th/"},{"@type":"ListItem","position":2,"name":"บล็อก","item":"https://gpt3.marketing/th/blog/"},{"@type":"ListItem","position":3,"name":"สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้","item":"https://gpt3.marketing/th/blog/few-shot-prompting-lessons-2020/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"few-shot prompting คืออะไร?","acceptedAnswer":{"@type":"Answer","text":"few-shot prompting หมายถึงการให้ตัวอย่างจริงของงานจำนวนเล็กน้อยแก่โมเดลภาษาภายในพรอมต์ เพื่อให้มันอนุมานรูปแบบและทำต่อ งานวิจัย GPT-3 ในปี 2020 ทำให้คำนี้เป็นที่นิยม"}},{"@type":"Question","name":"few-shot prompting ยังมีประโยชน์กับโมเดลยุคใหม่หรือไม่?","acceptedAnswer":{"@type":"Answer","text":"มี โมเดลที่ผ่านการปรับจูนด้วยคำสั่งทำตามคำขอธรรมดาได้ แต่ตัวอย่างยังคงเป็นวิธีที่แม่นยำที่สุดในการถ่ายทอดน้ำเสียง โครงสร้าง หรือระดับรายละเอียดที่เฉพาะเจาะจง คำสั่งบรรยาย ตัวอย่างสาธิต"}},{"@type":"Question","name":"พรอมต์สำหรับคอนเทนต์ควรมีตัวอย่างกี่ชิ้น?","acceptedAnswer":{"@type":"Answer","text":"โดยทั่วไปสองถึงห้าชิ้นที่แข็งแรงและหลากหลาย น้อยเกินไปโมเดลจะลอกชิ้นเดียวมากเกินไป มากเกินไปก็จะเบียดบรีฟออกไป คุณภาพและความหลากหลายสำคัญกว่าจำนวน"}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">ข้ามไปยังเนื้อหา</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="หน้าแรก GPT3 Marketing"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="โลโก้ GPT3 Marketing"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="หลัก"><a href="../../index.html#work">ผลงาน</a><a href="../../index.html#services">สิ่งที่เราทำ</a><a href="../index.html">อินไซต์</a><a href="../../index.html#faq">คำถามที่พบบ่อย</a><a href="../../../brand/index.html">แบรนด์</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">จองการตรวจสอบน้ำเสียงแบรนด์</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="ภาษา: ไทย"><span>ไทย</span></summary><ul><li><a href="../../../blog/few-shot-prompting-lessons-2020/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/few-shot-prompting-lessons-2020/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="../../../zh-hant/blog/few-shot-prompting-lessons-2020/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="../../../ja/blog/few-shot-prompting-lessons-2020/index.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="../../../ko/blog/few-shot-prompting-lessons-2020/index.html" hreflang="ko" lang="ko">한국어</a></li><li><a href="index.html" hreflang="th" lang="th" aria-current="page">ไทย</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="เส้นทางนำทาง"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">บล็อก</a> / ฝีมือการเขียนพรอมต์</nav>
+<h1 style="margin-top:18px">สิ่งที่ few-shot prompting ในปี 2020 ยังสอนทีมคอนเทนต์ได้</h1><p class="meta">5 ต.ค. 2026 · อ่าน 6 นาที · ทีมบรรณาธิการ GPT3 Marketing · <a href="#faq">คำถามที่พบบ่อย</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a01.webp" alt="เทอร์มินัลย้อนยุคปี 2020 ที่มีบล็อกตัวอย่างซ้อนกันป้อนเข้าสู่เคอร์เซอร์สีอำพันที่เรืองแสง" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">few-shot prompting สอนผู้ใช้ GPT-3 ยุคแรกว่าโมเดลเรียนรู้น้ำเสียงจากตัวอย่างได้ดีกว่าจากคำคุณศัพท์มาก ในปี 2026 ที่โมเดลทำตามคำสั่งได้อย่างลื่นไหล บทเรียนนี้ยังใช้ได้ ทีมที่ป้อนตัวอย่างที่คัดสรรและยึดกลุ่มเป้าหมายให้โมเดลจะได้คอนเทนต์ที่โดดเด่น ส่วนทีมที่แค่บรรยายโทนจะได้ข้อความเฉลี่ยแบบเดียวกับคนอื่น</p>
+<h2>การเขียนด้วย GPT-3 ในปี 2020 เป็นอย่างไรจริง ๆ?</h2>
+<p>ในเดือนพฤษภาคม 2020 OpenAI เผยแพร่งานวิจัย "Language Models are Few-Shot Learners" ซึ่งอธิบาย GPT-3 โมเดลขนาด 175 พันล้านพารามิเตอร์ ข้อเสนอหลักคือโมเดลที่ใหญ่พอสามารถเรียนรู้งานได้จากตัวอย่างไม่กี่ชิ้นที่ใส่ไว้ในพรอมต์ โดยไม่ต้องฝึกใหม่ ในเดือนมิถุนายน 2020 API เปิดให้ทดลองใช้แบบเบตาส่วนตัว และฤดูร้อนนั้นคือช่วงที่ GPT3 Marketing เริ่มทำงานกับมัน</p>
+<p>ตอนนั้นไม่มีหน้าต่างแชท คุณเขียนพรอมต์ที่ดูเหมือนจุดเริ่มต้นของเอกสาร ได้แก่ ตัวอย่างคำอธิบายสินค้าสามหรือสี่ชิ้น แต่ละชิ้นมีอินพุตสั้น ๆ และผลลัพธ์ที่เสร็จแล้ว ตามด้วยอินพุตใหม่และช่องว่าง โมเดลจะต่อรูปแบบนั้น หากตัวอย่างจืดชืด ผลลัพธ์ก็จืดชืด หากตัวอย่างชิ้นหนึ่งยาวกว่าชิ้นอื่นมาก ผลลัพธ์ก็จะยาวขึ้นเรื่อย ๆ ทุกความแปลกในตัวอย่างจะปรากฏในผลลัพธ์แบบขยายใหญ่</p>
+<p>เป็นวิธีทำงานที่เรียกร้องมาก และบังคับให้เกิดวินัยที่ทีมส่วนใหญ่ทิ้งไปเมื่ออินเทอร์เฟซแชทมาถึงในเดือนพฤศจิกายน 2022</p>
+<h2>ทำไมตัวอย่างจึงดีกว่าคำคุณศัพท์?</h2>
+<p>ขอให้โมเดลยุคใหม่เขียนด้วยน้ำเสียงที่ "อบอุ่น มั่นใจ และมีไหวพริบ" แล้วคุณจะได้งานที่อบอุ่น มั่นใจ และมีไหวพริบแบบเดียวกับแบรนด์อื่นอีกหลายพันแบรนด์ คำคุณศัพท์เหล่านั้นอยู่ในคู่มือแบรนด์ทุกเล่ม โมเดลเคยเห็นมันติดอยู่กับข้อความหลากหลายมหาศาล และคืนค่าตรงกลางของช่วงนั้นออกมา</p>
+<p>ตัวอย่างบรรจุข้อมูลที่คำคุณศัพท์บรรจุไม่ได้ ได้แก่ ความยาวประโยค มุกตลกตกตรงไหน คำไหนที่คุณไม่เคยใช้ คุณรับมือกับคำร้องเรียนอย่างไร และคุณเขียนว่า "เรา" หรือ "ทีมงาน" ตัวอย่างที่ดีคือคู่มือน้ำเสียงฉบับย่อ นั่นคือเหตุผลที่<a href="../brand-voice-system-for-ai/index.html">ระบบน้ำเสียงแบรนด์</a>ของเราสร้างรอบตัวอย่างจริง ไม่ใช่คำบรรยายโทน</p>
+<blockquote>คำสั่งบรรยายสิ่งที่คุณต้องการ ตัวอย่างพิสูจน์มัน โมเดลเชื่อถือหลักฐาน</blockquote>
+<h2>นิสัยจากปี 2020 ข้อใดที่ควรเก็บไว้?</h2>
+<h3>1. คัดสรรตัวอย่างเหมือนพอร์ตโฟลิโอ</h3>
+<p>ในปี 2020 ทุกตัวอย่างมีต้นทุนเป็นโทเคนและเงิน เราจึงเลือกอย่างระมัดระวัง วันนี้บริบทมีราคาถูก และทีมวางทั้งคลังเอกสารลงไป มากกว่าไม่ได้แปลว่าดีกว่า เลือกชิ้นที่สะท้อนน้ำเสียงในแบบที่แข็งแรงและเฉพาะเจาะจงที่สุด และกระจายให้หลากหลายรูปแบบ เพื่อให้โมเดลเรียนรู้น้ำเสียง ไม่ใช่เทมเพลตเดียว</p>
+<h3>2. ทำให้รูปแบบชัดแจ้ง</h3>
+<p>พรอมต์แบบ few-shot ได้ผลดีที่สุดเมื่อมีโครงสร้างสม่ำเสมอ ได้แก่ อินพุตที่ติดป้าย ผลลัพธ์ที่ติดป้าย และตัวคั่นที่ชัดเจน หลักการเดียวกันนี้ใช้กับพรอมต์ยุคใหม่ แสดงให้โมเดลเห็นว่าอะไรเข้าและอะไรออก เพื่อให้รู้ว่าส่วนใดของตัวอย่างคือน้ำเสียงที่ตายตัว และส่วนใดคือเนื้อหาที่เปลี่ยนได้</p>
+<h3>3. อ่านทุกผลลัพธ์ในฐานะบรรณาธิการ</h3>
+<p>ไม่มีใครเผยแพร่ข้อความดิบจาก GPT-3 มันหลุดประเด็น พูดซ้ำ และบางครั้งก็แต่งข้อเท็จจริงขึ้นมาอย่างมั่นใจเต็มที่ โมเดลยุคใหม่ดีกว่ามาก แต่นิสัยของบรรณาธิการยังคงเป็นการควบคุมคุณภาพที่ถูกที่สุด เราอธิบายรายละเอียดเพิ่มเติมใน<a href="../why-ai-drafts-need-heavy-editing/index.html">ทำไมร่างจาก AI ยังต้องแก้หนัก</a></p>
+<h3>4. ถือว่าพรอมต์เป็นสินทรัพย์</h3>
+<p>พรอมต์แบบ few-shot ที่ดีใช้เวลาปรับจูนหลายชั่วโมง เราจึงจัดเวอร์ชัน จัดทำเอกสาร และนำกลับมาใช้ซ้ำ สิ่งนี้พัฒนามาเป็นแนวปฏิบัติด้านคลังพรอมต์ที่เราดำเนินการให้ลูกค้าในวันนี้</p>
+<h2>ตัวอย่างควรมาจากไหน?</h2>
+<p>นี่คือจุดที่ปี 2026 ต่างจากปี 2020 สมัยนั้นตัวอย่างมาจากคลังผลงานของแบรนด์เอง ปัญหาคือคลังผลงานสะท้อนสิ่งที่แบรนด์อยากพูด ไม่จำเป็นต้องเป็นสิ่งที่กลุ่มเป้าหมายตอบสนอง หากตัวอย่างที่ดีที่สุดของคุณคือโพสต์โปรดของคุณเอง โมเดลจะเรียนรู้ความชอบของคุณ ไม่ใช่ของกลุ่มเป้าหมาย</p>
+<p>ตอนนี้เราวางฐานการเลือกตัวอย่างบนหลักฐานด้านกลุ่มเป้าหมาย ด้วย<a href="https://somin.ai/somin-strategy/" rel="noopener">เครื่องมือด้านกลยุทธ์ของ SOMIN</a> ซึ่ง SOMIN เป็นแพลตฟอร์มวิจัยกลุ่มเป้าหมายด้วย AI เราดูบทสนทนารอบหมวดสินค้า ได้แก่ วลีที่ผู้คนใช้จริง ความตึงเครียดที่พวกเขาพูดถึง และโทนที่ได้รับการตอบกลับแทนการเลื่อนผ่าน จากนั้นเราเลือกหรือเขียนตัวอย่างที่พูดถึงรายละเอียดเหล่านั้น โมเดลจะได้รับทั้งน้ำเสียงของแบรนด์และคำศัพท์ของกลุ่มเป้าหมายในเวลาเดียวกัน</p>
+<p><a href="https://somin.ai/brands-fujifilm-case-study/" rel="noopener">กรณีศึกษา Fujifilm</a> เป็นบทความอ่านเพิ่มเติมที่มีประโยชน์เรื่องอินไซต์กลุ่มเป้าหมายกำหนดสิ่งที่แบรนด์พูดอย่างไร ก่อนที่ใครจะแตะถ้อยคำ</p>
+<h2>ตัวอย่างจริง: สินค้าไลน์เดียว สองพรอมต์</h2>
+<p>ลองนึกภาพแบรนด์สกินแคร์ที่เขียนคำอธิบายสำหรับเซรั่มตัวใหม่</p>
+<ul>
+<li><strong>พรอมต์ A</strong> เขียนว่า: "เขียนคำอธิบายสินค้าที่อบอุ่นและเชี่ยวชาญสำหรับเซรั่มวิตามินซีตัวใหม่ของเรา โทนของเราเป็นมิตรและยึดหลักวิทยาศาสตร์"</li>
+<li><strong>พรอมต์ B</strong> ใส่คำอธิบายเก่าสามชิ้นที่ได้ผลดี แต่ละชิ้นจับคู่กับบรีฟของมัน บวกบันทึกสั้น ๆ ของวลีที่กลุ่มเป้าหมายใช้พูดถึงปัญหา (เช่น วิธีที่พวกเขาบรรยายผิวหมองคล้ำหรือผิวแพ้ง่ายด้วยคำพูดของตัวเอง) แล้วตามด้วยบรีฟใหม่</li>
+</ul>
+<p>พรอมต์ A ได้ข้อความที่ใช้ได้แต่อาจเป็นของแบรนด์ไหนบนชั้นวางก็ได้ พรอมต์ B ได้ข้อความที่มีจังหวะของแบรนด์และภาษาของกลุ่มเป้าหมาย ความต่างไม่ได้อยู่ที่คุณภาพของโมเดล แต่อยู่ที่คุณภาพของข้อมูลป้อนเข้า</p>
+<h2>เช็กลิสต์: พรอมต์แบบ few-shot สำหรับคอนเทนต์แบรนด์</h2>
+<ul>
+<li>ตัวอย่างสองถึงห้าชิ้น หลากหลายทั้งรูปแบบและความยาว</li>
+<li>แต่ละตัวอย่างจับคู่กับบรีฟที่สร้างมันขึ้นมา</li>
+<li>ป้ายกำกับและตัวคั่นที่สม่ำเสมอ</li>
+<li>รายการสั้น ๆ ของวลีและความตึงเครียดของกลุ่มเป้าหมาย ที่มาจากบทสนทนาจริง</li>
+<li>รายการสั้น ๆ ของสิ่งที่แบรนด์ไม่เคยพูด</li>
+<li>ผู้ตรวจสอบผลงานที่เป็นมนุษย์ซึ่งระบุชื่อชัดเจน</li>
+</ul>
+<h2>คำจำกัดความ</h2>
+<ul>
+<li><strong>Zero-shot:</strong> การขอให้โมเดลทำงานด้วยคำสั่งเพียงอย่างเดียว</li>
+<li><strong>Few-shot:</strong> การใส่ตัวอย่างจริงจำนวนเล็กน้อยไว้ในพรอมต์</li>
+<li><strong>In-context learning:</strong> การที่โมเดลปรับตัวตามรูปแบบในพรอมต์โดยไม่เปลี่ยนค่าน้ำหนัก</li>
+</ul>
+<h2>ทำไมเรื่องนี้จึงสำคัญในตอนนี้</h2>
+<p>เมื่อทุกคนเข้าถึงโมเดลเดียวกันได้ ความได้เปรียบก็ย้ายไปอยู่ที่ข้อมูลป้อนเข้า วินัยแบบ few-shot เกิดจากความขาดแคลนในปี 2020 ในปี 2026 มันคือทางหลุดพ้นจากความซ้ำซาก หากคุณอยากเห็นว่าสัญญาณจากกลุ่มเป้าหมายกำลังกลายเป็นการตัดสินใจด้านการตลาดเชิงปฏิบัติในที่อื่นอย่างไร ตอนรายสัปดาห์ของ <a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a> ถอดรหัสสัญญาณจริงทีละเรื่อง ซึ่งเป็นนิสัยที่ดีที่จะใช้คู่กับพรอมต์ที่คมขึ้น</p>
+<p>แบรนด์ที่ฟังโดดเด่นเมื่อใช้ AI มักไม่ใช่แบรนด์ที่มีคำสั่งฉลาดที่สุด แต่เป็นแบรนด์ที่มีตัวอย่างดีที่สุด ซึ่งเลือกโดยคำนึงถึงกลุ่มเป้าหมาย</p>
+<section id="faq" style="padding:40px 0 0"><h2>คำถามที่พบบ่อย</h2><details><summary>few-shot prompting คืออะไร?</summary><p>few-shot prompting หมายถึงการให้ตัวอย่างจริงของงานจำนวนเล็กน้อยแก่โมเดลภาษาภายในพรอมต์ เพื่อให้มันอนุมานรูปแบบและทำต่อ งานวิจัย GPT-3 ในปี 2020 ทำให้คำนี้เป็นที่นิยม</p></details><details><summary>few-shot prompting ยังมีประโยชน์กับโมเดลยุคใหม่หรือไม่?</summary><p>มี โมเดลที่ผ่านการปรับจูนด้วยคำสั่งทำตามคำขอธรรมดาได้ แต่ตัวอย่างยังคงเป็นวิธีที่แม่นยำที่สุดในการถ่ายทอดน้ำเสียง โครงสร้าง หรือระดับรายละเอียดที่เฉพาะเจาะจง คำสั่งบรรยาย ตัวอย่างสาธิต</p></details><details><summary>พรอมต์สำหรับคอนเทนต์ควรมีตัวอย่างกี่ชิ้น?</summary><p>โดยทั่วไปสองถึงห้าชิ้นที่แข็งแรงและหลากหลาย น้อยเกินไปโมเดลจะลอกชิ้นเดียวมากเกินไป มากเกินไปก็จะเบียดบรีฟออกไป คุณภาพและความหลากหลายสำคัญกว่าจำนวน</p></details></section>
+<div class="cta-box"><h2>จองการตรวจสอบน้ำเสียงแบรนด์</h2><p>เราเขียนด้วยโมเดลภาษามาตั้งแต่ฤดูร้อนที่ GPT-3 API เปิดให้ใช้ในปี 2020 เราสร้างระบบน้ำเสียงแบรนด์ คลังพรอมต์ และการดำเนินงานด้านคอนเทนต์ที่มนุษย์ตรวจแก้ โดยยึดสิ่งที่กลุ่มเป้าหมายจริงของคุณตอบสนองเป็นฐาน</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20What%20few-shot%20prompting%20in%202020%20still%20teaches%20content%20teams%29">อีเมล ask@gpt3.marketing →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>อ่านต่อ</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../why-ai-content-sounds-the-same/index.html"><img src="../../../assets/img/a02-640.webp" alt="ตารางกรอบคำพูดสีเทาที่เหมือนกันทั้งหมด มีกรอบสีอำพันหนึ่งกรอบที่โดดเด่นออกมา" width="640" height="427" loading="lazy"><div class="b"><span class="tag">น้ำเสียงแบรนด์</span><h3>ทำไมคอนเทนต์ AI จึงฟังดูเหมือนกันหมด และจะหลุดพ้นอย่างไร</h3><p>ข้อความ AI ที่ธรรมดาทั่วไปมาจากข้อมูลป้อนเข้าที่ถูกเฉลี่ย ไม่ใช่จากโมเดลที่แย่ นี่คือวิธีวินิจฉัยความซ้ำซากและสร้างน้ำเสียงที่กลุ่มเป้าหมายจดจำได้ขึ้นใหม่</p><div class="meta" style="margin-top:12px">28 ก.ย. 2026 · อ่าน 6 นาที</div></div></a><a class="post-card" href="../brand-voice-system-for-ai/index.html"><img src="../../../assets/img/a03-640.webp" alt="คอนโซลย้อนยุคที่มีปุ่มหมุนปรับคลื่นเสียงให้เป็นรูปทรงที่ชัดเจน สื่อถึงระบบน้ำเสียงแบรนด์" width="640" height="427" loading="lazy"><div class="b"><span class="tag">น้ำเสียงแบรนด์</span><h3>วิธีสร้างระบบน้ำเสียงแบรนด์ที่ AI ทำตามได้</h3><p>ระบบน้ำเสียงแบรนด์สำหรับยุค AI ได้แก่ หลักการ คำศัพท์ ตัวอย่าง และคำสั่งที่พร้อมใช้กับโมเดล ซึ่งทั้งนักเขียนและโมเดลของคุณใช้ร่วมกัน</p><div class="meta" style="margin-top:12px">14 ก.ย. 2026 · อ่าน 7 นาที</div></div></a><a class="post-card" href="../why-ai-drafts-need-heavy-editing/index.html"><img src="../../../assets/img/a04-640.webp" alt="ดินสอบรรณาธิการและรอยแก้สีอำพันบนกระดาษเปล่าที่ไหลออกจากเครื่องพิมพ์เทอร์มินัลย้อนยุค" width="640" height="427" loading="lazy"><div class="b"><span class="tag">งานบรรณาธิการ</span><h3>ทำไมร่างจาก AI ยังต้องแก้หนัก และจะลดการแก้ได้อย่างไร</h3><p>การแก้ร่างจาก AI อย่างหนักมักเป็นปัญหาที่ข้อมูลป้อนเข้า เวลาแก้ไขหมดไปกับอะไร และจะย้ายความพยายามไปต้นน้ำได้อย่างไร</p><div class="meta" style="margin-top:12px">7 ก.ย. 2026 · อ่าน 6 นาที</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="โลโก้ GPT3 Marketing"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">ที่ปรึกษาคอนเทนต์ Generative AI รุ่นบุกเบิกที่ช่วยให้แบรนด์ยังฟังเป็นตัวเอง</p>
+<p class="partner">พาร์ทเนอร์ด้านเทคโนโลยี <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">จองการตรวจสอบน้ำเสียงแบรนด์</a></p>
+<p>อีเมล <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">สิ่งที่เราทำ</a></li><li><a href="../index.html">อินไซต์</a></li><li><a href="../../index.html#about">เกี่ยวกับเรา</a></li><li><a href="../../index.html#faq">คำถามที่พบบ่อย</a></li><li><a href="../../../brand/index.html">แนวทางแบรนด์</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>ขับเคลื่อนโดย SOMIN</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">กรณีศึกษา</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">สำหรับแบรนด์</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">สำหรับเอเจนซี</a></li></ul></div>
+</div>
+<h4>เครือข่าย</h4>
+<nav class="network" aria-label="บริษัทในเครือ"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>สัญญาณจริงหนึ่งเรื่อง ถอดรหัสทุกวันจันทร์</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>การรับฟังตลอดเวลาที่คุณตรวจสอบได้</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>ทราฟฟิกแบบเสียเงิน วัดผลด้วยกำไร</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>เอเจนต์บรรเลง มนุษย์อำนวยเพลง</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>การตลาดที่ออกแบบใหม่สำหรับโมเดลการให้เหตุผล</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>จิตวิทยาผู้บริโภคและวัฒนธรรม ถอดรหัสเพื่อเอเชียตะวันออกเฉียงใต้</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search, Neural answers, Mentions ในจังหวะเดียว</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · สิงคโปร์ GPT3 Marketing เป็นที่ปรึกษาอิสระ และไม่มีความเกี่ยวข้องกับ OpenAI </p>
+</div></footer>
+</body></html>
