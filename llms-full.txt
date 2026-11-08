@@ -214,7 +214,7 @@ Give editors a voice checklist alongside the grammar check, and empower them to 
 
 A B2B software brand writes: "Experience seamless collaboration with our powerful new dashboard." Audience research shows their users complain, in their own words, about chasing three people for one number before Monday's meeting. The rewrite: "One number, before Monday, without chasing three people." Same feature. One version could be anyone's; the other could only be theirs, because it borrows the audience's own frustration.
 
-That rewrite did not need a better model. It needed better evidence. The SAMY case study (https://somin.ai/agencies-samy-case-study/) is useful further reading on how agencies use audience insight to shape creative direction.
+That rewrite did not need a better model. It needed better evidence. SOMIN's agency case studies (https://somin.ai/cases-ai-marketing-strategy/) are useful further reading on how agencies use audience insight to shape creative direction.
 
 ## Definitions
 
