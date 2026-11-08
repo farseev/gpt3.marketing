@@ -48,6 +48,7 @@
 - [Français](https://gpt3.marketing/fr/) · [blog](https://gpt3.marketing/fr/blog/) (10 articles translated)
 - [Deutsch](https://gpt3.marketing/de/) · [blog](https://gpt3.marketing/de/blog/) (10 articles translated)
 - [Português](https://gpt3.marketing/pt/) · [blog](https://gpt3.marketing/pt/blog/) (10 articles translated)
+- [العربية](https://gpt3.marketing/ar/) · [blog](https://gpt3.marketing/ar/blog/) (10 articles translated)
 
 ## FAQ
 - **What is GPT3 Marketing?** GPT3 Marketing is a generative-AI content consultancy established in 2020, when OpenAI opened its GPT-3 API. We build brand voice systems, prompt libraries and human-edited content workflows. Our technology partner, SOMIN, grounds that work in real audience conversations so AI-assisted content stays distinctive rather than generic.
