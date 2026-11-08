@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2020 年的少樣本提示，至今仍能教給內容團隊什麼</title>
+<meta name="description" content="GPT-3 迫使寫作者以範例來教導模型。這些少樣本的習慣，至今在 2026 年仍是對抗千篇一律之 AI 內容的最佳防線。">
+<link rel="canonical" href="https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2020 年的少樣本提示，至今仍能教給內容團隊什麼">
+<meta property="og:description" content="少樣本提示讓早期的 GPT-3 使用者明白，模型從範例學習品牌語調的效果，遠勝於從形容詞學習。">
+<meta property="og:url" content="https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="2020 年的少樣本提示，至今仍能教給內容團隊什麼，GPT3 Marketing">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2020 年的少樣本提示，至今仍能教給內容團隊什麼">
+<meta name="twitter:description" content="少樣本提示讓早期的 GPT-3 使用者明白，模型從範例學習品牌語調的效果，遠勝於從形容詞學習。">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta name="twitter:image:alt" content="2020 年的少樣本提示，至今仍能教給內容團隊什麼，GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-10-05"><meta property="article:section" content="提示詞技巧"><meta name="keywords" content="few-shot prompting, GPT-3, prompt craft, brand voice, AI content">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketing 部落格" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans TC',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans TC',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"2020 年的少樣本提示，至今仍能教給內容團隊什麼","description":"GPT-3 迫使寫作者以範例來教導模型。這些少樣本的習慣，至今在 2026 年仍是對抗千篇一律之 AI 內容的最佳防線。","datePublished":"2026-10-05","dateModified":"2026-10-05","image":["https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg","https://gpt3.marketing/assets/img/a01.webp"],"url":"https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/","mainEntityOfPage":"https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/","keywords":"few-shot prompting, GPT-3, prompt craft, brand voice, AI content","articleSection":"提示詞技巧","inLanguage":"zh-Hant","wordCount":1028,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/zh-hant/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://gpt3.marketing/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"2020 年的少樣本提示，至今仍能教給內容團隊什麼","item":"https://gpt3.marketing/zh-hant/blog/few-shot-prompting-lessons-2020/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"什麼是少樣本提示？","acceptedAnswer":{"@type":"Answer","text":"少樣本提示是指在提示詞中提供語言模型少量的任務實際範例，讓它推斷出模式並加以延續。這個詞因 2020 年的 GPT-3 論文而廣為流行。"}},{"@type":"Question","name":"少樣本提示對現代模型仍然有用嗎？","acceptedAnswer":{"@type":"Answer","text":"有用。經過指令調校的模型能遵循一般的請求，但要傳達特定的語調、結構或細節程度，範例仍是最精確的方式。指令負責描述，範例負責示範。"}},{"@type":"Question","name":"內容提示詞應該包含多少則範例？","acceptedAnswer":{"@type":"Answer","text":"通常是二到五則有力且多樣的範例。太少，模型會過度模仿其中一則；太多，則會擠壓到簡報。品質與多樣性比數量更重要。"}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketing 首頁"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 標誌"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="主選單"><a href="../../index.html#work">案例</a><a href="../../index.html#services">我們的工作</a><a href="../index.html">洞察</a><a href="../../index.html#faq">常見問題</a><a href="../../../brand/index.html">品牌</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">預約品牌語調稽核</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="語言: 繁體中文"><span>繁中</span></summary><ul><li><a href="../../../blog/few-shot-prompting-lessons-2020/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/few-shot-prompting-lessons-2020/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="index.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="導覽路徑"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">部落格</a> / 提示詞技巧</nav>
+<h1 style="margin-top:18px">2020 年的少樣本提示，至今仍能教給內容團隊什麼</h1><p class="meta">2026 年 10 月 5 日 · 閱讀時間 6 分鐘 · GPT3 Marketing 編輯團隊 · <a href="#faq">常見問題</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a01.webp" alt="2020 年的復古終端機，層層堆疊的範例區塊匯入一個發著琥珀色光芒的游標" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">少樣本提示讓早期的 GPT-3 使用者明白，模型從範例學習品牌語調的效果，遠勝於從形容詞學習。到了 2026 年，即使模型已能流暢遵循指令，這個教訓依然成立：為模型提供精選且以受眾為基礎之範例的團隊，能得到獨特的內容；只描述自身語氣的團隊，得到的則是和其他人一樣的平均文案。</p>
+<h2>2020 年用 GPT-3 寫作，實際上是什麼樣子？</h2>
+<p>2020 年 5 月，OpenAI 發表了〈Language Models are Few-Shot Learners〉，這篇論文描述了擁有 1,750 億個參數的 GPT-3 模型。它的核心主張是：夠大的模型只需在提示詞中放入少數幾個範例，就能學會一項任務，無需重新訓練。2020 年 6 月，API 以私人測試版的形式開放，GPT3 Marketing 就在那個夏天開始使用它。</p>
+<p>當時沒有聊天視窗。您寫的提示詞看起來就像一份文件的開頭：三、四則範例產品描述，每則都有簡短的輸入與完成的輸出，接著是一個新的輸入和一段空白。模型會延續這個模式。如果您的範例平淡，輸出就平淡；如果其中一則範例比其他的長得多，輸出就會越寫越長。範例中的每一個怪癖，都會被放大呈現在結果裡。</p>
+<p>這是一種要求很高的工作方式，它強迫人養成一種紀律，而大多數團隊在 2022 年 11 月聊天介面出現後就失去了這種紀律。</p>
+<h2>為什麼範例勝過形容詞？</h2>
+<p>請現代模型用「溫暖、自信又風趣」的語調寫作，您會得到一段溫暖、自信又風趣的文字，就和成千上萬個其他品牌一樣。這些形容詞出現在每一本品牌手冊裡。模型看過它們被套用在各式各樣的文本上，於是回傳那個範圍的中心值。</p>
+<p>範例承載了形容詞無法傳達的資訊：句子長度、笑點落在哪裡、哪些字您從來不用、您如何處理客訴、您寫「我們」還是「團隊」。一則好的範例就是一份濃縮的品牌語調指南。這就是為什麼我們的<a href="../brand-voice-system-for-ai/index.html">品牌語調系統</a>是圍繞實際範例、而不是語氣描述詞打造的。</p>
+<blockquote>指令描述您要什麼，範例則證明它。模型相信證據。</blockquote>
+<h2>哪些 2020 年的習慣值得保留？</h2>
+<h3>1. 像策展作品集一樣精選範例</h3>
+<p>在 2020 年，每一則範例都要花費 token 和金錢，所以我們謹慎挑選。如今上下文很便宜，團隊會把整個資料庫都貼進去。但多不代表好。請挑選最能代表品牌語調最強烈、最具體一面的作品，並在不同格式間變化，讓模型學到的是品牌語調，而不是某一個範本。</p>
+<h3>2. 讓模式清楚明確</h3>
+<p>少樣本提示詞在結構一致時效果最好：標記清楚的輸入、標記清楚的輸出、明確的分隔符號。同樣的原則也適用於現代的提示詞。讓模型看到輸入什麼、輸出什麼，它才知道範例中哪些部分是固定的品牌語調，哪些是可變的內容。</p>
+<h3>3. 以編輯的眼光閱讀每一則輸出</h3>
+<p>沒有人會直接發布 GPT-3 的原始文字。它會偏離、會重複，偶爾還會信心滿滿地捏造事實。現代模型已經好得多，但編輯的習慣仍是最便宜的品質控管。我們在<a href="../why-ai-drafts-need-heavy-editing/index.html">為什麼 AI 草稿仍需大幅編輯</a>一文中有更詳細的說明。</p>
+<h3>4. 把提示詞當作資產</h3>
+<p>一個好的少樣本提示詞要花好幾個小時調校，所以我們為它建立版本、撰寫文件並重複使用。這逐漸演變成我們如今為客戶執行的提示詞庫做法。</p>
+<h2>範例應該從哪裡來？</h2>
+<p>這正是 2026 年與 2020 年的不同之處。當時，範例來自品牌自己的資料庫。問題在於，資料庫反映的是品牌想說的話，不一定是受眾有反應的內容。如果您最好的範例是自己最喜歡的貼文，模型學到的就是您的偏好，而不是受眾的偏好。</p>
+<p>我們現在以受眾證據作為挑選範例的依據。我們運用 AI 受眾研究平台 SOMIN 的<a href="https://somin.ai/somin-strategy/" rel="noopener">策略工具</a>，觀察圍繞某個品類的對話：人們實際使用的措辭、他們表達的張力，以及能贏得回覆而非被滑過的語氣。接著，我們挑選或撰寫針對這些具體細節的範例。模型便能同時承襲品牌的語調與受眾的詞彙。</p>
+<p><a href="https://somin.ai/brands-fujifilm-case-study/" rel="noopener">Fujifilm 案例</a>是很實用的延伸閱讀，說明在任何人動筆之前，受眾洞察如何形塑品牌要說的話。</p>
+<h2>實例說明：一條產品線，兩種提示詞</h2>
+<p>想像一個保養品品牌正在為一款新精華液撰寫產品描述。</p>
+<ul>
+<li><strong>提示詞 A</strong> 寫道：「為我們的新維他命 C 精華液寫一段溫暖、專業的產品描述。我們的語氣友善且以科學為本。」</li>
+<li><strong>提示詞 B</strong> 則納入三則過去表現良好的產品描述，每則都搭配其簡報，再加上一小段受眾談論這個問題時所用措辭的筆記（例如他們如何用自己的話描述暗沉或敏感），最後才是新的簡報。</li>
+</ul>
+<p>提示詞 A 回傳的是合格的文案，放在貨架上任何一個品牌都適用。提示詞 B 回傳的文案則帶有品牌的節奏與受眾的語言。差別不在模型品質，而在輸入品質。</p>
+<h2>檢查清單：品牌內容的少樣本提示詞</h2>
+<ul>
+<li>二到五則範例，格式與長度各有不同</li>
+<li>每則範例都搭配產生它的簡報</li>
+<li>一致的標記與分隔符號</li>
+<li>一份簡短的受眾措辭與張力清單，取自真實對話</li>
+<li>一份簡短的品牌絕不說的話清單</li>
+<li>一位指定的人工審閱者負責審閱輸出</li>
+</ul>
+<h2>名詞定義</h2>
+<ul>
+<li><strong>零樣本：</strong>只用指令請模型執行任務。</li>
+<li><strong>少樣本：</strong>在提示詞中納入少量實際範例。</li>
+<li><strong>情境學習：</strong>模型在不改變權重的情況下，適應提示詞中的模式。</li>
+</ul>
+<h2>為什麼這件事現在很重要</h2>
+<p>當每個人都能使用相同的模型，優勢就轉移到輸入上。少樣本的紀律誕生於 2020 年的資源匱乏；到了 2026 年，它成為擺脫同質化的方法。如果您想了解受眾訊號在其他地方如何轉化為實際的行銷決策，<a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a> 每週的節目一次解讀一個真實訊號，這是很適合與更精準的提示詞搭配的習慣。</p>
+<p>用 AI 仍能聽起來獨具特色的品牌，很少是指令寫得最聰明的那些，而是擁有最好範例、並以受眾為念加以挑選的那些。</p>
+<section id="faq" style="padding:40px 0 0"><h2>常見問題</h2><details><summary>什麼是少樣本提示？</summary><p>少樣本提示是指在提示詞中提供語言模型少量的任務實際範例，讓它推斷出模式並加以延續。這個詞因 2020 年的 GPT-3 論文而廣為流行。</p></details><details><summary>少樣本提示對現代模型仍然有用嗎？</summary><p>有用。經過指令調校的模型能遵循一般的請求，但要傳達特定的語調、結構或細節程度，範例仍是最精確的方式。指令負責描述，範例負責示範。</p></details><details><summary>內容提示詞應該包含多少則範例？</summary><p>通常是二到五則有力且多樣的範例。太少，模型會過度模仿其中一則；太多，則會擠壓到簡報。品質與多樣性比數量更重要。</p></details></section>
+<div class="cta-box"><h2>預約品牌語調稽核</h2><p>自 2020 年 GPT-3 API 開放的那個夏天起，我們就一直在用語言模型寫作。我們打造品牌語調系統、提示詞庫與人工編輯的內容營運，並以您的真實受眾所回應的內容為基礎。</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20What%20few-shot%20prompting%20in%202020%20still%20teaches%20content%20teams%29">寄信至 ask@gpt3.marketing →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>延伸閱讀</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../why-ai-content-sounds-the-same/index.html"><img src="../../../assets/img/a02-640.webp" alt="一整排相同的灰色對話泡泡，其中一個獨特的琥珀色泡泡脫穎而出" width="640" height="427" loading="lazy"><div class="b"><span class="tag">品牌語調</span><h3>為什麼 AI 內容聽起來都一樣，以及如何擺脫</h3><p>千篇一律的 AI 文案來自被平均化的輸入，而不是糟糕的模型。如何診斷同質化，並重建受眾認得出來的品牌語調。</p><div class="meta" style="margin-top:12px">2026 年 9 月 28 日 · 閱讀時間 6 分鐘</div></div></a><a class="post-card" href="../brand-voice-system-for-ai/index.html"><img src="../../../assets/img/a03-640.webp" alt="一台帶有旋鈕的復古控制台，將聲波塑造成獨特的輪廓，象徵品牌語調系統" width="640" height="427" loading="lazy"><div class="b"><span class="tag">品牌語調</span><h3>如何打造 AI 能遵循的品牌語調系統</h3><p>AI 時代的品牌語調系統：原則、詞彙、範例，以及文案人員和模型都能使用、可直接交給模型的指令。</p><div class="meta" style="margin-top:12px">2026 年 9 月 14 日 · 閱讀時間 7 分鐘</div></div></a><a class="post-card" href="../why-ai-drafts-need-heavy-editing/index.html"><img src="../../../assets/img/a04-640.webp" alt="編輯的鉛筆與琥珀色修改記號，落在從復古終端機印表機中湧出的空白紙張上" width="640" height="427" loading="lazy"><div class="b"><span class="tag">編輯</span><h3>為什麼 AI 草稿仍需大幅編輯，以及如何減少編輯</h3><p>AI 草稿需要大幅修改，通常是輸入的問題。編輯時間花在哪裡，以及如何把力氣移往上游。</p><div class="meta" style="margin-top:12px">2026 年 9 月 7 日 · 閱讀時間 6 分鐘</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 標誌"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">歷史悠久的生成式 AI 內容顧問公司，讓品牌始終聽起來像自己。</p>
+<p class="partner">技術夥伴 <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">預約品牌語調稽核</a></p>
+<p>寄信至 <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">我們的工作</a></li><li><a href="../index.html">洞察</a></li><li><a href="../../index.html#about">關於我們</a></li><li><a href="../../index.html#faq">常見問題</a></li><li><a href="../../../brand/index.html">品牌規範</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>由 SOMIN 提供技術支援</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">案例研究</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">品牌方案</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">代理商方案</a></li></ul></div>
+</div>
+<h4>生態系</h4>
+<nav class="network" aria-label="姊妹公司"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>每週一，解讀一個真實訊號</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>可驗證的全天候聆聽</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>以利潤衡量的付費流量</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>代理執行，人類指揮。</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>為推理模型重新設計的行銷</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>為東南亞解讀消費者心理與文化</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search、Neural answers、Mentions，一次到位。</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · 新加坡。GPT3 Marketing 是一家獨立顧問公司，與 OpenAI 並無關聯。 </p>
+</div></footer>
+</body></html>

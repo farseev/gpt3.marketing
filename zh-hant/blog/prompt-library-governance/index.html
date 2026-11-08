@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>提示詞庫：如何建立、管理版本與治理</title>
+<meta name="description" content="建立團隊提示詞庫的實用指南：結構、版本管理、測試、負責人，以及如何讓它持續以受眾證據為基礎。">
+<link rel="canonical" href="https://gpt3.marketing/zh-hant/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gpt3.marketing/zh-hant/blog/prompt-library-governance/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/prompt-library-governance/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="提示詞庫：如何建立、管理版本與治理">
+<meta property="og:description" content="提示詞庫是一套共用、具版本管理、經過測試的提示詞集合，用於團隊經常性的內容工作。">
+<meta property="og:url" content="https://gpt3.marketing/zh-hant/blog/prompt-library-governance/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="提示詞庫：如何建立、管理版本與治理，GPT3 Marketing">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_SG">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="提示詞庫：如何建立、管理版本與治理">
+<meta name="twitter:description" content="提示詞庫是一套共用、具版本管理、經過測試的提示詞集合，用於團隊經常性的內容工作。">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg">
+<meta name="twitter:image:alt" content="提示詞庫：如何建立、管理版本與治理，GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-08-17"><meta property="article:section" content="提示詞技巧"><meta name="keywords" content="prompt library, prompt management, prompt versioning, AI governance, content operations">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketing 部落格" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans TC',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans TC',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"提示詞庫：如何建立、管理版本與治理","description":"建立團隊提示詞庫的實用指南：結構、版本管理、測試、負責人，以及如何讓它持續以受眾證據為基礎。","datePublished":"2026-08-17","dateModified":"2026-08-17","image":["https://gpt3.marketing/assets/img/og/prompt-library-governance.jpg","https://gpt3.marketing/assets/img/a06.webp"],"url":"https://gpt3.marketing/zh-hant/blog/prompt-library-governance/","mainEntityOfPage":"https://gpt3.marketing/zh-hant/blog/prompt-library-governance/","keywords":"prompt library, prompt management, prompt versioning, AI governance, content operations","articleSection":"提示詞技巧","inLanguage":"zh-Hant","wordCount":933,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/zh-hant/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://gpt3.marketing/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"提示詞庫：如何建立、管理版本與治理","item":"https://gpt3.marketing/zh-hant/blog/prompt-library-governance/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"什麼是提示詞庫？","acceptedAnswer":{"@type":"Answer","text":"一套共用、有組織、經過測試的提示詞集合，用於團隊的經常性任務，每個提示詞都附有範例、使用說明、負責人與版本歷史。"}},{"@type":"Question","name":"誰應該負責提示詞庫？","acceptedAnswer":{"@type":"Answer","text":"一位指定的內容或營運主管，並由團隊各成員共同貢獻。每個提示詞也應有自己的負責人，負責測試與更新。"}},{"@type":"Question","name":"提示詞應該多久重新測試一次？","acceptedAnswer":{"@type":"Answer","text":"在模型重大更新、品牌語調系統改變或受眾研究出現顯著轉變之後，並且至少每季定期進行一次。"}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketing 首頁"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 標誌"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="主選單"><a href="../../index.html#work">案例</a><a href="../../index.html#services">我們的工作</a><a href="../index.html">洞察</a><a href="../../index.html#faq">常見問題</a><a href="../../../brand/index.html">品牌</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">預約品牌語調稽核</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="語言: 繁體中文"><span>繁中</span></summary><ul><li><a href="../../../blog/prompt-library-governance/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="../../../zh-hans/blog/prompt-library-governance/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="index.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="導覽路徑"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">部落格</a> / 提示詞技巧</nav>
+<h1 style="margin-top:18px">提示詞庫：如何建立、管理版本與治理</h1><p class="meta">2026 年 8 月 17 日 · 閱讀時間 6 分鐘 · GPT3 Marketing 編輯團隊 · <a href="#faq">常見問題</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a06.webp" alt="復古的卡片目錄櫃，抽屜透出琥珀色光芒，提示詞卡片正以手工歸檔" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">提示詞庫是一套共用、具版本管理、經過測試的提示詞集合，用於團隊經常性的內容工作。做得好的話，它能保存工藝，讓品質不取決於是誰在打字。它需要結構、指定的負責人、測試案例與定期檢視，而其中的範例與受眾輸入應以真實的受眾證據更新，而不是任其過時。</p>
+<h2>團隊為什麼需要提示詞庫？</h2>
+<p>沒有提示詞庫，每位文案人員都會自創提示詞。有些很出色，大多數還可以，少數很差，而沒有人知道哪個是哪個。品質變成個人的事，而不是系統的事；當那位出色的文案人員離職，他的工藝也隨之離開。</p>
+<p>我們從 2020 年開始維護提示詞庫，因為 GPT-3 的提示詞調校成本很高。一個好的產品描述少樣本提示詞，可能要花一整個下午反覆調整。把它弄丟簡直荒謬。這個習慣比當時的資源匱乏存續得更久。</p>
+<h2>每個提示詞條目應該包含什麼？</h2>
+<ul>
+<li><strong>名稱與用途：</strong>它所服務的內容工作。</li>
+<li><strong>提示詞本身：</strong>並清楚標示變數欄位。</li>
+<li><strong>必要輸入：</strong>簡報欄位、事實、受眾筆記。</li>
+<li><strong>範例：</strong>二到五則精選範例，或指向範例庫的參照。</li>
+<li><strong>測試案例：</strong>幾份已知有良好輸出的簡報。</li>
+<li><strong>負責人與版本：</strong>由誰維護，以及改了什麼。</li>
+<li><strong>已測試的模型：</strong>它已在哪些模型與設定上驗證過。</li>
+<li><strong>已知的失敗模式：</strong>它容易在哪裡出錯。</li>
+</ul>
+<h2>如何建構提示詞庫？</h2>
+<p>依內容工作分類，而不是依通路或依人分類。例如「新產品上市公告」、「客訴回覆」、「每週電子報開場」等。每項工作可能有不同通路的變化版本，但人們搜尋的單位是工作。</p>
+<p>讓品牌語調系統保持獨立並以參照方式引用，而不是複製到每一個提示詞中。品牌語調改變時，您只需更新一個地方。我們的<a href="../brand-voice-system-for-ai/index.html">打造品牌語調系統</a>指南說明了這個共用層包含哪些內容。</p>
+<h2>如何為提示詞建立版本並進行測試？</h2>
+<p>像對待程式碼一樣對待提示詞。每一次變更都要有版本編號和一行說明。在新版本取代舊版本之前，先執行測試案例，並請編輯在不知情的情況下比較輸出。在新版本於實際使用中證明自己之前，保留舊版本可供使用。</p>
+<p>在以下情況重新測試：</p>
+<ol>
+<li>您的模型供應商更新，或您更換了模型。</li>
+<li>品牌語調系統改變。</li>
+<li>受眾研究顯示語言或關切出現轉變。</li>
+<li>編輯反映一再做出相同的修正。</li>
+</ol>
+<h2>如何讓提示詞保持有所依據？</h2>
+<p>提示詞庫可能會僵化。去年奏效的範例，描述的可能是受眾早已不再關心的事。我們將每個提示詞的受眾輸入與一個更新週期綁在一起，由我們的技術夥伴、AI 受眾研究平台 SOMIN 提供資料。它的<a href="https://somin.ai/somin-reporting/" rel="noopener">報告</a>與聆聽功能，幫助我們看出哪些主題與措辭正在興起或消退。若需要對品牌對話進行全天候聆聽，我們的姊妹應用程式 <a href="https://somonitor.ai/" rel="noopener">Somonitor</a> 專為聲量占比與早期預警而打造。</p>
+<blockquote>提示詞庫的時效，取決於其中受眾證據的時效。</blockquote>
+<h2>由誰治理？</h2>
+<p>治理不需要很繁重。整個提示詞庫一位負責人、每個提示詞一位負責人、每月檢視使用情況與編輯紀錄，再加上一條簡單的規則：任何提示詞在通過測試案例之前，都不得用於發布的內容。這就足以在不流於官僚的情況下維持品質穩定。</p>
+<h2>檢查清單：提示詞庫健康度</h2>
+<ul>
+<li>依內容工作分類</li>
+<li>每個提示詞都有負責人與版本</li>
+<li>有測試案例，且在變更時執行</li>
+<li>以參照方式引用品牌語調系統，而非重複複製</li>
+<li>受眾輸入在上一季更新過</li>
+<li>列出已測試的模型</li>
+<li>編輯紀錄回饋到改進中</li>
+</ul>
+<h2>名詞定義</h2>
+<ul>
+<li><strong>變數欄位：</strong>提示詞中每次使用時填入的預留位置，例如產品名稱或受眾區隔。</li>
+<li><strong>測試案例：</strong>一個固定的輸入，搭配已知可接受的輸出，用來檢查提示詞。</li>
+<li><strong>提示詞偏移：</strong>當模型、品牌語調或受眾在一個未更動的提示詞周圍改變時，輸出品質隨之下降的現象。</li>
+</ul>
+<h2>實際範例</h2>
+<p>一個零售團隊維護著一個「客訴回覆」提示詞。編輯紀錄顯示，編輯一再把開場白改得更柔和。負責人加入一則修改前後的範例，以及一條先回應具體問題的規則，升級版本、執行六個測試案例，然後上線。那項反覆出現的編輯就此消失。像這樣小而清晰可見的循環，正是讓提示詞庫隨時間增值的關鍵。</p>
+<p><a href="https://somin.ai/brands-mothercare-sg-case-study/" rel="noopener">Mothercare 新加坡案例</a>是很實用的延伸閱讀，說明在決定要對受眾說什麼之前，如何先了解他們。如果您想與新加坡的同業交流提示詞技巧，<a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a> 每週都會圍繞一個真實訊號把行銷人聚集在一起。</p><h2>應該使用哪些工具？</h2>
+<p>比您想的要少。許多有效的提示詞庫就放在共用的文件工作區，或一個命名清楚、附有版本說明的簡單資料庫中。當您有許多提示詞在自動化工作流程中執行時，專門的提示詞管理工具會有幫助，但它們無法取代負責人、測試案例與檢視的紀律。</p>
+<p>無論使用什麼工具，都要讓三件事變得容易：為某項工作找到正確的提示詞、看出改了什麼以及原因，以及回報問題。如果文案人員無法在一分鐘內找到提示詞，他們就會自己寫，提示詞庫便開始分裂。一份列出每項內容工作、並以一行字說明何時使用各個提示詞的簡短索引頁，就能避免大部分這類情況。</p>
+<p>最後，把汰除納入治理的一環。已停售產品或過時活動的提示詞應該封存，而不是留在原處讓新成員混淆。</p><h2>如何讓大家使用它？</h2><p>採用率是一個設計問題。把提示詞庫放在大家原本就在工作的地方，為每個提示詞展示修改前後的對照，讓它的價值一目了然，並在貢獻者的改進上線時給予肯定。幾個月內，使用提示詞庫應該會比從頭寫一個提示詞更快。</p>
+<section id="faq" style="padding:40px 0 0"><h2>常見問題</h2><details><summary>什麼是提示詞庫？</summary><p>一套共用、有組織、經過測試的提示詞集合，用於團隊的經常性任務，每個提示詞都附有範例、使用說明、負責人與版本歷史。</p></details><details><summary>誰應該負責提示詞庫？</summary><p>一位指定的內容或營運主管，並由團隊各成員共同貢獻。每個提示詞也應有自己的負責人，負責測試與更新。</p></details><details><summary>提示詞應該多久重新測試一次？</summary><p>在模型重大更新、品牌語調系統改變或受眾研究出現顯著轉變之後，並且至少每季定期進行一次。</p></details></section>
+<div class="cta-box"><h2>預約品牌語調稽核</h2><p>自 2020 年 GPT-3 API 開放的那個夏天起，我們就一直在用語言模型寫作。我們打造品牌語調系統、提示詞庫與人工編輯的內容營運，並以您的真實受眾所回應的內容為基礎。</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20Prompt%20libraries%3A%20how%20to%20build%2C%20version%20and%20govern%20them%29">寄信至 ask@gpt3.marketing →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>延伸閱讀</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../from-gpt3-to-chatgpt-what-changed/index.html"><img src="../../../assets/img/a05-640.webp" alt="一條螢幕的時間軸，從 2020 年的小型終端機一路延伸到城市天際線上方巨大而發光的聊天視窗" width="640" height="427" loading="lazy"><div class="b"><span class="tag">傳承</span><h3>從 GPT-3 到 ChatGPT：對行銷人而言真正改變了什麼</h3><p>從 GPT-3 API 測試版到今天的六年：內容團隊有哪些改變、哪些沒變，以及為什麼現在工藝更加重要。</p><div class="meta" style="margin-top:12px">2026 年 8 月 24 日 · 閱讀時間 7 分鐘</div></div></a><a class="post-card" href="../authenticity-outlasts-trends/index.html"><img src="../../../assets/img/a07-640.webp" alt="一棵根深柢固的琥珀色大樹屹立不搖，潮流形狀的風箏與彩帶從旁吹過" width="640" height="427" loading="lazy"><div class="b"><span class="tag">策略</span><h3>真誠比潮流長久：AI 內容中的敘事勝過錯失恐懼</h3><p>用 AI 追逐潮流，讓品牌變得更快，也更模糊。為什麼一致的敘事會產生複利效果，以及如何用它來檢驗潮流。</p><div class="meta" style="margin-top:12px">2026 年 8 月 3 日 · 閱讀時間 6 分鐘</div></div></a><a class="post-card" href="../human-edited-content-at-scale/index.html"><img src="../../../assets/img/a08-640.webp" alt="人工編輯們站在一條由復古機器送出內容卡片的輸送帶旁，逐一以手工完成每張卡片" width="640" height="427" loading="lazy"><div class="b"><span class="tag">編輯</span><h3>規模化的人工編輯內容：職務、循環與極限</h3><p>如何在不犧牲品質的前提下擴大 AI 輔助內容的規模：編輯職務、審閱層級、回饋循環，以及人在哪裡最能創造價值。</p><div class="meta" style="margin-top:12px">2026 年 7 月 27 日 · 閱讀時間 6 分鐘</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 標誌"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">歷史悠久的生成式 AI 內容顧問公司，讓品牌始終聽起來像自己。</p>
+<p class="partner">技術夥伴 <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">預約品牌語調稽核</a></p>
+<p>寄信至 <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">我們的工作</a></li><li><a href="../index.html">洞察</a></li><li><a href="../../index.html#about">關於我們</a></li><li><a href="../../index.html#faq">常見問題</a></li><li><a href="../../../brand/index.html">品牌規範</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>由 SOMIN 提供技術支援</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">案例研究</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">品牌方案</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">代理商方案</a></li></ul></div>
+</div>
+<h4>生態系</h4>
+<nav class="network" aria-label="姊妹公司"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>每週一，解讀一個真實訊號</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>可驗證的全天候聆聽</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>以利潤衡量的付費流量</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>代理執行，人類指揮。</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>為推理模型重新設計的行銷</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>為東南亞解讀消費者心理與文化</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>Search、Neural answers、Mentions，一次到位。</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · 新加坡。GPT3 Marketing 是一家獨立顧問公司，與 OpenAI 並無關聯。 </p>
+</div></footer>
+</body></html>
