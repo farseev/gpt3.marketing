@@ -32,6 +32,10 @@
 - [How to run a brand voice audit in the age of AI content](https://gpt3.marketing/blog/how-to-run-a-brand-voice-audit/): A step-by-step brand voice audit: gather samples, test distinctiveness, compare with audience language and prioritise fixes.
 - [Audience-grounded AI content: feeding models what people say](https://gpt3.marketing/blog/audience-grounded-ai-content/): Why AI content improves when briefs carry real audience language and tensions, and a practical workflow for grounding prompts in evidence.
 
+## Other languages
+
+- [简体中文](https://gpt3.marketing/zh-hans/) · [blog](https://gpt3.marketing/zh-hans/blog/) (10 articles translated)
+
 ## FAQ
 - **What is GPT3 Marketing?** GPT3 Marketing is a generative-AI content consultancy established in 2020, when OpenAI opened its GPT-3 API. We build brand voice systems, prompt libraries and human-edited content workflows. Our technology partner, SOMIN, grounds that work in real audience conversations so AI-assisted content stays distinctive rather than generic.
 - **Why is the company called GPT3 Marketing?** Because that is when we started. We began writing with GPT-3 in the summer of 2020, when prompts were hand-built few-shot examples and every output needed a careful editor. The name is a reminder of the craft habits we formed then, which matter more now that fluent text is cheap.

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2020 年的少样本提示至今仍能教给内容团队什么</title>
+<meta name="description" content="GPT-3 迫使写作者通过示例来教学。这些少样本习惯，依然是 2026 年抵御千篇一律 AI 内容的最佳防线。">
+<link rel="canonical" href="https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="en-SG" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/">
+<link rel="alternate" hreflang="x-default" href="https://gpt3.marketing/blog/few-shot-prompting-lessons-2020/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1C2420">
+<meta property="og:site_name" content="GPT3 Marketing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2020 年的少样本提示至今仍能教给内容团队什么">
+<meta property="og:description" content="少样本提示让早期的 GPT-3 用户明白：模型从示例中学习语调，远比从形容词中学得好。">
+<meta property="og:url" content="https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/">
+<meta property="og:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="2020 年的少样本提示至今仍能教给内容团队什么，GPT3 Marketing">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_SG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2020 年的少样本提示至今仍能教给内容团队什么">
+<meta name="twitter:description" content="少样本提示让早期的 GPT-3 用户明白：模型从示例中学习语调，远比从形容词中学得好。">
+<meta name="twitter:image" content="https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg">
+<meta name="twitter:image:alt" content="2020 年的少样本提示至今仍能教给内容团队什么，GPT3 Marketing">
+<meta name="application-name" content="GPT3 Marketing"><meta name="apple-mobile-web-app-title" content="GPT3 Marketing">
+<meta property="article:author" content="GPT3 Marketing"><meta property="article:published_time" content="2026-10-05"><meta property="article:section" content="提示词技巧"><meta name="keywords" content="few-shot prompting, GPT-3, prompt craft, brand voice, AI content">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../assets/img/icon-180.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GPT3 Marketing 博客" href="https://gpt3.marketing/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../../assets/site.css">
+<style id="i18n-font">:root{--fh:'IBM Plex Mono','Noto Sans SC',system-ui,sans-serif;--fb:'IBM Plex Sans','Noto Sans SC',system-ui,sans-serif}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QY6BBZM4MS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QY6BBZM4MS');document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(/^mailto:/.test(h))return gtag('event','generate_lead',{method:'email',link_text:(a.textContent||'').trim().slice(0,80)});var m=h.match(/^https?:\/\/(?:www\.)?((?:cloud\.|share\.)?somin\.ai)(\/[^?#]*)?/);if(m)gtag('event','somin_click',{destination:m[1],path:(m[2]||'/').slice(0,80),link_text:(a.textContent||'').trim().slice(0,80)});});document.addEventListener('submit',function(e){var f=e.target;if(f&&f.tagName==='FORM')gtag('event','generate_lead',{method:'form',form_class:String(f.className||'').slice(0,40)});},true);</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"2020 年的少样本提示至今仍能教给内容团队什么","description":"GPT-3 迫使写作者通过示例来教学。这些少样本习惯，依然是 2026 年抵御千篇一律 AI 内容的最佳防线。","datePublished":"2026-10-05","dateModified":"2026-10-05","image":["https://gpt3.marketing/assets/img/og/few-shot-prompting-lessons-2020.jpg","https://gpt3.marketing/assets/img/a01.webp"],"url":"https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/","mainEntityOfPage":"https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/","keywords":"few-shot prompting, GPT-3, prompt craft, brand voice, AI content","articleSection":"提示词技巧","inLanguage":"zh-Hans","wordCount":1028,"author":{"@type":"Organization","name":"GPT3 Marketing editorial team","url":"https://gpt3.marketing/"},"publisher":{"@id":"https://gpt3.marketing/#org"},"mentions":[{"@type":"Organization","name":"SOMIN","url":"https://somin.ai/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPT3 Marketing","item":"https://gpt3.marketing/zh-hans/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://gpt3.marketing/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"2020 年的少样本提示至今仍能教给内容团队什么","item":"https://gpt3.marketing/zh-hans/blog/few-shot-prompting-lessons-2020/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"什么是少样本提示？","acceptedAnswer":{"@type":"Answer","text":"少样本提示是指在提示词中给语言模型提供少量完成某项任务的实例，让它推断出模式并延续下去。2020 年的 GPT-3 论文让这个术语广为流传。"}},{"@type":"Question","name":"对于现代模型，少样本提示还有用吗？","acceptedAnswer":{"@type":"Answer","text":"有用。经过指令微调的模型能够遵循直白的请求，但要传达一种特定的语调、结构或细节程度，示例仍是最精确的方式。指令负责描述，示例负责示范。"}},{"@type":"Question","name":"一条内容提示词应该包含多少个示例？","acceptedAnswer":{"@type":"Answer","text":"通常是两到五个有力且多样的示例。太少，模型会过度照搬某一个；太多，则会挤占简报的空间。质量和多样性比数量更重要。"}}]},{"@type":"Organization","@id":"https://gpt3.marketing/#org","name":"GPT3 Marketing","url":"https://gpt3.marketing/","logo":"https://gpt3.marketing/brand/logo.svg","email":"ask@gpt3.marketing","description":"GPT3 Marketing is a generative-AI content consultancy founded in 2020, the summer OpenAI opened its GPT-3 API. It designs brand voice systems, prompt libraries and human-edited content workflows so AI-assisted content stays distinctive. Its technology partner is SOMIN, an AI audience-research platform, which grounds every voice and content decision in what real audiences actually say and respond to.","slogan":"Six years of AI content craft","areaServed":"Singapore and Asia-Pacific","address":{"@type":"PostalAddress","addressLocality":"Singapore","addressCountry":"SG"},"contactPoint":{"@type":"ContactPoint","email":"ask@gpt3.marketing","contactType":"sales"},"knowsAbout":["AI brand guidelines","AI content","AI content briefs","AI content editing","AI content operations","AI content sameness","AI content strategy","AI drafts","AI governance","AI timeline","ChatGPT","GPT-3","GPT-3 history","audience research","brand authenticity","brand consistency","brand differentiation","brand narrative","brand voice","brand voice audit","brand voice system","consumer tensions","content at scale","content audit","content governance"],"memberOf":{"@type":"Organization","name":"SOMIN partner network","url":"https://somin.ai/"},"brand":{"@type":"Brand","name":"GPT3 Marketing"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="../../index.html" aria-label="GPT3 Marketing 首页"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 标志"><rect width="40" height="40" rx="4" fill="#1C2420"/><path d="M9 13l7 7-7 7" fill="none" stroke="#E8A33D" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#E8A33D"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#1C2420">gpt3</tspan><tspan fill="#93590A">.marketing</tspan></text></svg></a>
+<nav aria-label="主导航"><a href="../../index.html#work">案例</a><a href="../../index.html#services">我们做什么</a><a href="../index.html">洞察</a><a href="../../index.html#faq">常见问题</a><a href="../../../brand/index.html">品牌</a><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">预约品牌语调审计</a><!--i18n:langsw--><details class="langsw" translate="no"><summary aria-label="语言: 简体中文"><span>简中</span></summary><ul><li><a href="../../../blog/few-shot-prompting-lessons-2020/index.html" hreflang="en-SG" lang="en-SG">English</a></li><li><a href="index.html" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a></li></ul></details><script>document.addEventListener('click',function(e){var a=e.target.closest('.langsw a[hreflang]');if(a&&typeof gtag==='function')gtag('event','language_switch',{language_from:document.documentElement.lang,language_to:a.getAttribute('hreflang'),page_path:location.pathname});var d=document.querySelector('.langsw[open]');if(d&&!d.contains(e.target))d.removeAttribute('open');});</script><!--/i18n:langsw--></nav>
+</div></header>
+<main id="main">
+<article class="post"><div class="wrap narrow head"><nav class="crumbs" aria-label="面包屑导航"><a href="../../index.html">GPT3 Marketing</a> / <a href="../index.html">博客</a> / 提示词技巧</nav>
+<h1 style="margin-top:18px">2020 年的少样本提示至今仍能教给内容团队什么</h1><p class="meta">2026 年 10 月 5 日 · 阅读约 6 分钟 · GPT3 Marketing 编辑团队 · <a href="#faq">常见问题</a></p></div>
+<div class="wrap" style="max-width:1000px"><figure class="cover" style="margin:0 0 40px"><img src="../../../assets/img/a01.webp" alt="复古的 2020 年终端，叠放的示例块输入一个发光的琥珀色光标" width="1536" height="1024" fetchpriority="high"></figure></div>
+<div class="wrap narrow prose"><p class="answer">少样本提示让早期的 GPT-3 用户明白：模型从示例中学习语调，远比从形容词中学得好。到了 2026 年，模型已能流畅地遵循指令，这一经验依然成立：给模型输入经过精选、以受众为依据的示例的团队，能得到独特的内容；而只描述语气的团队，得到的是和所有人一样的平庸文案。</p>
+<h2>2020 年用 GPT-3 写作究竟是什么样子？</h2>
+<p>2020 年 5 月，OpenAI 发表了论文《Language Models are Few-Shot Learners》，介绍拥有 1750 亿参数的模型 GPT-3。其核心论点是：足够大的模型无需重新训练，只要在提示词中放入少量示例就能学会一项任务。2020 年 6 月，API 以私有测试版的形式开放，GPT3 Marketing 也正是在那个夏天开始使用它。</p>
+<p>那时没有聊天窗口。您写的提示词看起来像一份文档的开头：三四条示例产品描述，每条都有简短的输入和完成的输出，然后是一个新的输入和一段空白。模型会延续这个模式。如果示例平淡，输出就平淡。如果某个示例比其他的长很多，输出就会越写越长。示例中的每一个小毛病都会被放大，出现在结果里。</p>
+<p>这是一种要求很高的工作方式，它迫使人们养成一种纪律，而大多数团队在 2022 年 11 月聊天界面出现后便丢掉了这种纪律。</p>
+<h2>为什么示例胜过形容词？</h2>
+<p>让一个现代模型用“温暖、自信、风趣”的语调写作，您得到的会是和成千上万其他品牌一样的温暖、自信、风趣。这些形容词出现在每一本品牌手册里。模型见过它们被贴在各种各样的文本上，于是返回这个范围的中间值。</p>
+<p>示例承载着形容词无法传达的信息：句子长度、笑点落在哪里、哪些词您从来不用、如何处理投诉、写“我们”还是“团队”。一个好的示例就是一份压缩版的语调指南。这就是为什么我们的<a href="../brand-voice-system-for-ai/index.html">品牌语调体系</a>是围绕实例而不是语气描述词来构建的。</p>
+<blockquote>指令描述您想要什么，示例证明它。模型信任证据。</blockquote>
+<h2>哪些 2020 年的习惯值得保留？</h2>
+<h3>1. 像策划作品集一样精选示例</h3>
+<p>2020 年，每个示例都要消耗 token 和费用，所以我们精挑细选。如今上下文很便宜，团队会把整个档案库都粘贴进去。多并不等于好。挑选那些最能体现语调最强、最具体一面的作品，并在不同形式之间加以变化，让模型学到的是语调，而不是某一个模板。</p>
+<h3>2. 让模式清晰明确</h3>
+<p>少样本提示在结构一致时效果最好：带标签的输入、带标签的输出、清晰的分隔符。同样的原则也适用于现代提示词。向模型展示输入什么、输出什么，让它知道示例中哪些部分是固定的语调、哪些是可变的内容。</p>
+<h3>3. 以编辑的眼光审读每一条输出</h3>
+<p>没有人会发布未经处理的 GPT-3 文本。它会跑题、重复，偶尔还会信心十足地编造事实。现代模型已经好得多，但编辑的习惯仍是现有成本最低的质量控制。我们在<a href="../why-ai-drafts-need-heavy-editing/index.html">为什么 AI 草稿仍需大量编辑</a>中对此有更详细的介绍。</p>
+<h3>4. 把提示词当作资产</h3>
+<p>一条好的少样本提示词要花几个小时调试，所以我们为它管理版本、编写文档并反复使用。这逐渐发展成了我们如今为客户运行的提示词库实践。</p>
+<h2>示例应该从哪里来？</h2>
+<p>这正是 2026 年与 2020 年的不同之处。那时，示例来自品牌自己的档案库。问题在于，档案反映的是品牌想说的话，而不一定是受众有所回应的内容。如果您最好的示例是您自己最喜欢的帖子，模型学到的就是您的偏好，而不是受众的。</p>
+<p>我们现在让示例的挑选以受众证据为依据。借助 AI 受众研究平台 SOMIN 的<a href="https://somin.ai/somin-strategy/" rel="noopener">策略工具</a>，我们审视围绕某个品类的对话：人们实际使用的说法、他们表达的冲突点，以及能赢得回复而不是被划走的语气。然后我们挑选或撰写回应这些具体细节的示例。模型同时继承了品牌的语调和受众的词汇。</p>
+<p><a href="https://somin.ai/brands-fujifilm-case-study/" rel="noopener">Fujifilm 案例研究</a>是一篇有用的延伸阅读，讲述在任何人推敲措辞之前，受众洞察如何塑造品牌要说的内容。</p>
+<h2>一个实例：同一条产品线，两条提示词</h2>
+<p>设想一个护肤品牌要为一款新精华撰写产品描述。</p>
+<ul>
+<li><strong>提示词 A</strong> 写道：“为我们的新款维生素 C 精华写一段温暖、专业的产品描述。我们的语气友好且以科学为导向。”</li>
+<li><strong>提示词 B</strong> 包含三条过去表现良好的描述，每条都配有对应的简报，外加一小段受众谈论这个问题时所用说法的笔记（例如，他们如何用自己的话描述暗沉或敏感），然后是新的简报。</li>
+</ul>
+<p>提示词 A 返回的是合格的文案，可以属于货架上的任何一个品牌。提示词 B 返回的文案则带有品牌的节奏和受众的语言。区别不在于模型质量，而在于输入质量。</p>
+<h2>检查清单：用于品牌内容的少样本提示词</h2>
+<ul>
+<li>两到五个示例，形式和长度各异</li>
+<li>每个示例都配有产出它的简报</li>
+<li>一致的标签和分隔符</li>
+<li>一份来自真实对话的受众说法和冲突点简短清单</li>
+<li>一份品牌从不说的话的简短清单</li>
+<li>一位负责审阅输出的具名人员</li>
+</ul>
+<h2>定义</h2>
+<ul>
+<li><strong>零样本：</strong>只用指令让模型完成任务。</li>
+<li><strong>少样本：</strong>在提示词中加入少量实例。</li>
+<li><strong>上下文学习：</strong>模型在不改变权重的情况下适应提示词中的模式。</li>
+</ul>
+<h2>为什么这在当下很重要</h2>
+<p>当人人都能使用同样的模型时，优势就转移到了输入上。少样本纪律在 2020 年诞生于资源稀缺；到了 2026 年，它成了摆脱同质化的一种方式。如果您想看看其他地方如何把受众信号转化为实际的营销决策，<a href="https://mondays.marketing/" rel="noopener">Marketing Mondays</a> 每周的节目一次解读一个真实信号，这是一个值得与更精准的提示词搭配的好习惯。</p>
+<p>用 AI 写出独特声音的品牌，很少是那些指令最巧妙的品牌，而是那些拥有最佳示例、并在挑选时把受众放在心上的品牌。</p>
+<section id="faq" style="padding:40px 0 0"><h2>常见问题</h2><details><summary>什么是少样本提示？</summary><p>少样本提示是指在提示词中给语言模型提供少量完成某项任务的实例，让它推断出模式并延续下去。2020 年的 GPT-3 论文让这个术语广为流传。</p></details><details><summary>对于现代模型，少样本提示还有用吗？</summary><p>有用。经过指令微调的模型能够遵循直白的请求，但要传达一种特定的语调、结构或细节程度，示例仍是最精确的方式。指令负责描述，示例负责示范。</p></details><details><summary>一条内容提示词应该包含多少个示例？</summary><p>通常是两到五个有力且多样的示例。太少，模型会过度照搬某一个；太多，则会挤占简报的空间。质量和多样性比数量更重要。</p></details></section>
+<div class="cta-box"><h2>预约品牌语调审计</h2><p>自 2020 年 GPT-3 API 开放的那个夏天起，我们就一直在用语言模型写作。我们打造品牌语调体系、提示词库和人工编辑的内容运营，以您的真实受众的反应为依据。</p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing%20%28re%3A%20What%20few-shot%20prompting%20in%202020%20still%20teaches%20content%20teams%29">发送邮件至 ask@gpt3.marketing →</a></div>
+</div></article>
+<section class="alt"><div class="wrap"><h2>继续阅读</h2><div class="grid g3" style="margin-top:28px"><a class="post-card" href="../why-ai-content-sounds-the-same/index.html"><img src="../../../assets/img/a02-640.webp" alt="一排相同的灰色对话气泡中，一个独特的琥珀色气泡脱颖而出" width="640" height="427" loading="lazy"><div class="b"><span class="tag">品牌语调</span><h3>为什么 AI 内容听起来都一样，以及如何摆脱</h3><p>千篇一律的 AI 文案源于被平均化的输入，而不是糟糕的模型。如何诊断同质化，并重建受众认得出的品牌语调。</p><div class="meta" style="margin-top:12px">2026 年 9 月 28 日 · 阅读约 6 分钟</div></div></a><a class="post-card" href="../brand-voice-system-for-ai/index.html"><img src="../../../assets/img/a03-640.webp" alt="带旋钮的复古控制台将声波塑造成一个独特的轮廓，象征品牌语调体系" width="640" height="427" loading="lazy"><div class="b"><span class="tag">品牌语调</span><h3>如何构建一套 AI 能够遵循的品牌语调体系</h3><p>面向 AI 时代的品牌语调体系：原则、词汇、示例，以及写作者和模型都能使用的、可直接交给模型的指令。</p><div class="meta" style="margin-top:12px">2026 年 9 月 14 日 · 阅读约 7 分钟</div></div></a><a class="post-card" href="../why-ai-drafts-need-heavy-editing/index.html"><img src="../../../assets/img/a04-640.webp" alt="编辑的铅笔和琥珀色修改标记，落在从复古终端打印机中涌出的空白纸张上" width="640" height="427" loading="lazy"><div class="b"><span class="tag">编辑</span><h3>为什么 AI 草稿仍需大量编辑，以及如何减少编辑量</h3><p>AI 草稿需要大量修改，通常是输入问题。编辑时间花在了哪里，以及如何把功夫前移到上游。</p><div class="meta" style="margin-top:12px">2026 年 9 月 7 日 · 阅读约 6 分钟</div></div></a></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><div style="margin-bottom:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40" width="250" height="40" role="img" aria-label="GPT3 Marketing 标志"><rect width="40" height="40" rx="4" fill="#E8A33D"/><path d="M9 13l7 7-7 7" fill="none" stroke="#1C2420" stroke-width="3.6" stroke-linecap="square"/><rect x="19" y="25" width="12" height="3.6" fill="#1C2420"/><text x="50" y="28" font-family="'IBM Plex Mono', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="-0.4"><tspan fill="#FFFFFF">gpt3</tspan><tspan fill="#E8A33D">.marketing</tspan></text></svg></div><p style="max-width:30em">历史悠久的生成式 AI 内容咨询公司，让品牌始终听起来像它自己。</p>
+<p class="partner">技术合作伙伴 <a href="https://somin.ai/" class="somin" style="text-decoration:none"><b>SO</b><i>MIN</i></a></p>
+<p><a class="btn" href="mailto:ask@gpt3.marketing?subject=Voice%20audit%20request%3A%20GPT3%20Marketing">预约品牌语调审计</a></p>
+<p>邮箱 <a href="mailto:ask@gpt3.marketing">ask@gpt3.marketing</a></p></div>
+<div><h4>GPT3 Marketing</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="../../index.html#services">我们做什么</a></li><li><a href="../index.html">洞察</a></li><li><a href="../../index.html#about">关于</a></li><li><a href="../../index.html#faq">常见问题</a></li><li><a href="../../../brand/index.html">品牌指南</a></li><li><a href="https://gpt3.marketing/feed.xml">RSS</a></li></ul></div>
+<div><h4>由 SOMIN 提供技术支持</h4><ul style="list-style:none;padding:0;margin:0;line-height:2.1"><li><a href="https://somin.ai/" rel="noopener">somin.ai</a></li><li><a href="https://somin.ai/cases-ai-marketing-strategy/" rel="noopener">案例研究</a></li><li><a href="https://somin.ai/somin-for-brands/" rel="noopener">面向品牌</a></li><li><a href="https://somin.ai/somin-for-agencies/" rel="noopener">面向代理商</a></li></ul></div>
+</div>
+<h4>合作网络</h4>
+<nav class="network" aria-label="姊妹公司"><a href="https://mondays.marketing/" rel="noopener">Marketing Mondays<span>每周一，解读一个真实信号</span></a><a href="https://somonitor.ai/" rel="noopener">Somonitor<span>可核查的全天候社媒聆听</span></a><a href="https://fmedia.marketing/" rel="noopener">FMedia<span>付费流量，以利润衡量</span></a><a href="https://agentc.marketing/" rel="noopener">AgentC<span>智能体执行，人类指挥。</span></a><a href="https://gpt5.marketing/" rel="noopener">GPT5 Marketing<span>为推理模型重新设计的营销</span></a><a href="https://mindfuse.sg/" rel="noopener">Mindfuse<span>为东南亚解读消费者心理与文化</span></a><a href="https://snmrush.com/" rel="noopener">SNMRush<span>搜索、AI 答案、提及。一次全面冲刺。</span></a></nav>
+<p style="margin-top:40px;font-size:13px">© 2026 GPT3 Marketing · gpt3.marketing · 新加坡。GPT3 Marketing 是一家独立咨询公司，与 OpenAI 没有关联。 </p>
+</div></footer>
+</body></html>
